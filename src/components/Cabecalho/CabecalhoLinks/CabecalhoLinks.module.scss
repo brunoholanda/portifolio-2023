@@ -1,0 +1,16 @@
+.cabecalhoLinks {
+    
+    a {
+        text-decoration: none;
+        color: var(--cinza-texto);
+        margin-left: 5em;
+        font-family: var(--fonte-secundaria);
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    a:hover {
+        color: var(--preto);
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,21 @@
+:root {
+  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-secundaria: 'DM Sans', sans-serif;
+  --branco: #ffffff;
+  --preto: #000000;
+  --cinza-texto: #666666;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-principal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

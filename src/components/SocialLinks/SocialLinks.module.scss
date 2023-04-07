@@ -1,0 +1,12 @@
+.socialLinks {
+    
+    img {
+        margin: 0 0.4em;
+        width: 30px;
+        height: 30px;
+    }
+
+    img:hover {
+        filter: hue-rotate(90deg);
+    }
+}
