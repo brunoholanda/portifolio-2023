@@ -1,0 +1,91 @@
+{ "passeios":
+[
+    {
+        "id": 1,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/cataratas.jpg",
+        "titulo": "Passeio cataratas do Iguaçu",
+        "descricao": "150",
+        "deploy": "https://cursos-tech-br.vercel.app/",
+        "repositorio": "https://github.com/brunoholanda/cursos-tech-br"
+    },
+    {
+        "id": 2,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/cataratas.jpg",
+        "titulo": "Passeio cataratas do Iguaçu",
+        "descricao": "150",
+        "deploy": "https://imobiliaria-orpin.vercel.app/",
+        "repositorio": "https://github.com/brunoholanda/imobiliaria"
+    },
+    {
+        "id": 3,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/cataratas.jpg",
+        "titulo": "Passeio cataratas do Iguaçu",
+        "descricao": "150",
+        "deploy": "https://restaurante-rho.vercel.app/",
+        "repositorio": "https://github.com/brunoholanda/restaurante"
+    },
+    {
+        "id": 4,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/jamtar-tematico.jpg",
+        "nome": "Jantar temático restaurante argentino",
+        "preco": "200",
+        "pagamento": "https://pag.ae/7Zf1tQ8YQ"
+    },
+    {
+        "id": 5,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/bar-gelo.jpg",
+        "nome": "Bar de gelo foz do Iguaçu",
+        "preco": "95",
+        "pagamento": "https://pag.ae/7Zf1uBCcM"
+    },
+    {
+        "id": 6,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/itaipu.jpg",
+        "nome": "Visita a usina de Itaipu",
+        "preco": "60",
+        "pagamento": "https://pag.ae/7Zf1vcEGa"
+    },
+    {
+        "id": 7,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/city-argentina.jpg",
+        "nome": "City tour na Argentina",
+        "preco": "80",
+        "pagamento": "https://pag.ae/7Zf1vLaB6"
+    },
+    {
+        "id": 8,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/astronomico.jpg",
+        "nome": "Visita polo astronômico",
+        "preco": "40",
+        "pagamento": "https://pag.ae/7Zf1wgJG5"
+    },
+    {
+        "id": 9,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/argentina-experience.jpg",
+        "nome": "The Argentina experiênce",
+        "preco": "180",
+        "pagamento": "https://pag.ae/7Zf1wKasL"
+    },
+    {
+        "id": 10,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/roda-gigante.jpg",
+        "nome": "Passeio roda gigante foz",
+        "preco": "50",
+        "pagamento": "https://pag.ae/7Zf1xW3HM"
+    },
+    {
+        "id": 11,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/tres-fronteiras.jpg",
+        "nome": "Passeio marco das 3 fronteiras",
+        "preco": "50",
+        "pagamento": "https://pag.ae/7Zf1yjMer"
+    },
+    {
+        "id": 12,
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/helicoptero.jpg",
+        "nome": "Passeio de helicóptero pelas cataratas",
+        "preco": "450",
+        "pagamento": "https://pag.ae/7Zf1yLaCL"
+    }
+]
+}

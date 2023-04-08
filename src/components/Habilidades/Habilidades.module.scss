@@ -1,0 +1,33 @@
+.habilidades {
+
+    text-align: center;
+    margin: 4em 6em;
+
+    h2 {
+        font-size: 48px;
+        line-height: 26px;
+        font-weight: 700;
+        color: var(--preto-texto);
+        margin-bottom: 1em;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 26px;
+        color: var(--cinza-texto);
+        margin-bottom: 2em;
+    }
+
+    &__icones {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.introducao {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 7em 5em;
+    
+    &__texto {
+
+        h1 {
+            margin: 0;
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 70px;
+            color: var(--preto-texto);
+        }
+    }
+
+}
