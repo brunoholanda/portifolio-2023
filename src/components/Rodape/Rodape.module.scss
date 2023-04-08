@@ -1,6 +1,8 @@
 .rodape {
 
+
     text-align: center;
+
     &__contato {
         display: flex;
         flex-direction: row;
@@ -30,6 +32,7 @@
         p {
             font-size: 18px;
             color: var(--cinza-texto);
+            margin-right: 5em;
         }
     }
 }

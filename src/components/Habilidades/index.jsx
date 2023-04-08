@@ -7,6 +7,7 @@ import sass from '../../public/assets/icons/sass.svg';
 import git from '../../public/assets/icons/git-icon.svg';
 import vscode from '../../public/assets/icons/vscode.svg';
 import github from '../../public/assets/icons/github-fill.svg';
+import wordpress from '../../public/assets/icons/wordpress.png';
 
 export default function Habilidades() {
 
@@ -19,6 +20,7 @@ export default function Habilidades() {
         { imagem: git },
         { imagem: vscode },
         { imagem: github },
+        { imagem: wordpress },
     ]
 
     return (

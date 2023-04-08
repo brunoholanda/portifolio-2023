@@ -1,0 +1,40 @@
+.sobre {
+    margin: 5em 11em;
+
+    h2 {
+        font-size: 42px;
+        font-weight: 700;
+        color: var(--preto-texto);
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--cinza-texto);
+    }
+
+    &__descricao {
+        margin: 0 20em 0 0;
+    }
+}
+
+.formacao {
+    display: flex;
+    align-items: center;
+    p {
+        margin-right: 2em;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--branco);
+        font-size: 16px;
+    }
+
+    button {
+        border-radius: 10px;
+        width: 140px;
+        height: 40px;
+        border: none;
+    }
+}

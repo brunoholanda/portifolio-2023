@@ -1,91 +1,85 @@
-{ "passeios":
+{ "projetos":
 [
     {
         "id": 1,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/cataratas.jpg",
-        "titulo": "Passeio cataratas do Iguaçu",
-        "descricao": "150",
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
+        "titulo": "Cursos Tech BR",
+        "descricao": "Website fictício para um programa do Ministério da Educação responsivo e que faz o mapeamento de faculdades com cursos de tecnologia que existem no Brasil. Possui tela sistema de login e funcionalidades de pesquisa funcionais...",
+        "stacks": "React, JavaScript, SASS, html",
         "deploy": "https://cursos-tech-br.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/cursos-tech-br"
     },
     {
         "id": 2,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/cataratas.jpg",
-        "titulo": "Passeio cataratas do Iguaçu",
-        "descricao": "150",
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/imobiliaria.png",
+        "titulo": "Imobiliaria",
+        "descricao": "Website para imobiliária com funcionalidade experimental para que qualquer pessoa anuncie imóveis para alugar ou vender (Marketplace)",
+        "stacks": "React, JavaScript, SASS, html",
         "deploy": "https://imobiliaria-orpin.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/imobiliaria"
     },
     {
         "id": 3,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/cataratas.jpg",
-        "titulo": "Passeio cataratas do Iguaçu",
-        "descricao": "150",
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/restaurante.png",
+        "titulo": "Restaurante",
+        "descricao": "Website para restaurante com a utilização de API para coletar os dados do cardápio além de um estilo de dar água na boca...",
+        "stacks": "React, JavaScript, SASS, html",
         "deploy": "https://restaurante-rho.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/restaurante"
     },
     {
         "id": 4,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/jamtar-tematico.jpg",
-        "nome": "Jantar temático restaurante argentino",
-        "preco": "200",
-        "pagamento": "https://pag.ae/7Zf1tQ8YQ"
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nivernay.png",
+        "titulo": "Site Aniversario",
+        "descricao": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a passeios em viagens, bem como também possui informações sobre a festa, como localização e dicas para personalização do Abada. ",
+        "stacks": "React, JavaScript, SASS, html",
+        "deploy": "https://niver-org-presentes.vercel.app/",
+        "repositorio": "https://github.com/brunoholanda/imobiliaria"
     },
     {
         "id": 5,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/bar-gelo.jpg",
-        "nome": "Bar de gelo foz do Iguaçu",
-        "preco": "95",
-        "pagamento": "https://pag.ae/7Zf1uBCcM"
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/borali.png",
+        "titulo": "BoraLi Viver",
+        "descricao": "Site do tipo blog para fornecer dicas de roteiros e lugares para viagem, obtenção de ganhos por meio de fermentas afiliadas do Booking e Rent a Cars...",
+        "stacks": "Wordpress",
+        "deploy": "https://boraliviver.com.br/",
+        "repositorio": ""
     },
     {
         "id": 6,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/itaipu.jpg",
-        "nome": "Visita a usina de Itaipu",
-        "preco": "60",
-        "pagamento": "https://pag.ae/7Zf1vcEGa"
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nerdking.png",
+        "titulo": "NerdKing Tecnologia",
+        "descricao": "Site do tipo blog para propagar dicas e tutoriais para diversas tecnologias, obtenção de ganhos por meio de anúncios do Google...",
+        "stacks": "Wordpress",
+        "deploy": "https://nerdking.net.br/",
+        "repositorio": ""
     },
     {
         "id": 7,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/city-argentina.jpg",
-        "nome": "City tour na Argentina",
-        "preco": "80",
-        "pagamento": "https://pag.ae/7Zf1vLaB6"
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/alurageek.png",
+        "titulo": "AluraGeek",
+        "descricao": "Alura Geek é um marketplace fictício que reúne produtos Geek para compras, nesse projeto foi possível praticar UseStates do React, o Router Dom 6, SASS e uso de API...",
+        "stacks": "React, JavaScript, SASS, html",
+        "deploy": "https://alura-geek-react-n25q.vercel.app/",
+        "repositorio": "https://github.com/brunoholanda/AluraGeek-REACT"
     },
     {
         "id": 8,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/astronomico.jpg",
-        "nome": "Visita polo astronômico",
-        "preco": "40",
-        "pagamento": "https://pag.ae/7Zf1wgJG5"
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/barbearia.png",
+        "titulo": "Vieira Barbearia",
+        "descricao": "Site para barbearia do bairro, a qual corto cabelo. O link do site fica nas redes sociais da empresa e tem a função de conectar clientes que queiram agendar um horário, conhecer mais sobre o trabalho deles, e venda de produtos.",
+        "stacks": "JavaScript, CSS, html",
+        "deploy": "https://vieira-barbearia-job-95e3.vercel.app/",
+        "repositorio": "https://github.com/brunoholanda/VieiraBarbearia-JOB"
     },
     {
         "id": 9,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/argentina-experience.jpg",
-        "nome": "The Argentina experiênce",
-        "preco": "180",
-        "pagamento": "https://pag.ae/7Zf1wKasL"
-    },
-    {
-        "id": 10,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/roda-gigante.jpg",
-        "nome": "Passeio roda gigante foz",
-        "preco": "50",
-        "pagamento": "https://pag.ae/7Zf1xW3HM"
-    },
-    {
-        "id": 11,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/tres-fronteiras.jpg",
-        "nome": "Passeio marco das 3 fronteiras",
-        "preco": "50",
-        "pagamento": "https://pag.ae/7Zf1yjMer"
-    },
-    {
-        "id": 12,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/03/helicoptero.jpg",
-        "nome": "Passeio de helicóptero pelas cataratas",
-        "preco": "450",
-        "pagamento": "https://pag.ae/7Zf1yLaCL"
+        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nkcine.png",
+        "titulo": "NerdKing Tag",
+        "descricao": "Website para adicionar aos favoritos os vídeos que o usuário mais gostar no youtube do NerdKing",
+        "stacks": "JavaScript, CSS, html",
+        "deploy": "https://nktag-react-i64j.vercel.app/",
+        "repositorio": "https://github.com/brunoholanda/nktag-react"
     }
 ]
 }
