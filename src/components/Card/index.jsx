@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from './Card.module.scss';
 import anexo from '../../public/assets/icons/anexo.png';
 import github from '../../public/assets/icons/mini-git-hub.png';
@@ -16,7 +15,7 @@ export default function Card({ id, imagem, titulo, descricao, stacks, deploy, re
                 </div>
             </div>
             <div className={styles.card__links}>
-            <a href={deploy} target="_blank">
+                <a href={deploy} target="_blank">
                     <div className={styles.link__icone}>
                         <img src={anexo} alt="icone pequeno de clipe de papel" />
                         <p>Ver Site</p>

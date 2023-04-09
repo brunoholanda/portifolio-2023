@@ -1,7 +1,8 @@
 import SocialLinks from "components/SocialLinks";
 import styles from './Rodape.module.scss'
-import CabecalhoLinks from "components/Cabecalho/CabecalhoLinks";
-import divisor from '../../public/assets/img/divisor.png';
+import TextoDuasCores from "components/TextoDuasCores";
+import Divisor from "components/Divisor";
+import MenuLinks from "components/LinksMenu";
 
 export default function Rodape() {
     return (
@@ -10,10 +11,16 @@ export default function Rodape() {
                 <SocialLinks />
                 <a href="mailto:holanda_rodrigues@hotmail.com?subject=Contato">holanda_rodrigues@hotmail.com</a>
             </div>
-            <img src={divisor} alt="divisor do rodape da pagina" />
+            <Divisor />
             <div className={styles.rodape__links}>
-                <CabecalhoLinks />
-                <p>Desenvolvido por Bruno Holanda</p>
+                <MenuLinks/>
+                <TextoDuasCores 
+                     texto="Desenvolvido por Bruno Holanda"
+                     palavra1="Bruno"
+                     cor1="#3f51b5"
+                     palavra2="Holanda"
+                     cor2="#3f51b5"
+                />
             </div>
         </header>
     )

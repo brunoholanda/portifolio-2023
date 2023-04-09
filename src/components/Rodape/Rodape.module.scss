@@ -1,6 +1,6 @@
 .rodape {
 
-
+    margin: 1em 0;
     text-align: center;
 
     &__contato {
@@ -29,10 +29,20 @@
         align-items: center;
         justify-content: space-around;
 
-        p {
+        h1 {
             font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
             color: var(--cinza-texto);
             margin-right: 5em;
         }
     }
+}
+
+.divisao {
+    border: 1px solid var(--cinza-texto);
+    margin: 1em 7em;
+    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    opacity: 40%;
 }

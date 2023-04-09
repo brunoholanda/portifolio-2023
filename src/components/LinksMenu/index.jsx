@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import styles from './CabecalhoLinks.module.scss';
+import styles from './MenuLinks.module.scss';
 
-export default function CabecalhoLinks() {
+export default function MenuLinks() {
     return (
-        <section className={styles.cabecalhoLinks}>
+        <section className={styles.menuLinks}>
             <Link to="./">
                 Início
             </Link>
