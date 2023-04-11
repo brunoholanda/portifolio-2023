@@ -1,0 +1,19 @@
+.contato {
+
+    margin:  2em 6em;
+
+    h1,h2, p {
+        color: var(--preto-texto);
+    }
+
+    &__meios {
+        h2 {
+            font-size: 26px;
+        }
+    
+        p {
+            font-size: 20px;
+        }
+    }
+
+}

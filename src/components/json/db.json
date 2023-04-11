@@ -4,7 +4,8 @@
         "id": 1,
         "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
         "titulo": "Cursos Tech BR",
-        "descricao": "Website fictício para um programa do Ministério da Educação responsivo e que faz o mapeamento de faculdades com cursos de tecnologia que existem no Brasil. Possui tela sistema de login e funcionalidades de pesquisa funcionais...",
+        "resumo": "Website fictício para um programa do Ministério da Educação responsivo e que faz o mapeamento de faculdades com cursos de tecnologia que existem no Brasil...",
+        "post": "O website fictício para um programa do Ministério da Educação. Uma plataforma online responsiva que tem como objetivo mapear e disponibilizar informações atualizadas sobre todas as faculdades que oferecem cursos de tecnologia no Brasil. A página conta com uma interface intuitiva e fácil de usar, que permite aos usuários acessarem rapidamente as informações que procuram. \n\n Possui um sistema de cadastro e login para que futuramente seja possível coletar informações dos usuários como Email, localização e preferencias de procura. \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a criação de um hook para controle de login e cadastro utilizando LocalStorage. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Clicar no botão Entrar \n\n Faça seu cadastro \n\nEntre com Email e senha cadastrados.",
         "stacks": "React, JavaScript, SASS, html",
         "deploy": "https://cursos-tech-br.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/cursos-tech-br"
@@ -13,7 +14,8 @@
         "id": 2,
         "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/imobiliaria.png",
         "titulo": "Imobiliaria",
-        "descricao": "Website para imobiliária com funcionalidade experimental para que qualquer pessoa anuncie imóveis para alugar ou vender (Marketplace)",
+        "resumo": "Website para imobiliária com funcionalidade experimental para que qualquer pessoa anuncie imóveis para alugar ou vender (Marketplace)",
+        "post": "Além de permitir que a imobiliária anuncie imóveis, o website inclui uma funcionalidade experimental que permite que qualquer pessoa anuncie imóveis para alugar ou vender, transformando o website em um marketplace de imóveis. Isso significa que pessoas que possuem imóveis para alugar ou vender podem futuramente criar uma conta e publicar suas próprias listagens no website, aumentando a quantidade de imóveis disponíveis para os potenciais compradores ou locatários. O website conta com informações sobre cada imóvel, como fotos, descrições, preços e informações sobre a localização. Também pode incluir uma forma de contato para permitir que os usuários entrem em contato com a imobiliária ou com os proprietários dos imóveis. \n\n Ao acessar o botão disponível no banner inicial o usuário tem acesso a funcionalidade de adicionar imóveis. \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a pratica do Javascript no react, fazer essa funcionalidade de adicionar imóveis pela primeira vez não foi fácil, mas entendi que trata-se de algo que pode ser implementado em várias aplicações.. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Clicar no botão ANUNCIE AQUI dentro do banner \n\n Inserir as informações do imóvel a ser anunciado \n\n Clicar no Botão 'Adicionar Imóvel'",
         "stacks": "React, JavaScript, SASS, html",
         "deploy": "https://imobiliaria-orpin.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/imobiliaria"
@@ -22,7 +24,8 @@
         "id": 3,
         "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/restaurante.png",
         "titulo": "Restaurante",
-        "descricao": "Website para restaurante com a utilização de API para coletar os dados do cardápio além de um estilo de dar água na boca...",
+        "resumo": "Website para restaurante com a utilização de API para coletar os dados do cardápio além de um estilo de dar água na boca, feito em react...",
+        "post": "O website para restaurante é uma ótima maneira de apresentar o cardápio de forma clara e atraente. Para tornar a experiência ainda melhor, é possível utilizar APIs para coletar os dados do cardápio diretamente de um sistema de gerenciamento de pedidos. Dessa forma, o website sempre exibirá as informações mais atualizadas sobre os pratos, bebidas e sobremesas disponíveis. \n\n  Além disso, é importante que o estilo do website seja cuidadosamente planejado para dar água na boca dos visitantes. Isso pode incluir o uso de imagens de alta qualidade dos pratos, fontes que combinem com a temática do restaurante e paletas de cores que remetam aos ingredientes utilizados nos pratos.\n\n  ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a uma boa estilização dos cards com as fotos do produto, inclusive um hover com a div inteira utilizando uma margin-top negativa. Também reforcei meus aprendizados com API, mesmo que eu tenha utilizado uma API fake isso animou a estudar back-end \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • CSS • Git \n\n ### Como usar? \n\n Trata-se apenas de uma landing Page e você pode acessar seu Deploy [Clicando aqui](https://imobiliaria-orpin.vercel.app/)",
         "stacks": "React, JavaScript, SASS, html",
         "deploy": "https://restaurante-rho.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/restaurante"
@@ -31,7 +34,8 @@
         "id": 4,
         "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nivernay.png",
         "titulo": "Site Aniversario",
-        "descricao": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a passeios em viagens, bem como também possui informações sobre a festa, como localização e dicas para personalização do Abada. ",
+        "resumo": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a...",
+        "post": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a itens de uma lista de desejos disponibilizada no site, proporcionando uma forma prática e cômoda para presentear, garantindo que a aniversariante receba apenas presentes que realmente deseja. Além disso, o site também conta com informações sobre a festa, como data, horário e local, e permite que os convidados confirmem presença e deixem mensagens para a aniversariante. \n\n O website é desenvolvido em React, utilizando uma API para gerenciamento de pagamentos. Com um design moderno e intuitivo, o site proporciona uma experiência única e inovadora para a organização e celebração de aniversários. \n\n  ### O que aprendi? \n\n Meu maior aprendizado neste projeto por mais simples que pareça foi com a criação do menu hamburguer dentro do React, terminei utilizando a biblioteca mdb-react-ui-kit que me possibilitou entregar o projeto de forma rápida pois a cliente queria o site para ontem. Também tive que me desdobrar para fazer a criação dos links de pagamento dentro do PagSeguro, no fim deu tudo certo! Também reforcei meus aprendizados com API, mesmo que eu tenha utilizado uma API fake isso animou a estudar back-end \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Trata-se de uma landing Page intuitiva e você pode acessar seu Deploy  [Clicando aqui]( https://niver-org-presentes.vercel.app/) ",
         "stacks": "React, JavaScript, SASS, html",
         "deploy": "https://niver-org-presentes.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/imobiliaria"
@@ -40,7 +44,8 @@
         "id": 5,
         "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/borali.png",
         "titulo": "BoraLi Viver",
-        "descricao": "Site do tipo blog para fornecer dicas de roteiros e lugares para viagem, obtenção de ganhos por meio de fermentas afiliadas do Booking e Rent a Cars...",
+        "resumo": "Site do tipo blog para fornecer dicas de roteiros e lugares para viagem, obtenção de ganhos por meio de fermentas afiliadas do Booking e Rent a Cars...",
+        "post": "",
         "stacks": "Wordpress",
         "deploy": "https://boraliviver.com.br/",
         "repositorio": ""
@@ -49,7 +54,8 @@
         "id": 6,
         "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nerdking.png",
         "titulo": "NerdKing Tecnologia",
-        "descricao": "Site do tipo blog para propagar dicas e tutoriais para diversas tecnologias, obtenção de ganhos por meio de anúncios do Google...",
+        "resumo": "Site do tipo blog para propagar dicas e tutoriais para diversas tecnologias, obtenção de ganhos por meio de anúncios do Google. Feito em Wordpress...",
+        "post": "",
         "stacks": "Wordpress",
         "deploy": "https://nerdking.net.br/",
         "repositorio": ""
@@ -58,7 +64,8 @@
         "id": 7,
         "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/alurageek.png",
         "titulo": "AluraGeek",
-        "descricao": "Alura Geek é um marketplace fictício que reúne produtos Geek para compras, nesse projeto foi possível praticar UseStates do React, o Router Dom 6, SASS e uso de API...",
+        "resumo": "Alura Geek é um marketplace fictício que reúne produtos Geek para compras, nesse projeto foi possível praticar UseStates do React...",
+        "post": "",
         "stacks": "React, JavaScript, SASS, html",
         "deploy": "https://alura-geek-react-n25q.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/AluraGeek-REACT"
@@ -67,7 +74,8 @@
         "id": 8,
         "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/barbearia.png",
         "titulo": "Vieira Barbearia",
-        "descricao": "Site para barbearia do bairro, a qual corto cabelo. O link do site fica nas redes sociais da empresa e tem a função de conectar clientes que queiram agendar um horário, conhecer mais sobre o trabalho deles, e venda de produtos.",
+        "resumo": "Site para barbearia do bairro, a qual corto cabelo. O link do site fica nas redes sociais da empresa e tem a função de conectar clientes que...",
+        "post": "",
         "stacks": "JavaScript, CSS, html",
         "deploy": "https://vieira-barbearia-job-95e3.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/VieiraBarbearia-JOB"
@@ -76,7 +84,8 @@
         "id": 9,
         "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nkcine.png",
         "titulo": "NerdKing Tag",
-        "descricao": "Website para adicionar aos favoritos os vídeos que o usuário mais gostar no youtube do NerdKing",
+        "resumo": "Website para adicionar aos favoritos os vídeos que o usuário mais gostar no youtube do NerdKing, feito para praticar useStates, e aprender a criar uma API fake",
+        "post": "",
         "stacks": "JavaScript, CSS, html",
         "deploy": "https://nktag-react-i64j.vercel.app/",
         "repositorio": "https://github.com/brunoholanda/nktag-react"

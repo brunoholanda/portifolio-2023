@@ -19,6 +19,9 @@ export default function MenuLinks() {
             <Link to="./contato">
                 Contato
             </Link>
+            <Link to="./hobby">
+                Hobbies
+            </Link>
         </section>
     )
 }

@@ -1,0 +1,25 @@
+.post {
+
+    margin: 3em 8em;
+    
+    h2, h3 {
+        color: var(--preto-texto);
+    }
+
+    p {
+        color: var(--cinza-texto);
+    }
+   
+    &__artigo {
+        img {
+            width: 550px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
