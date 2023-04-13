@@ -19,7 +19,7 @@ export default function MenuLinks() {
             <Link to="./contato">
                 Contato
             </Link>
-            <Link to="./hobby">
+            <Link to="./hobbies">
                 Hobbies
             </Link>
         </section>

@@ -3,13 +3,14 @@ import { useParams } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
 import styles from './Post.module.scss';
 import Card from "components/Card";
+import carregando from '../../public/assets/img/carregando.gif';
 
 export default function Post() {
     const [projetos, setProjetos] = useState([]);
     const { id } = useParams();
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/brunoholanda/portifolio-api/projetos')
+        fetch('https://my.api.mockaroo.com/db.json?key=6b539750')
             .then(resposta => resposta.json())
             .then(dados => {
                 setProjetos(dados)
@@ -27,7 +28,7 @@ export default function Post() {
                     <ReactMarkdown>{projeto.post}</ReactMarkdown>
                 </div>
             ) : (
-                <p>Projeto não encontrado.</p>
+                <img src={carregando} alt="carregando projeto"/>
             )}
             <h2>Veja mais projetos:</h2>
             <div className={styles.post__cards}>

@@ -7,7 +7,7 @@ export default function Projetos() {
     const [projetos, setProjetos] = useState([]);
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/brunoholanda/portifolio-api/projetos')
+        fetch('https://my.api.mockaroo.com/db.json?key=6b539750')
             .then(resposta => resposta.json())
             .then(dados => {
                 setProjetos(dados)

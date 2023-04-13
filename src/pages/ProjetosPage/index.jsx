@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import styles from './ProjetosPage.module.scss';
 import Card from 'components/Card';
+import carregando from '../../public/assets/img/carregando.gif';
 
 export default function ProjetosPage() {
 
     const [projetos, setProjetos] = useState([]);
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/brunoholanda/portifolio-api/projetos')
+        fetch('https://run.mocky.io/v3/9c615f44-dfd2-425c-8f17-2ca2b679e2b8')
             .then(resposta => resposta.json())
             .then(dados => {
                 setProjetos(dados)
@@ -22,9 +23,11 @@ export default function ProjetosPage() {
                 <h2>Projetos Publicados</h2>
             </div>
             <div className={styles.projetos__cards}>
-                {projetos.map((projeto) => {
-                    return <Card {...projeto} key={projeto.id} />
-                })}
+                {projetos.length > 0 ? (
+                    projetos.map((projeto) => <Card {...projeto} key={projeto.id} />)
+                ) : (
+                    <img src={carregando} alt="carregando projeto"/>
+                )}
             </div>
         </section>
     )

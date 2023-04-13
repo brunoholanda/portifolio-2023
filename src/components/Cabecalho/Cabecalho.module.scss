@@ -3,4 +3,27 @@
     align-items: center;
     justify-content: center;
     margin: 2em 0;
+
+    &__celular {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .cabecalho {
+        justify-content: space-around;
+
+        &__celular {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        &__links {
+            display: none;
+        }
+    }
 }
