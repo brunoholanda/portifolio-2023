@@ -1,9 +1,11 @@
 .menuLinks {
+    display: flex;
+    align-items: center;
     
     a {
         text-decoration: none;
         color: var(--cinza-texto);
-        margin-left: 5em;
+        margin-left: 3em;
         font-family: var(--fonte-secundaria);
         font-size: 20px;
         font-weight: 500;
@@ -12,5 +14,13 @@
     a:hover {
         color: var(--preto);
         font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menuLinks {
+        a {
+            margin-left: 2em;
+        }
     }
 }

@@ -38,12 +38,12 @@ export default function Sobre() {
             <div className={styles.sobre__experiencia}>
                 <h2>Experiência</h2>
                 <h3>Desenvolvedor Front-End - Autônomo</h3>
-                <h4>O que eu faco:</h4>
+                <h4>O que eu faço:</h4>
                 <p>Desenvolvimento de websites Mobile First com responsividade, utilizando ReactJS, JavaScript, CSS, SASS e HTML aplicando conceitos de API`s. Foco em entrega rápida, qualidade e ótimas funcionalidades.</p>
                 <p>| Janeiro 2022 - presente</p>
                 <img src={divisor} alt="divisor de experiencias" />
                 <h3>Gerente Administrativo - Banco Bradesco</h3>
-                <h4>O que eu faco:</h4>
+                <h4>O que eu fçco:</h4>
                 <p>Conduzo uma equipe com 32 funcionários, sendo o grande propagador do compliance da empresa lidando com pessoas e alta quantidade de informações. Sugeri alterações e melhorias sistêmicas com base nos meus conhecimentos em tecnologia com a finalidade de reduzir custos e riscos</p>
                 <p>| Março 2012 - presente</p>
                 <img src={divisor} alt="divisor de experiencias" />

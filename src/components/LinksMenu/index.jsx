@@ -8,7 +8,7 @@ export default function MenuLinks() {
                 Início
             </Link>
             <Link to="./sobre">
-                Sobre Mim
+                Sobre
             </Link>
             <Link to="./habilidades">
                 Habilidades

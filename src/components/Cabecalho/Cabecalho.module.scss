@@ -9,19 +9,37 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+
+    .cabecalho {
+
+        flex-direction: column;
+        margin: 1.5em 1em;
+        
+        &__links {
+            margin-top: 1em;
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
 
     .cabecalho {
+        flex-direction: row;
         justify-content: space-around;
+        margin: 1.5em 2em;
 
         &__celular {
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            
         }
 
+        &__social {
+            display: flex;
+            margin: 0em 1em;
+        }
         &__links {
             display: none;
         }

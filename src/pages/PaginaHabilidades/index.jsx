@@ -40,7 +40,7 @@ export default function PaginaHabilidades() {
 
     return (
         <div className={styles.habilidades}>
-            <h2>Minhas habilidades Tech</h2>
+            <h2>Minhas Habilidades Tech</h2>
             <div className={styles.habilidades__icones}>
                 {habilidades.map((habilidade, index) => (
                     <div key={index}>
@@ -53,7 +53,7 @@ export default function PaginaHabilidades() {
             <div className={styles.habilidades__idioma}>
                 <h2>Segundo Idioma</h2>
                 <div className={styles.idioma}>
-                    <p>Inglês Avançado - Consigo me comunicar, ler e entender bem</p>
+                    <p>Inglês Avançado - Consigo me comunicar, ler e entender bem!</p>
                     <Botao><a href="#" onClick={handleLinkClick}>Ver Teste</a></Botao>
                 </div>
 

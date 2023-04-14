@@ -10,3 +10,14 @@
         filter: hue-rotate(90deg);
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .socialLinks {
+    
+        img {
+            margin: 0 .8em;
+            
+        }
+    }
+}

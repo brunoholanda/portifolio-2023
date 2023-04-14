@@ -19,3 +19,21 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .erro {
+        margin: 1em 2em;
+        flex-direction: column;
+
+        img {
+            width: 150px;
+        }
+    
+        h1 {
+            font-size: 20px;
+        }
+    
+        button {
+            margin-bottom: 1em;
+        }
+    }
+}

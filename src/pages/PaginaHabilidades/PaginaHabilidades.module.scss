@@ -1,5 +1,5 @@
 .habilidades {
-    
+
     margin: 4em 7em;
 
     h2 {
@@ -8,7 +8,7 @@
         font-weight: 700;
         color: var(--preto-texto);
         margin-bottom: 1em;
-        
+
     }
 
     &__icones {
@@ -31,12 +31,12 @@
     }
 
     &__idioma {
-        
+
         h2 {
             margin-bottom: 1em;
         }
 
-        
+
     }
 
 }
@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     margin: 0 4em;
-    
+
     p {
         margin-right: 2em;
         color: var(--cinza-texto);
@@ -63,5 +63,86 @@
         width: 140px;
         height: 40px;
         border: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .idioma {
+        margin-bottom: 1em;
+        flex-direction: column;
+        text-align: center;
+
+        p {
+            margin-right: 0em;
+            font-size: 26px;
+        }
+
+        a {
+            font-size: 18px;
+        }
+    }
+
+    .imageContainer {
+
+        img {
+            width: 800px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .habilidades {
+
+        margin: 2em 2em;
+
+        h2 {
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        &__icones {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            img {
+                width: 85px;
+                height: 85px;
+                margin: .3em;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .idioma {
+
+        margin: 0 1em;
+
+        p {
+            margin-right: 1em;
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 18px;
+        }
+
+        button {
+            width: 200px;
+            font-size: 16px;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .imageContainer {
+
+        img {
+            width: 320px;
+        }
     }
 }

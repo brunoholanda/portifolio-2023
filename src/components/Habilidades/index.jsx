@@ -25,7 +25,7 @@ export default function Habilidades() {
 
     return (
         <div className={styles.habilidades}>
-            <h2>Minhas habilidades Tech</h2>
+            <h2>Minhas Habilidades Tech</h2>
             <p>Tecnologias que eu venho trabalhando...</p>
             <div className={styles.habilidades__icones}>
                 {habilidades.map((habilidade, index) => (

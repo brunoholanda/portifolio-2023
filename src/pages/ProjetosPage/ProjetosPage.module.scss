@@ -23,3 +23,15 @@
         justify-content: space-around;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .projetos {
+    
+        &__descricao {
+    
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+}

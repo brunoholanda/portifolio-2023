@@ -15,7 +15,6 @@
             height: 260px;
             border-radius: 20px 20px 0px 0px;
         }
-
     }
 
     &__texto {
@@ -56,7 +55,7 @@
             color: var(--azul);
             font-weight: 700;
         }
-    } 
+    }
 }
 
 .link__icone {
@@ -79,4 +78,21 @@
 .card:hover {
     margin-top: -.5em;
     transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+
+        width: 320px;
+        height: 580px;
+
+        &__imagem {
+    
+            img {
+                width: 320px;
+                height: 220px;
+            }
+    
+        }
+    }
 }

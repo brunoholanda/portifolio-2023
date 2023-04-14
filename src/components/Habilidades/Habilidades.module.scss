@@ -31,3 +31,50 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .habilidades { 
+
+        margin: 1em 2em;
+        
+        h2 {
+            font-size: 38px;
+            line-height: 35px;
+        }
+
+        p {
+            font-size: 28px;
+        }
+
+        &__icones {
+            img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .habilidades { 
+
+        margin: 1em 2em;
+        
+        h2 {
+            font-size: 29px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        &__icones {
+            img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

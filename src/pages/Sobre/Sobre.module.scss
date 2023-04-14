@@ -25,6 +25,7 @@
 .formacao {
     display: flex;
     align-items: center;
+
     p {
         margin-right: 2em;
     }
@@ -41,4 +42,83 @@
         height: 40px;
         border: none;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 5em;
+        text-align: center;
+
+        h2 {
+            font-size: 42px;
+        }
+    
+        p {
+            font-size: 22px;
+        }
+    
+        h3, h4 {
+            font-size: 21px;
+        }
+}
+
+.formacao {
+
+    flex-direction: column;
+    button {
+        font-size: 18px;
+        margin-bottom: 1em;
+    }
+
+    p {
+        font-size: 20px;
+        margin-right: 0em;
+    }
+}
+
+.imageContainer {
+
+    img {
+        width: 550px;
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+    .sobre {
+        margin: 1em 2em;
+        h2 {
+            font-size: 38px;
+        }
+    
+        p {
+            font-size: 18px;
+        }
+    
+        h3, h4 {
+            font-size: 20px;
+        }
+}
+
+.formacao {
+
+    button {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.imageContainer {
+
+    img {
+        width: 310px;
+    }
+    
+}
+
 }

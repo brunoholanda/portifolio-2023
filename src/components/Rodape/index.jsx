@@ -13,13 +13,15 @@ export default function Rodape() {
             </div>
             <Divisor />
             <div className={styles.rodape__links}>
-                <MenuLinks/>
-                <TextoDuasCores 
-                     texto="Desenvolvido por Bruno Holanda"
-                     palavra1="Bruno"
-                     cor1="#3f51b5"
-                     palavra2="Holanda"
-                     cor2="#3f51b5"
+                <div className={styles.menuLinks}>
+                    <MenuLinks />
+                </div>
+                <TextoDuasCores
+                    texto="Desenvolvido por Bruno Holanda"
+                    palavra1="Bruno"
+                    cor1="#3f51b5"
+                    palavra2="Holanda"
+                    cor2="#3f51b5"
                 />
             </div>
         </header>
