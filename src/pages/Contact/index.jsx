@@ -1,6 +1,6 @@
-import styles from './Contato.module.scss';
+import styles from './Contact.module.scss';
 
-export default function Contato() {
+export default function Contact() {
     return (
         <div className={styles.contato}>
             <h1>Entre em contato</h1>

@@ -1,8 +1,8 @@
-import styles from './Introducao.module.scss';
-import TextoDuasCores from 'components/TextoDuasCores';
+import styles from './Presentation.module.scss';
+import TextoDuasCores from 'components/TwoColorsText';
 import profile from '../../public/assets/img/profile-me.png';
 
-export default function Introducao() {
+export default function Presentation() {
     return (
         <div className={styles.introducao}>
             <div className={styles.introducao__texto}>

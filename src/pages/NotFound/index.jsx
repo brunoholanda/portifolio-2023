@@ -1,9 +1,9 @@
-import styles from './PaginaDeErro.module.scss';
+import styles from './NotFound.module.scss';
 import erro404 from './404.png';
 import { useNavigate } from 'react-router-dom';
-import Botao from 'components/Botao';
+import Botao from 'components/Btn';
 
-function PaginaDeErro() {
+export default function NotFound() {
 
     const navegar = useNavigate ();
 
@@ -19,5 +19,3 @@ function PaginaDeErro() {
         </section>
     )
 }
-
-export default PaginaDeErro;

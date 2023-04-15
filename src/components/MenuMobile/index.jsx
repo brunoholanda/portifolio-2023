@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import HamburgerMenu from 'hamburger-react';
-import styles from './MenuCelular.module.scss';
+import styles from './MenuMobile.module.scss';
 import { Link } from 'react-router-dom';
 
-function MenuCelular() {
+export default function MenuMobile() {
     const [isOpen, setOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -46,4 +46,4 @@ function MenuCelular() {
     );
 }
 
-export default MenuCelular;
+

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import styles from './Projetos.module.scss';
+import styles from './MyProjects.module.scss';
 import Card from '../Card';
 
-export default function Projetos() {
+export default function MyProjects() {
 
     const [projetos, setProjetos] = useState([]);
 

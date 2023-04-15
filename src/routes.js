@@ -1,29 +1,29 @@
 import ScrollToTop from "components/ScrollToTop";
-import Contato from "pages/Contato";
-import CorpoDaPagina from "pages/CorpoDaPagina";
+import Contact from "pages/Contact";
 import Hobbies from "pages/Hobbies";
-import Inicio from "pages/Inicio";
-import PaginaDeErro from "pages/PaginaDeErro";
-import PaginaHabilidades from "pages/PaginaHabilidades";
+import Home from "pages/Home";
+import NotFound from "pages/NotFound";
 import Post from "pages/Post";
-import ProjetosPage from "pages/ProjetosPage";
-import Sobre from "pages/Sobre";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PageBody from "pages/PageBody";
+import MyStacks from "pages/MyStacks";
+import MyProjectsPage from "pages/MyProjectsPage";
+import About from "pages/About";
 
 function AppRoutes() {
     return (
         <BrowserRouter>
             <ScrollToTop />
             <Routes>
-                <Route path="/" element={<CorpoDaPagina />}>
-                    <Route index element={<Inicio />} />
-                    <Route path="/sobre" element={<Sobre />} />
-                    <Route path="/habilidades" element={<PaginaHabilidades />} />
-                    <Route path="/projetos" element={<ProjetosPage />} />
+                <Route path="/" element={<PageBody />}>
+                    <Route index element={<Home />} />
+                    <Route path="/sobre" element={<About />} />
+                    <Route path="/habilidades" element={<MyStacks />} />
+                    <Route path="/projetos" element={<MyProjectsPage />} />
                     <Route path="/projetos/:id" element={<Post />} />
-                    <Route path="/contato" element={<Contato />} />
+                    <Route path="/contato" element={<Contact />} />
                     <Route path="/hobbies" element={<Hobbies />} />
-                    <Route path="*" element={<PaginaDeErro />} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
         </BrowserRouter>

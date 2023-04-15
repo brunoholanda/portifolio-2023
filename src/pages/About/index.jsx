@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import styles from './Sobre.module.scss';
+import styles from './About.module.scss';
 import adm from '../../public/assets/img/certifcados/superioradm.jpg';
 import ads from '../../public/assets/img/certifcados/ads.jpg';
 import divisor from '../../public/assets/img/divisor-2.png';
-import Botao from 'components/Botao';
+import Botao from 'components/Btn';
 
-export default function Sobre() {
+export default function About() {
     const [showAds, setShowAds] = useState(false);
     const [showAdm, setShowAdm] = useState(false);
 

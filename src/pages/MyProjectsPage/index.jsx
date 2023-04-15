@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import styles from './ProjetosPage.module.scss';
+import styles from './MyProjectsPage.module.scss';
 import Card from 'components/Card';
 import carregando from '../../public/assets/img/carregando.gif';
 
-export default function ProjetosPage() {
+export default function MyProjectsPage() {
 
     const [projetos, setProjetos] = useState([]);
 

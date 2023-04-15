@@ -1,4 +1,4 @@
-import styles from './PaginaHabilidades.module.scss';
+import styles from './MyStacks.module.scss';
 import html from '../../public/assets/icons/html.svg';
 import css from '../../public/assets/icons/css.svg';
 import js from '../../public/assets/icons/js.svg';
@@ -10,9 +10,9 @@ import github from '../../public/assets/icons/github-fill.svg';
 import wordpress from '../../public/assets/icons/wordpress.png';
 import { useState } from 'react';
 import eftest from '../../public/assets/img/certifcados/english-prof.jpg';
-import Botao from 'components/Botao';
+import Botao from 'components/Btn';
 
-export default function PaginaHabilidades() {
+export default function MyStacks() {
 
     const habilidades = [
         { nome: "HTML", imagem: html },

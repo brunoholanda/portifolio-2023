@@ -1,10 +1,10 @@
 import SocialLinks from "components/SocialLinks";
-import styles from './Rodape.module.scss'
-import TextoDuasCores from "components/TextoDuasCores";
+import styles from './Footer.module.scss'
+import TextoDuasCores from "components/TwoColorsText";
 import Divisor from "components/Divisor";
 import MenuLinks from "components/LinksMenu";
 
-export default function Rodape() {
+export default function Footer() {
     return (
         <header className={styles.rodape}>
             <div className={styles.rodape__contato}>

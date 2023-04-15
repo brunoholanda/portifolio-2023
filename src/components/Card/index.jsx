@@ -1,7 +1,7 @@
 import styles from './Card.module.scss';
 import anexo from '../../public/assets/icons/anexo.png';
 import github from '../../public/assets/icons/mini-git-hub.png';
-import Botao from 'components/Botao';
+import Botao from 'components/Btn';
 import { Link } from 'react-router-dom';
 
 export default function Card({ id, imagem, titulo, resumo, stacks, deploy, repositorio }) {

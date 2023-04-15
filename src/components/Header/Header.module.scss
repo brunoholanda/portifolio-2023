@@ -1,17 +1,17 @@
-.cabecalho {
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 2em 0;
 
-    &__celular {
+    &__mobile {
         display: none;
     }
 }
 
 @media screen and (max-width: 1024px) {
 
-    .cabecalho {
+    .header {
 
         flex-direction: column;
         margin: 1.5em 1em;
@@ -24,12 +24,12 @@
 
 @media screen and (max-width: 768px) {
 
-    .cabecalho {
+    .header {
         flex-direction: row;
         justify-content: space-around;
         margin: 1.5em 2em;
 
-        &__celular {
+        &__mobile {
             display: flex;
             flex-direction: column;
             align-items: center;
