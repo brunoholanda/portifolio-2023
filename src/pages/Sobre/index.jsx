@@ -41,12 +41,12 @@ export default function Sobre() {
                 <h4>O que eu faço:</h4>
                 <p>Desenvolvimento de websites Mobile First com responsividade, utilizando ReactJS, JavaScript, CSS, SASS e HTML aplicando conceitos de API`s. Foco em entrega rápida, qualidade e ótimas funcionalidades.</p>
                 <p>| Janeiro 2022 - presente</p>
-                <img src={divisor} alt="divisor de experiencias" />
+                <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
                 <h3>Gerente Administrativo - Banco Bradesco</h3>
                 <h4>O que eu fçco:</h4>
                 <p>Conduzo uma equipe com 32 funcionários, sendo o grande propagador do compliance da empresa lidando com pessoas e alta quantidade de informações. Sugeri alterações e melhorias sistêmicas com base nos meus conhecimentos em tecnologia com a finalidade de reduzir custos e riscos</p>
                 <p>| Março 2012 - presente</p>
-                <img src={divisor} alt="divisor de experiencias" />
+                <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
             </div>
             <div className={styles.sobre__formacao}>
                 <h2>Formação Acadêmica</h2>
@@ -59,7 +59,7 @@ export default function Sobre() {
                     <img src={ads} alt="Certificado de Administração" />
                 </div>
             )}
-                <img src={divisor} alt="divisor de experiencias" />
+                <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
                 <div className={styles.formacao}>
                     <p>Administracao de pessoas - IFPB </p>
                     <Botao><a href="#" onClick={handleLinkClickAdm}>Ver Certificado</a></Botao>

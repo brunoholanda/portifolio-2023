@@ -1,6 +1,7 @@
 import ScrollToTop from "components/ScrollToTop";
 import Contato from "pages/Contato";
 import CorpoDaPagina from "pages/CorpoDaPagina";
+import Hobbies from "pages/Hobbies";
 import Inicio from "pages/Inicio";
 import PaginaDeErro from "pages/PaginaDeErro";
 import PaginaHabilidades from "pages/PaginaHabilidades";
@@ -21,6 +22,7 @@ function AppRoutes() {
                     <Route path="/projetos" element={<ProjetosPage />} />
                     <Route path="/projetos/:id" element={<Post />} />
                     <Route path="/contato" element={<Contato />} />
+                    <Route path="/hobbies" element={<Hobbies />} />
                     <Route path="*" element={<PaginaDeErro />} />
                 </Route>
             </Routes>

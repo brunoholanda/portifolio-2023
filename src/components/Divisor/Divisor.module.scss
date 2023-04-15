@@ -6,3 +6,8 @@
     opacity: 40%;
 }
 
+@media screen and (max-width: 768px) {
+    .divisor {
+        margin: 1em 2em;
+    }
+}

@@ -1,94 +1,114 @@
-{ "projetos":
-[
-    {
-        "id": 1,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
-        "titulo": "Cursos Tech BR",
-        "resumo": "Website fictício para um programa do Ministério da Educação responsivo e que faz o mapeamento de faculdades com cursos de tecnologia que existem no Brasil...",
-        "post": "O website fictício para um programa do Ministério da Educação. Uma plataforma online responsiva que tem como objetivo mapear e disponibilizar informações atualizadas sobre todas as faculdades que oferecem cursos de tecnologia no Brasil. A página conta com uma interface intuitiva e fácil de usar, que permite aos usuários acessarem rapidamente as informações que procuram. \n\n Possui um sistema de cadastro e login para que futuramente seja possível coletar informações dos usuários como Email, localização e preferencias de procura. \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a criação de um hook para controle de login e cadastro utilizando LocalStorage. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Clicar no botão Entrar \n\n Faça seu cadastro \n\nEntre com Email e senha cadastrados.",
-        "stacks": "React, JavaScript, SASS, html",
-        "deploy": "https://cursos-tech-br.vercel.app/",
-        "repositorio": "https://github.com/brunoholanda/cursos-tech-br"
-    },
-    {
-        "id": 2,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/imobiliaria.png",
-        "titulo": "Imobiliaria",
-        "resumo": "Website para imobiliária com funcionalidade experimental para que qualquer pessoa anuncie imóveis para alugar ou vender (Marketplace)",
-        "post": "Além de permitir que a imobiliária anuncie imóveis, o website inclui uma funcionalidade experimental que permite que qualquer pessoa anuncie imóveis para alugar ou vender, transformando o website em um marketplace de imóveis. Isso significa que pessoas que possuem imóveis para alugar ou vender podem futuramente criar uma conta e publicar suas próprias listagens no website, aumentando a quantidade de imóveis disponíveis para os potenciais compradores ou locatários. O website conta com informações sobre cada imóvel, como fotos, descrições, preços e informações sobre a localização. Também pode incluir uma forma de contato para permitir que os usuários entrem em contato com a imobiliária ou com os proprietários dos imóveis. \n\n Ao acessar o botão disponível no banner inicial o usuário tem acesso a funcionalidade de adicionar imóveis. \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a pratica do Javascript no react, fazer essa funcionalidade de adicionar imóveis pela primeira vez não foi fácil, mas entendi que trata-se de algo que pode ser implementado em várias aplicações.. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Clicar no botão ANUNCIE AQUI dentro do banner \n\n Inserir as informações do imóvel a ser anunciado \n\n Clicar no Botão 'Adicionar Imóvel'",
-        "stacks": "React, JavaScript, SASS, html",
-        "deploy": "https://imobiliaria-orpin.vercel.app/",
-        "repositorio": "https://github.com/brunoholanda/imobiliaria"
-    },
-    {
-        "id": 3,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/restaurante.png",
-        "titulo": "Restaurante",
-        "resumo": "Website para restaurante com a utilização de API para coletar os dados do cardápio além de um estilo de dar água na boca, feito em react...",
-        "post": "O website para restaurante é uma ótima maneira de apresentar o cardápio de forma clara e atraente. Para tornar a experiência ainda melhor, é possível utilizar APIs para coletar os dados do cardápio diretamente de um sistema de gerenciamento de pedidos. Dessa forma, o website sempre exibirá as informações mais atualizadas sobre os pratos, bebidas e sobremesas disponíveis. \n\n  Além disso, é importante que o estilo do website seja cuidadosamente planejado para dar água na boca dos visitantes. Isso pode incluir o uso de imagens de alta qualidade dos pratos, fontes que combinem com a temática do restaurante e paletas de cores que remetam aos ingredientes utilizados nos pratos.\n\n  ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a uma boa estilização dos cards com as fotos do produto, inclusive um hover com a div inteira utilizando uma margin-top negativa. Também reforcei meus aprendizados com API, mesmo que eu tenha utilizado uma API fake isso animou a estudar back-end \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • CSS • Git \n\n ### Como usar? \n\n Trata-se apenas de uma landing Page e você pode acessar seu Deploy [Clicando aqui](https://imobiliaria-orpin.vercel.app/)",
-        "stacks": "React, JavaScript, SASS, html",
-        "deploy": "https://restaurante-rho.vercel.app/",
-        "repositorio": "https://github.com/brunoholanda/restaurante"
-    },
-    {
-        "id": 4,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nivernay.png",
-        "titulo": "Site Aniversario",
-        "resumo": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a...",
-        "post": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a itens de uma lista de desejos disponibilizada no site, proporcionando uma forma prática e cômoda para presentear, garantindo que a aniversariante receba apenas presentes que realmente deseja. Além disso, o site também conta com informações sobre a festa, como data, horário e local, e permite que os convidados confirmem presença e deixem mensagens para a aniversariante. \n\n O website é desenvolvido em React, utilizando uma API para gerenciamento de pagamentos. Com um design moderno e intuitivo, o site proporciona uma experiência única e inovadora para a organização e celebração de aniversários. \n\n  ### O que aprendi? \n\n Meu maior aprendizado neste projeto por mais simples que pareça foi com a criação do menu hamburguer dentro do React, terminei utilizando a biblioteca mdb-react-ui-kit que me possibilitou entregar o projeto de forma rápida pois a cliente queria o site para ontem. Também tive que me desdobrar para fazer a criação dos links de pagamento dentro do PagSeguro, no fim deu tudo certo! Também reforcei meus aprendizados com API, mesmo que eu tenha utilizado uma API fake isso animou a estudar back-end \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Trata-se de uma landing Page intuitiva e você pode acessar seu Deploy  [Clicando aqui]( https://niver-org-presentes.vercel.app/) ",
-        "stacks": "React, JavaScript, SASS, html",
-        "deploy": "https://niver-org-presentes.vercel.app/",
-        "repositorio": "https://github.com/brunoholanda/imobiliaria"
-    },
-    {
-        "id": 5,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/borali.png",
-        "titulo": "BoraLi Viver",
-        "resumo": "Site do tipo blog para fornecer dicas de roteiros e lugares para viagem, obtenção de ganhos por meio de fermentas afiliadas do Booking e Rent a Cars...",
-        "post": "Um site do tipo blog para fornecer dicas de roteiros e lugares para viagens, é uma ótima ideia para quem deseja compartilhar suas experiências de viagens e ajudar outras pessoas a planejarem suas próprias aventuras. Esse tipo de plataforma pode ser uma fonte valiosa de informações para viajantes iniciantes e experientes, que desejam conhecer novos lugares e descobrir novas culturas. \n\n Além de fornecer informações úteis e interessantes sobre destinos de viagem, o site gera receita por meio de ferramentas afiliadas do Booking e Rent a Cars. Essas ferramentas permitem que os usuários reservem suas acomodações e aluguem seus carros diretamente pelo site, enquanto o proprietário do site recebe uma comissão por cada reserva realizada. \n\n  ### O que aprendi? \n\n O site foi desenvolvido em WordPress e está hospedado numa Droplet da Digital Ocean, o grande aprendizado esteve nas implementações de plugins, como o lazy-loading, minify css e compressão de imagens para maior velocidade de carregamento da página, além do emprego de técnicas de SEO para que a página seja encontrada nos motores de busca como Google, Bing e outros \n\n ### Tecnologias utilizadas: \n\n WordPress, Droplets Linux, \n\n ### Como usar? \n\n Trata-se de um blog onde o administrador pode adicionar novos posts a página  [Clicando aqui]( https://boraliviver.com.br/) ",
-        "stacks": "Wordpress, Linux",
-        "deploy": "https://boraliviver.com.br/",
-        "repositorio": ""
-    },
-    {
-        "id": 6,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nerdking.png",
-        "titulo": "NerdKing Tecnologia",
-        "resumo": "Site do tipo blog para propagar dicas e tutoriais para diversas tecnologias, obtenção de ganhos por meio de anúncios do Google. Feito em Wordpress...",
-        "post": "Atenção! Todos os projetos dentro desse blog são de autoria minha e você pode ver das minhas engenhocas na sessão de hobbies dessa página. \n\n NerdKing Tecnologia é um site do tipo blog para propagar dicas e tutoriais para diversas tecnologias sendo uma excelente maneira de compartilhar conhecimento e experiências com pessoas que têm interesse no assunto. \n\n Além de fornecer conteúdo útil e informativo, o site gera receita por meio de anúncios do Google. Por meio do Google AdSense, é possível que o proprietário do site exiba anúncios em suas páginas e ganhem uma comissão por cada clique nos anúncios. .\n\n Outro aspecto importante é o marketing e divulgação do site. Que inclui o uso de técnicas de SEO para aumentar a visibilidade do site nos resultados de pesquisa do Google, bem como a promoção do conteúdo do site nas redes sociais e em outras plataformas online. Quanto maior o número de visitas no site, maior a receita gerada pelos anúncios do Google. \n\n  ### O que aprendi? \n\n O site foi desenvolvido em WordPress e está hospedado numa Droplet da Digital Ocean, foi meu primeiro site hospedado numa Droplet e foi extremante difícil configurar o servidor a 5 anos atras e com pouco conhecimento sobre o assunto. Também preciso destacar as implementações de plugins, como o lazy-loading, minify css e compressão de imagens para maior velocidade de carregamento da página, sem contar com outros milhões de plugins que essa página conta para capturar e-mails, comentários e compartilhamentos. \n\n ### Tecnologias utilizadas: \n\n WordPress, Droplets, Linux, Plugins do Wordpress \n\n ### Como usar? \n\n Trata-se de um blog onde o administrador pode adicionar novos posts a página [Clicando aqui]( https://nerdking.net.br/) ",
-        "stacks": "Wordpress",
-        "deploy": "https://nerdking.net.br/",
-        "repositorio": ""
-    },
-    {
-        "id": 7,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/alurageek.png",
-        "titulo": "AluraGeek",
-        "resumo": "Alura Geek é um marketplace fictício que reúne produtos Geek para compras, nesse projeto foi possível praticar UseStates do React...",
-        "post": "O Alura Geek é um marketplace fictício que foi desenvolvido com o objetivo de reunir produtos relacionados ao universo Geek para compras online. Esse tipo de plataforma é muito interessante para os fãs de cultura pop e tecnologia, já que oferece uma ampla variedade de produtos. \n\n Para tornar a plataforma mais atraente e funcional, foi utilizado o React, uma biblioteca JavaScript muito popular para o desenvolvimento de interfaces de usuário. Com o React, foi possível implementar diversas funcionalidades interessantes no Alura Geek, como por exemplo, o uso de UseStates. \n\n Os UseStates são um recurso do React que permite a criação de variáveis de estado que podem ser modificadas ao longo do tempo. Eles são muito úteis para implementar funcionalidades dinâmicas em um site, como a atualização de informações em tempo real, ou a alteração de cores e imagens ao passar o mouse sobre um produto, por exemplo. \n\n Por fim, é importante destacar que a utilização do React no projeto do Alura Geek possibilitou um desenvolvimento mais ágil e eficiente, já que a biblioteca simplifica muitas das tarefas complexas envolvidas na criação de uma plataforma de comércio eletrônico. Isso permitiu que os desenvolvedores do projeto pudessem se concentrar mais na criação de um design atraente e uma interface de usuário intuitiva, garantindo uma experiência de compra agradável para os usuários. \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a pratica do Javascript no react, fazer essa funcionalidade de adicionar novos produtos, mesmo não sendo a primeira vez  que desenvolvi esse tipo de funcionalidade, não foi fácil, mas entendi que trata-se de algo que pode ser implementado em várias aplicações. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n [Entre na Página]( https://alura-geek-react-n25q.vercel.app/)  \n\n Clique em -Ver todos os Produtos- \n\n Clicar no Botão 'Adicionar produtos'",
-        "stacks": "React, JavaScript, SASS, html",
-        "deploy": "https://alura-geek-react-n25q.vercel.app/",
-        "repositorio": "https://github.com/brunoholanda/AluraGeek-REACT"
-    },
-    {
-        "id": 8,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/barbearia.png",
-        "titulo": "Vieira Barbearia",
-        "resumo": "Site para barbearia do bairro, a qual corto cabelo. O link do site fica nas redes sociais da empresa e tem a função de conectar clientes que...",
-        "post": "    empresa e tem a função de conectar clientes que procuram os serviços da barbearia . Além disso, o site oferece informações sobre os serviços prestados, horários de funcionamento, preços e promoções especiais. \n\n No caso da barbearia em questão, o site tem a importante função de conectar os clientes com a empresa, permitindo que eles conheçam melhor os serviços oferecidos e possam agendar horários para cortes de cabelo, barba e outros serviços de beleza. É importante que o site seja de fácil acesso e navegabilidade, com um design atraente e responsivo para que possa ser acessado tanto em desktops quanto em dispositivos móveis. \n\n  ### O que aprendi? \n\n Desenvolvimento Mobile First, criação de um Menu hambúrguer do zero, Carrossel de fotos com JavaScript e Incorporação com WhatsApp \n\n ### Tecnologias utilizadas: \n\n HTML • JavaScript • HTML • CSS • Git \n\n ### Como usar? \n\n Trata-se de uma landing Page intuitiva e você pode acessar seu Deploy  [Clicando aqui]( https://vieira-barbearia-job-95e3.vercel.app/)",
-        "stacks": "JavaScript, CSS, html",
-        "deploy": "https://vieira-barbearia-job-95e3.vercel.app/",
-        "repositorio": "https://github.com/brunoholanda/VieiraBarbearia-JOB"
-    },
-    {
-        "id": 9,
-        "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nkcine.png",
-        "titulo": "NerdKing Tag",
-        "resumo": "Website para adicionar aos favoritos os vídeos que o usuário mais gostar no youtube do NerdKing, feito para praticar useStates, e aprender a criar uma API fake",
-        "post": "O desenvolvimento de um website para adicionar aos favoritos os vídeos mais interessantes do canal NerdKing no YouTube é uma excelente maneira de praticar a criação de uma aplicação com UseStates no React, além de aprender a criar uma API fake. Essa aplicação pode ser muito útil para os usuários que desejam salvar e organizar seus vídeos favoritos do canal. \n\n Para tornar a plataforma mais atraente e funcional, foi utilizado o React, uma biblioteca JavaScript muito popular para o desenvolvimento de interfaces de usuário. Com o React, foi possível implementar diversas funcionalidades interessantes no site, como por exemplo, o uso de UseStates na funcionalidade de favoritar ou desfavoritar itens da página. \n\n Os UseStates são um recurso do React que permite a criação de variáveis de estado que podem ser modificadas ao longo do tempo. Eles são muito úteis para implementar funcionalidades dinâmicas em um site, como a atualização de informações em tempo real, ou a alteração de cores e imagens ao passar o mouse sobre um produto, por exemplo.  \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a pratica do Javascript no react, desenvolver a funcionalidade de favoritar e desafavoritar pela primeira vez foi um grande desafio. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • CSS • Git \n\n ### Como usar? \n\n Trata-se de uma landing Page intuitiva e você pode acessar seu Deploy  [Clicando aqui]( https://nktag-react-i64j.vercel.app/)",
-        "stacks": "JavaScript, CSS, html",
-        "deploy": "https://nktag-react-i64j.vercel.app/",
-        "repositorio": "https://github.com/brunoholanda/nktag-react"
-    }
-]
+{
+    "projetos": [
+        {
+            "id": 1,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
+            "titulo": "Cursos Tech BR",
+            "resumo": "Website fictício para um programa do Ministério da Educação responsivo e que faz o mapeamento de faculdades com cursos de tecnologia que existem no Brasil...",
+            "post": "O website fictício para um programa do Ministério da Educação. Uma plataforma online responsiva que tem como objetivo mapear e disponibilizar informações atualizadas sobre todas as faculdades que oferecem cursos de tecnologia no Brasil. A página conta com uma interface intuitiva e fácil de usar, que permite aos usuários acessarem rapidamente as informações que procuram. \n\n Possui um sistema de cadastro e login para que futuramente seja possível coletar informações dos usuários como Email, localização e preferencias de procura. \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a criação de um hook para controle de login e cadastro utilizando LocalStorage. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Clicar no botão Entrar \n\n Faça seu cadastro \n\nEntre com Email e senha cadastrados.",
+            "stacks": "React, JavaScript, SASS, html",
+            "deploy": "https://cursos-tech-br.vercel.app/",
+            "repositorio": "https://github.com/brunoholanda/cursos-tech-br"
+        },
+        {
+            "id": 2,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/imobiliaria.png",
+            "titulo": "Imobiliaria",
+            "resumo": "Website para imobiliária com funcionalidade experimental para que qualquer pessoa anuncie imóveis para alugar ou vender (Marketplace)",
+            "post": "Além de permitir que a imobiliária anuncie imóveis, o website inclui uma funcionalidade experimental que permite que qualquer pessoa anuncie imóveis para alugar ou vender, transformando o website em um marketplace de imóveis. Isso significa que pessoas que possuem imóveis para alugar ou vender podem futuramente criar uma conta e publicar suas próprias listagens no website, aumentando a quantidade de imóveis disponíveis para os potenciais compradores ou locatários. O website conta com informações sobre cada imóvel, como fotos, descrições, preços e informações sobre a localização. Também pode incluir uma forma de contato para permitir que os usuários entrem em contato com a imobiliária ou com os proprietários dos imóveis. \n\n Ao acessar o botão disponível no banner inicial o usuário tem acesso a funcionalidade de adicionar imóveis. \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a pratica do Javascript no react, fazer essa funcionalidade de adicionar imóveis pela primeira vez não foi fácil, mas entendi que trata-se de algo que pode ser implementado em várias aplicações.. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Clicar no botão ANUNCIE AQUI dentro do banner \n\n Inserir as informações do imóvel a ser anunciado \n\n Clicar no Botão 'Adicionar Imóvel'",
+            "stacks": "React, JavaScript, SASS, html",
+            "deploy": "https://imobiliaria-orpin.vercel.app/",
+            "repositorio": "https://github.com/brunoholanda/imobiliaria"
+        },
+        {
+            "id": 3,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/restaurante.png",
+            "titulo": "Restaurante",
+            "resumo": "Website para restaurante com a utilização de API para coletar os dados do cardápio além de um estilo de dar água na boca, feito em react...",
+            "post": "O website para restaurante é uma ótima maneira de apresentar o cardápio de forma clara e atraente. Para tornar a experiência ainda melhor, é possível utilizar APIs para coletar os dados do cardápio diretamente de um sistema de gerenciamento de pedidos. Dessa forma, o website sempre exibirá as informações mais atualizadas sobre os pratos, bebidas e sobremesas disponíveis. \n\n  Além disso, é importante que o estilo do website seja cuidadosamente planejado para dar água na boca dos visitantes. Isso pode incluir o uso de imagens de alta qualidade dos pratos, fontes que combinem com a temática do restaurante e paletas de cores que remetam aos ingredientes utilizados nos pratos.\n\n  ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a uma boa estilização dos cards com as fotos do produto, inclusive um hover com a div inteira utilizando uma margin-top negativa. Também reforcei meus aprendizados com API, mesmo que eu tenha utilizado uma API fake isso animou a estudar back-end \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • CSS • Git \n\n ### Como usar? \n\n Trata-se apenas de uma landing Page e você pode acessar seu Deploy [Clicando aqui](https://imobiliaria-orpin.vercel.app/)",
+            "stacks": "React, JavaScript, SASS, html",
+            "deploy": "https://restaurante-rho.vercel.app/",
+            "repositorio": "https://github.com/brunoholanda/restaurante"
+        },
+        {
+            "id": 4,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nivernay.png",
+            "titulo": "Site Aniversario",
+            "resumo": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a...",
+            "post": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a itens de uma lista de desejos disponibilizada no site, proporcionando uma forma prática e cômoda para presentear, garantindo que a aniversariante receba apenas presentes que realmente deseja. Além disso, o site também conta com informações sobre a festa, como data, horário e local, e permite que os convidados confirmem presença e deixem mensagens para a aniversariante. \n\n O website é desenvolvido em React, utilizando uma API para gerenciamento de pagamentos. Com um design moderno e intuitivo, o site proporciona uma experiência única e inovadora para a organização e celebração de aniversários. \n\n  ### O que aprendi? \n\n Meu maior aprendizado neste projeto por mais simples que pareça foi com a criação do menu hamburguer dentro do React, terminei utilizando a biblioteca mdb-react-ui-kit que me possibilitou entregar o projeto de forma rápida pois a cliente queria o site para ontem. Também tive que me desdobrar para fazer a criação dos links de pagamento dentro do PagSeguro, no fim deu tudo certo! Também reforcei meus aprendizados com API, mesmo que eu tenha utilizado uma API fake isso animou a estudar back-end \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Trata-se de uma landing Page intuitiva e você pode acessar seu Deploy  [Clicando aqui]( https://niver-org-presentes.vercel.app/) ",
+            "stacks": "React, JavaScript, SASS, html",
+            "deploy": "https://niver-org-presentes.vercel.app/",
+            "repositorio": "https://github.com/brunoholanda/imobiliaria"
+        },
+        {
+            "id": 5,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/borali.png",
+            "titulo": "BoraLi Viver",
+            "resumo": "Site do tipo blog para fornecer dicas de roteiros e lugares para viagem, obtenção de ganhos por meio de fermentas afiliadas do Booking e Rent a Cars...",
+            "post": "Um site do tipo blog para fornecer dicas de roteiros e lugares para viagens, é uma ótima ideia para quem deseja compartilhar suas experiências de viagens e ajudar outras pessoas a planejarem suas próprias aventuras. Esse tipo de plataforma pode ser uma fonte valiosa de informações para viajantes iniciantes e experientes, que desejam conhecer novos lugares e descobrir novas culturas. \n\n Além de fornecer informações úteis e interessantes sobre destinos de viagem, o site gera receita por meio de ferramentas afiliadas do Booking e Rent a Cars. Essas ferramentas permitem que os usuários reservem suas acomodações e aluguem seus carros diretamente pelo site, enquanto o proprietário do site recebe uma comissão por cada reserva realizada. \n\n  ### O que aprendi? \n\n O site foi desenvolvido em WordPress e está hospedado numa Droplet da Digital Ocean, o grande aprendizado esteve nas implementações de plugins, como o lazy-loading, minify css e compressão de imagens para maior velocidade de carregamento da página, além do emprego de técnicas de SEO para que a página seja encontrada nos motores de busca como Google, Bing e outros \n\n ### Tecnologias utilizadas: \n\n WordPress, Droplets Linux, \n\n ### Como usar? \n\n Trata-se de um blog onde o administrador pode adicionar novos posts a página  [Clicando aqui]( https://boraliviver.com.br/) ",
+            "stacks": "Wordpress, Linux",
+            "deploy": "https://boraliviver.com.br/",
+            "repositorio": ""
+        },
+        {
+            "id": 6,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nerdking.png",
+            "titulo": "NerdKing Tecnologia",
+            "resumo": "Site do tipo blog para propagar dicas e tutoriais para diversas tecnologias, obtenção de ganhos por meio de anúncios do Google. Feito em Wordpress...",
+            "post": "Atenção! Todos os projetos dentro desse blog são de autoria minha e você pode ver das minhas engenhocas na sessão de hobbies dessa página. \n\n NerdKing Tecnologia é um site do tipo blog para propagar dicas e tutoriais para diversas tecnologias sendo uma excelente maneira de compartilhar conhecimento e experiências com pessoas que têm interesse no assunto. \n\n Além de fornecer conteúdo útil e informativo, o site gera receita por meio de anúncios do Google. Por meio do Google AdSense, é possível que o proprietário do site exiba anúncios em suas páginas e ganhem uma comissão por cada clique nos anúncios. .\n\n Outro aspecto importante é o marketing e divulgação do site. Que inclui o uso de técnicas de SEO para aumentar a visibilidade do site nos resultados de pesquisa do Google, bem como a promoção do conteúdo do site nas redes sociais e em outras plataformas online. Quanto maior o número de visitas no site, maior a receita gerada pelos anúncios do Google. \n\n  ### O que aprendi? \n\n O site foi desenvolvido em WordPress e está hospedado numa Droplet da Digital Ocean, foi meu primeiro site hospedado numa Droplet e foi extremante difícil configurar o servidor a 5 anos atras e com pouco conhecimento sobre o assunto. Também preciso destacar as implementações de plugins, como o lazy-loading, minify css e compressão de imagens para maior velocidade de carregamento da página, sem contar com outros milhões de plugins que essa página conta para capturar e-mails, comentários e compartilhamentos. \n\n ### Tecnologias utilizadas: \n\n WordPress, Droplets, Linux, Plugins do Wordpress \n\n ### Como usar? \n\n Trata-se de um blog onde o administrador pode adicionar novos posts a página [Clicando aqui]( https://nerdking.net.br/) ",
+            "stacks": "Wordpress",
+            "deploy": "https://nerdking.net.br/",
+            "repositorio": ""
+        },
+        {
+            "id": 7,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/alurageek.png",
+            "titulo": "AluraGeek",
+            "resumo": "Alura Geek é um marketplace fictício que reúne produtos Geek para compras, nesse projeto foi possível praticar UseStates do React...",
+            "post": "O Alura Geek é um marketplace fictício que foi desenvolvido com o objetivo de reunir produtos relacionados ao universo Geek para compras online. Esse tipo de plataforma é muito interessante para os fãs de cultura pop e tecnologia, já que oferece uma ampla variedade de produtos. \n\n Para tornar a plataforma mais atraente e funcional, foi utilizado o React, uma biblioteca JavaScript muito popular para o desenvolvimento de interfaces de usuário. Com o React, foi possível implementar diversas funcionalidades interessantes no Alura Geek, como por exemplo, o uso de UseStates. \n\n Os UseStates são um recurso do React que permite a criação de variáveis de estado que podem ser modificadas ao longo do tempo. Eles são muito úteis para implementar funcionalidades dinâmicas em um site, como a atualização de informações em tempo real, ou a alteração de cores e imagens ao passar o mouse sobre um produto, por exemplo. \n\n Por fim, é importante destacar que a utilização do React no projeto do Alura Geek possibilitou um desenvolvimento mais ágil e eficiente, já que a biblioteca simplifica muitas das tarefas complexas envolvidas na criação de uma plataforma de comércio eletrônico. Isso permitiu que os desenvolvedores do projeto pudessem se concentrar mais na criação de um design atraente e uma interface de usuário intuitiva, garantindo uma experiência de compra agradável para os usuários. \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a pratica do Javascript no react, fazer essa funcionalidade de adicionar novos produtos, mesmo não sendo a primeira vez  que desenvolvi esse tipo de funcionalidade, não foi fácil, mas entendi que trata-se de algo que pode ser implementado em várias aplicações. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n [Entre na Página]( https://alura-geek-react-n25q.vercel.app/)  \n\n Clique em -Ver todos os Produtos- \n\n Clicar no Botão 'Adicionar produtos'",
+            "stacks": "React, JavaScript, SASS, html",
+            "deploy": "https://alura-geek-react-n25q.vercel.app/",
+            "repositorio": "https://github.com/brunoholanda/AluraGeek-REACT"
+        },
+        {
+            "id": 8,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/barbearia.png",
+            "titulo": "Vieira Barbearia",
+            "resumo": "Site para barbearia do bairro, a qual corto cabelo. O link do site fica nas redes sociais da empresa e tem a função de conectar clientes que...",
+            "post": "    empresa e tem a função de conectar clientes que procuram os serviços da barbearia . Além disso, o site oferece informações sobre os serviços prestados, horários de funcionamento, preços e promoções especiais. \n\n No caso da barbearia em questão, o site tem a importante função de conectar os clientes com a empresa, permitindo que eles conheçam melhor os serviços oferecidos e possam agendar horários para cortes de cabelo, barba e outros serviços de beleza. É importante que o site seja de fácil acesso e navegabilidade, com um design atraente e responsivo para que possa ser acessado tanto em desktops quanto em dispositivos móveis. \n\n  ### O que aprendi? \n\n Desenvolvimento Mobile First, criação de um Menu hambúrguer do zero, Carrossel de fotos com JavaScript e Incorporação com WhatsApp \n\n ### Tecnologias utilizadas: \n\n HTML • JavaScript • HTML • CSS • Git \n\n ### Como usar? \n\n Trata-se de uma landing Page intuitiva e você pode acessar seu Deploy  [Clicando aqui]( https://vieira-barbearia-job-95e3.vercel.app/)",
+            "stacks": "JavaScript, CSS, html",
+            "deploy": "https://vieira-barbearia-job-95e3.vercel.app/",
+            "repositorio": "https://github.com/brunoholanda/VieiraBarbearia-JOB"
+        },
+        {
+            "id": 9,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nkcine.png",
+            "titulo": "NerdKing Tag",
+            "resumo": "Website para adicionar aos favoritos os vídeos que o usuário mais gostar no youtube do NerdKing, feito para praticar useStates, e aprender a criar uma API fake",
+            "post": "O desenvolvimento de um website para adicionar aos favoritos os vídeos mais interessantes do canal NerdKing no YouTube é uma excelente maneira de praticar a criação de uma aplicação com UseStates no React, além de aprender a criar uma API fake. Essa aplicação pode ser muito útil para os usuários que desejam salvar e organizar seus vídeos favoritos do canal. \n\n Para tornar a plataforma mais atraente e funcional, foi utilizado o React, uma biblioteca JavaScript muito popular para o desenvolvimento de interfaces de usuário. Com o React, foi possível implementar diversas funcionalidades interessantes no site, como por exemplo, o uso de UseStates na funcionalidade de favoritar ou desfavoritar itens da página. \n\n Os UseStates são um recurso do React que permite a criação de variáveis de estado que podem ser modificadas ao longo do tempo. Eles são muito úteis para implementar funcionalidades dinâmicas em um site, como a atualização de informações em tempo real, ou a alteração de cores e imagens ao passar o mouse sobre um produto, por exemplo.  \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a pratica do Javascript no react, desenvolver a funcionalidade de favoritar e desafavoritar pela primeira vez foi um grande desafio. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • CSS • Git \n\n ### Como usar? \n\n Trata-se de uma landing Page intuitiva e você pode acessar seu Deploy  [Clicando aqui]( https://nktag-react-i64j.vercel.app/)",
+            "stacks": "JavaScript, CSS, html",
+            "deploy": "https://nktag-react-i64j.vercel.app/",
+            "repositorio": "https://github.com/brunoholanda/nktag-react"
+        }
+    ],
+    "hobbies": [
+        {
+            "id": 1,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
+            "titulo": "Espelho Inteligente RPI",
+            "resumo": "Este projeto ja me fez virar matéria de jornal duas vezes, eu fui a primeira pessoa no Brasil a fazer um tutorial em português de como fazer esse espelho",
+            "stacks": "Python, Linux",
+            "Video": "https://youtu.be/nybZmXBRpkI",
+            "repositorio": "https://nerdking.net.br/espelho-inteligente-em-2020/"
+        },
+        {
+            "id": 2,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
+            "titulo": "Espelho Inteligente RPI",
+            "resumo": "Este projeto ja me fez virar matéria de jornal duas vezes, eu fui a primeira pessoa no Brasil a fazer um tutorial em português de como fazer esse espelho",
+            "stacks": "Python, Linux",
+            "Video": "https://youtu.be/nybZmXBRpkI",
+            "repositorio": "https://nerdking.net.br/espelho-inteligente-em-2020/"
+        }
+    ]
 }
