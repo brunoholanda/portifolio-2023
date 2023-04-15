@@ -2,19 +2,19 @@
     margin: 5em 30em 5em 11em;
 
     h2 {
-        font-size: 42px;
+        font-size: 2.62rem;
         font-weight: 700;
         color: var(--preto-texto);
     }
 
     p {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
         color: var(--cinza-texto);
     }
 
     h3, h4 {
-        font-size: 20px;
+        font-size: 1.25rem;
         color: var(--preto-texto);
         margin-bottom: 0;
         margin-top: .5em;
@@ -33,7 +33,7 @@
     a {
         text-decoration: none;
         color: var(--branco);
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     button {
@@ -52,15 +52,15 @@
         text-align: center;
 
         h2 {
-            font-size: 42px;
+            font-size: 2.62rem;
         }
     
         p {
-            font-size: 22px;
+            font-size: 1.37rem;
         }
     
         h3, h4 {
-            font-size: 21px;
+            font-size: 1.32rem;
         }
 }
 
@@ -68,12 +68,12 @@
 
     flex-direction: column;
     button {
-        font-size: 18px;
+        font-size: 1.13rem;
         margin-bottom: 1em;
     }
 
     p {
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-right: 0em;
     }
 }
@@ -90,26 +90,26 @@
     .sobre {
         margin: 1em 2em;
         h2 {
-            font-size: 38px;
+            font-size: 2.38rem;
         }
     
         p {
-            font-size: 18px;
+            font-size: 1.13rem;
         }
     
         h3, h4 {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
 }
 
 .formacao {
 
     button {
-        font-size: 14px;
+        font-size: .87rem;
     }
 
     p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 

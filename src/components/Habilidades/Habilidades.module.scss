@@ -4,8 +4,8 @@
     margin: 4em 6em;
 
     h2 {
-        font-size: 48px;
-        line-height: 26px;
+        font-size: 3rem;
+        line-height: 1.63rem;
         font-weight: 700;
         color: var(--preto-texto);
         margin-bottom: 1em;
@@ -13,8 +13,8 @@
 
     p {
         font-weight: 400;
-        font-size: 32px;
-        line-height: 26px;
+        font-size: 2rem;
+        line-height: 1.63rem;
         color: var(--cinza-texto);
         margin-bottom: 2em;
     }
@@ -38,12 +38,12 @@
         margin: 1em 2em;
         
         h2 {
-            font-size: 38px;
-            line-height: 35px;
+            font-size: 2.38rem;
+            line-height: 2.19rem;
         }
 
         p {
-            font-size: 28px;
+            font-size: 1.75rem;
         }
 
         &__icones {
@@ -62,11 +62,11 @@
         margin: 1em 2em;
         
         h2 {
-            font-size: 29px;
+            font-size: 1.82rem;
         }
 
         p {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
 
         &__icones {

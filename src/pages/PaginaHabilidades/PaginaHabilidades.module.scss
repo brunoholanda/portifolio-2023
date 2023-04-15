@@ -3,8 +3,8 @@
     margin: 4em 7em;
 
     h2 {
-        font-size: 48px;
-        line-height: 26px;
+        font-size: 3rem;
+        line-height: 1.63rem;
         font-weight: 700;
         color: var(--preto-texto);
         margin-bottom: 1em;
@@ -23,8 +23,8 @@
 
         p {
             font-weight: 400;
-            font-size: 24px;
-            line-height: 18px;
+            font-size: 1.5rem;
+            line-height: 1.13rem;
             color: var(--cinza-texto);
             margin-bottom: 2em;
         }
@@ -55,7 +55,7 @@
     a {
         text-decoration: none;
         color: var(--branco);
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     button {
@@ -75,11 +75,11 @@
 
         p {
             margin-right: 0em;
-            font-size: 26px;
+            font-size: 1.63rem;
         }
 
         a {
-            font-size: 18px;
+            font-size: 1.13rem;
         }
     }
 
@@ -97,8 +97,8 @@
         margin: 2em 2em;
 
         h2 {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 2rem;
+            line-height: 2.5rem;
             text-align: center;
         }
 
@@ -114,7 +114,7 @@
             }
 
             p {
-                font-size: 16px;
+                font-size: 1rem;
             }
         }
     }
@@ -125,16 +125,16 @@
 
         p {
             margin-right: 1em;
-            font-size: 18px;
+            font-size: 1.13rem;
         }
 
         a {
-            font-size: 18px;
+            font-size: 1.13rem;
         }
 
         button {
             width: 200px;
-            font-size: 16px;
+            font-size: 1rem;
             margin-bottom: 1.5em;
         }
     }

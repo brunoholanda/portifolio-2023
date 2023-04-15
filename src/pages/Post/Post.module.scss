@@ -6,8 +6,17 @@
         color: var(--preto-texto);
     }
 
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
     p {
         color: var(--cinza-texto);
+        font-size: 1.2rem;
     }
    
     &__artigo {
