@@ -10,6 +10,11 @@ export default function MenuMobile() {
         setOpen(!isOpen);
     };
 
+    const handleItemClick = (e) => {
+        setOpen(false);
+      }
+      
+
     return (
         <>
             <nav>
@@ -21,7 +26,7 @@ export default function MenuMobile() {
                 />
             </nav>
             {isOpen && (
-                <ul className={styles.lista}>
+                <ul className={styles.lista} onClick={handleItemClick}>
                     <Link to="./">
                         <li>Inicio</li>
                     </Link>

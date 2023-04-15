@@ -98,17 +98,53 @@
             "titulo": "Espelho Inteligente RPI",
             "resumo": "Este projeto ja me fez virar matéria de jornal duas vezes, eu fui a primeira pessoa no Brasil a fazer um tutorial em português de como fazer esse espelho",
             "stacks": "Python, Linux",
-            "Video": "https://youtu.be/nybZmXBRpkI",
+            "deploy": "https://youtu.be/nybZmXBRpkI",
             "repositorio": "https://nerdking.net.br/espelho-inteligente-em-2020/"
         },
         {
             "id": 2,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
-            "titulo": "Espelho Inteligente RPI",
-            "resumo": "Este projeto ja me fez virar matéria de jornal duas vezes, eu fui a primeira pessoa no Brasil a fazer um tutorial em português de como fazer esse espelho",
-            "stacks": "Python, Linux",
-            "Video": "https://youtu.be/nybZmXBRpkI",
-            "repositorio": "https://nerdking.net.br/espelho-inteligente-em-2020/"
+            "titulo": "Controlar portão pelo Wi-fi",
+            "resumo": "Este projeto foi desenvolvido para ser vendido a pessoas que desejam controlar o motor do portão da sua casa pelo Wi-Fi",
+            "stacks": "Lua, C++, Blockly",
+            "deploy": "https://youtu.be/peqC0BgiWxU",
+            "repositorio": "https://github.com/brunoholanda/Portao-WIFI-ESP8266"
+        },
+        {
+            "id": 3,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
+            "titulo": "Fechadura eletrônica Bluetooth",
+            "resumo": "Projeto desenvolvido para ensinar as pessoas como projetar uma fechadura automática controlável via bluetooth a partir de sucata de",
+            "stacks": "C++, Arduíno, Blockly",
+            "deploy": "https://youtu.be/OyfdHldKBPg",
+            "repositorio": "https://nerdking.net.br/fechadura-eletronica-feita-em-casa/"
+        },
+        {
+            "id": 4,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
+            "titulo": "Maquina de Refrigerante",
+            "resumo": "Projeto para construir uma maquina de refrigerante funcional e tecnológica com seletor de sabores e função de refrigerar",
+            "stacks": "Blockly ,C++ e Arduíno",
+            "deploy": "https://youtu.be/YMGiZMBldh4",
+            "repositorio": "https://github.com/brunoholanda/Maquina-refrigerante"
+        },
+        {
+            "id": 5,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
+            "titulo": "Alarme Portátil",
+            "resumo": "Alarme portátil android via bluetooth, fácil de fazer, funcional e pode ser escondido em qualquer lugar dado o seu tamanho",
+            "stacks": "Blockly ,C++ e Arduíno",
+            "deploy": "https://youtu.be/siXLTV5zAyc",
+            "repositorio": "https://github.com/brunoholanda/alarme-portatil"
+        },
+        {
+            "id": 6,
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/cursostech.png",
+            "titulo": "Dispenser de Álcool",
+            "resumo": "Em meio a pandemia do Covid-19 desenvolvi um dispensador de alcool inteligente que detecta quando o usuário passa para o lado contaminado",
+            "stacks": "C++ e Arduíno",
+            "deploy": "https://youtu.be/4JhpiCp4j4w",
+            "repositorio": "https://nerdking.net.br/dispenser-de-alcool-em-gel-inteligente/"
         }
     ]
 }
