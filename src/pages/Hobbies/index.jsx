@@ -9,7 +9,7 @@ export default function Hobbies() {
     const [hobbies, setHobbies] = useState([]);
 
     useEffect(() => {
-        fetch('https://my.api.mockaroo.com/hobbies.json?key=6b539750')
+        fetch('https://run.mocky.io/v3/2d1bb2ab-3521-4720-aaeb-f5764f1c12b5')
             .then(resposta => resposta.json())
             .then(dados => {
                 setHobbies(dados)

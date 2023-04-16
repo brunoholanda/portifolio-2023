@@ -1,7 +1,7 @@
 .contato {
 
     margin:  2em 6em;
-
+    
     h1,h2, p {
         color: var(--preto-texto);
     }
@@ -22,6 +22,7 @@
 @media screen and (max-width: 768px) {
     .contato {
         margin: 1em 2em;
+        text-align: center;
 
         &__meios {
 

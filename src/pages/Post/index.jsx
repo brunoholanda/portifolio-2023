@@ -10,7 +10,7 @@ export default function Post() {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch('https://my.api.mockaroo.com/db.json?key=6b539750')
+        fetch('https://run.mocky.io/v3/677dfb3d-0e11-48d2-930b-d87f1e1dfe04')
             .then(resposta => resposta.json())
             .then(dados => {
                 setProjetos(dados)
