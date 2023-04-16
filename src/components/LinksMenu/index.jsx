@@ -22,6 +22,9 @@ export default function MenuLinks() {
             <Link to="./hobbies">
                 Hobbies
             </Link>
+            <div className={styles.header__cv}>
+                <a href="https://drive.google.com/file/d/1MTNHqL--FUSi4Y4jKKkXvU806imkzZnj/view?usp=sharing" target="_blank">Baixar CV</a>
+            </div>
         </section>
     )
 }

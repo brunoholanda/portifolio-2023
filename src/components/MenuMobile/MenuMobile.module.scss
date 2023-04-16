@@ -1,4 +1,4 @@
-.lista {
+.mobileMenu {
 
     margin-bottom: .5em;
     margin-left: 0;
@@ -17,4 +17,12 @@
         width: 150px;
       }
       
+      &__cv {
+         margin-bottom: .5em;
+            border: 1px solid var(--preto-texto);
+            text-align: center;
+            border-radius: 10px;
+            width: 150px;
+      }
+
 }

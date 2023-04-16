@@ -15,7 +15,6 @@ export default function Header() {
             <div className={styles.header__links}>
                 <MenuLinks />
             </div>
-
         </header>
     )
 }

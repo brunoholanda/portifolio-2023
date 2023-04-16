@@ -12,8 +12,8 @@ export default function MenuMobile() {
 
     const handleItemClick = (e) => {
         setOpen(false);
-      }
-      
+    }
+
 
     return (
         <>
@@ -26,7 +26,7 @@ export default function MenuMobile() {
                 />
             </nav>
             {isOpen && (
-                <ul className={styles.lista} onClick={handleItemClick}>
+                <ul className={styles.mobileMenu} onClick={handleItemClick}>
                     <Link to="./">
                         <li>Inicio</li>
                     </Link>
@@ -45,6 +45,9 @@ export default function MenuMobile() {
                     <Link to="./hobbies">
                         <li>Hobbies</li>
                     </Link>
+                    <div className={styles.mobileMenu__cv}>
+                        <a href="https://drive.google.com/file/d/1MTNHqL--FUSi4Y4jKKkXvU806imkzZnj/view?usp=sharing" target="_blank">Baixar CV</a>
+                    </div>
                 </ul>
             )}
         </>
