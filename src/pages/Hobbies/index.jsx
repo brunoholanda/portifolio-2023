@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from './Hobbies.module.scss';
 import Card from 'components/Card';
 import carregando from '../../public/assets/img/carregando.gif';
+import CardHobbie from './CardHobbie';
 
 export default function Hobbies() {
 
@@ -26,7 +27,7 @@ export default function Hobbies() {
             <p>Desde então sempre que tenho um tempo livre posto novos vídeos ensinando as pessoas a fazerem algumas engenhocas interessantes e a seguir você pode conferir algumas delas:</p>
             <div className={styles.hobbies__cards}>
             {hobbies.length > 0 ? (
-                    hobbies.map((hobbie) => <Card {...hobbie} key={hobbie.id} />)
+                    hobbies.map((hobbie) => <CardHobbie {...hobbie} key={hobbie.id} />)
                 ) : (
                     <img src={carregando} alt="carregando projeto"/>
                 )}

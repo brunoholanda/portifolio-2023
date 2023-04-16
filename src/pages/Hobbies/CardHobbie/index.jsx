@@ -1,16 +1,13 @@
-import styles from './Card.module.scss';
-import anexo from '../../public/assets/icons/anexo.png';
-import github from '../../public/assets/icons/mini-git-hub.png';
-import { Link } from 'react-router-dom';
+import styles from './CardHobbie.module.scss';
+import youtube from '../../../public/assets/icons/youtube.png';
+import github from '../../../public/assets/icons/mini-git-hub.png';
 
-export default function Card({ id, imagem, titulo, resumo, stacks, deploy, repositorio }) {
+export default function CardHobbie({ id, imagem, titulo, resumo, stacks, deploy, repositorio }) {
 
     return (
         <div className={styles.card}>
             <div className={styles.card__imagem}>
-            <Link to={`/projetos/${id}`}>
-                <img src={imagem} alt={titulo} />
-                </Link>
+            <img src={imagem} alt={titulo} />
                 <div className={styles.card__texto}>
                     <h3>{titulo}</h3>
                     <h4>{resumo}</h4>
@@ -20,8 +17,8 @@ export default function Card({ id, imagem, titulo, resumo, stacks, deploy, repos
             <div className={styles.card__links}>
                 <a href={deploy} target="_blank">
                     <div className={styles.link__icone}>
-                        <img src={anexo} alt="icone pequeno de clipe de papel" />
-                        <p>Ver Site</p>
+                        <img src={youtube} alt="icone pequeno de clipe de papel" />
+                        <p>Ver Vídeo</p>
                     </div>
                 </a>
                 <a href={repositorio} target="_blank">
