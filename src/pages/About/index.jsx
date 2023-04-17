@@ -43,7 +43,7 @@ export default function About() {
                 <p>| Janeiro 2022 - presente</p>
                 <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
                 <h3>Gerente Administrativo - Banco Bradesco</h3>
-                <h4>O que eu fçco:</h4>
+                <h4>O que eu faço:</h4>
                 <p>Conduzo uma equipe com 32 funcionários, sendo o grande propagador do compliance da empresa lidando com pessoas e alta quantidade de informações. Sugeri alterações e melhorias sistêmicas com base nos meus conhecimentos em tecnologia com a finalidade de reduzir custos e riscos</p>
                 <p>| Março 2012 - presente</p>
                 <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />

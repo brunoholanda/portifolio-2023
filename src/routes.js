@@ -4,7 +4,7 @@ import Hobbies from "pages/Hobbies";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
 import Post from "pages/Post";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import PageBody from "pages/PageBody";
 import MyStacks from "pages/MyStacks";
 import MyProjectsPage from "pages/MyProjectsPage";
@@ -12,7 +12,7 @@ import About from "pages/About";
 
 function AppRoutes() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <ScrollToTop />
             <Routes>
                 <Route path="/" element={<PageBody />}>
@@ -26,7 +26,7 @@ function AppRoutes() {
                     <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

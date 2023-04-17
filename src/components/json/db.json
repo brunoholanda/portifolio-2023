@@ -13,7 +13,7 @@
         {
             "id": 2,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/imobiliaria.png",
-            "titulo": "Imobiliaria",
+            "titulo": "Imobiliária",
             "resumo": "Website para imobiliária com funcionalidade experimental para que qualquer pessoa anuncie imóveis para alugar ou vender (Marketplace)",
             "post": "Além de permitir que a imobiliária anuncie imóveis, o website inclui uma funcionalidade experimental que permite que qualquer pessoa anuncie imóveis para alugar ou vender, transformando o website em um marketplace de imóveis. Isso significa que pessoas que possuem imóveis para alugar ou vender podem futuramente criar uma conta e publicar suas próprias listagens no website, aumentando a quantidade de imóveis disponíveis para os potenciais compradores ou locatários. O website conta com informações sobre cada imóvel, como fotos, descrições, preços e informações sobre a localização. Também pode incluir uma forma de contato para permitir que os usuários entrem em contato com a imobiliária ou com os proprietários dos imóveis. \n\n Ao acessar o botão disponível no banner inicial o usuário tem acesso a funcionalidade de adicionar imóveis. \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a pratica do Javascript no react, fazer essa funcionalidade de adicionar imóveis pela primeira vez não foi fácil, mas entendi que trata-se de algo que pode ser implementado em várias aplicações.. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Clicar no botão ANUNCIE AQUI dentro do banner \n\n Inserir as informações do imóvel a ser anunciado \n\n Clicar no Botão 'Adicionar Imóvel'",
             "stacks": "React, JavaScript, SASS, html",
@@ -33,7 +33,7 @@
         {
             "id": 4,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nivernay.png",
-            "titulo": "Site Aniversario",
+            "titulo": "Site Aniversário",
             "resumo": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a...",
             "post": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a itens de uma lista de desejos disponibilizada no site, proporcionando uma forma prática e cômoda para presentear, garantindo que a aniversariante receba apenas presentes que realmente deseja. Além disso, o site também conta com informações sobre a festa, como data, horário e local, e permite que os convidados confirmem presença e deixem mensagens para a aniversariante. \n\n O website é desenvolvido em React, utilizando uma API para gerenciamento de pagamentos. Com um design moderno e intuitivo, o site proporciona uma experiência única e inovadora para a organização e celebração de aniversários. \n\n  ### O que aprendi? \n\n Meu maior aprendizado neste projeto por mais simples que pareça foi com a criação do menu hamburguer dentro do React, terminei utilizando a biblioteca mdb-react-ui-kit que me possibilitou entregar o projeto de forma rápida pois a cliente queria o site para ontem. Também tive que me desdobrar para fazer a criação dos links de pagamento dentro do PagSeguro, no fim deu tudo certo! Também reforcei meus aprendizados com API, mesmo que eu tenha utilizado uma API fake isso animou a estudar back-end \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Trata-se de uma landing Page intuitiva e você pode acessar seu Deploy  [Clicando aqui]( https://niver-org-presentes.vercel.app/) ",
             "stacks": "React, JavaScript, SASS, html",
@@ -122,8 +122,8 @@
         {
             "id": 4,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/maquina-refri.png",
-            "titulo": "Maquina de Refrigerante",
-            "resumo": "Projeto para construir uma maquina de refrigerante funcional e tecnológica com seletor de sabores e função de refrigerar",
+            "titulo": "Máquina de Refrigerante",
+            "resumo": "Projeto para construir uma máquina de refrigerante funcional e tecnológica com seletor de sabores e função de refrigerar",
             "stacks": "Blockly ,C++ e Arduíno",
             "video": "https://youtu.be/YMGiZMBldh4",
             "repositorio": "https://github.com/brunoholanda/Maquina-refrigerante"
