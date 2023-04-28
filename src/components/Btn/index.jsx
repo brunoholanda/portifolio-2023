@@ -1,4 +1,4 @@
-import styles from './Btn.module.scss';
+import styles from './Btn.module.scss'
 
 const Btn = (props) => {
     return (

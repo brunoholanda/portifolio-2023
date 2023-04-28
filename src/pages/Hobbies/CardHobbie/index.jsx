@@ -2,7 +2,7 @@ import styles from './CardHobbie.module.scss';
 import youtube from '../../../public/assets/icons/youtube.png';
 import github from '../../../public/assets/icons/mini-git-hub.png';
 
-export default function CardHobbie({ id, imagem, titulo, resumo, stacks, deploy, repositorio }) {
+export default function CardHobbie({ id, imagem, titulo, resumo, stacks, video, repositorio }) {
 
     return (
         <div className={styles.card}>
@@ -15,7 +15,7 @@ export default function CardHobbie({ id, imagem, titulo, resumo, stacks, deploy,
                 </div>
             </div>
             <div className={styles.card__links}>
-                <a href={deploy} target="_blank">
+                <a href={video} target="_blank">
                     <div className={styles.link__icone}>
                         <img src={youtube} alt="icone pequeno de clipe de papel" />
                         <p>Ver Vídeo</p>
