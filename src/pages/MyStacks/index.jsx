@@ -8,6 +8,7 @@ import git from '../../public/assets/icons/git-icon.svg';
 import vscode from '../../public/assets/icons/vscode.svg';
 import github from '../../public/assets/icons/github-fill.svg';
 import wordpress from '../../public/assets/icons/wordpress.png';
+import next from '../../public/assets/icons/next-js.svg';
 import { useState } from 'react';
 import eftest from '../../public/assets/img/certifcados/english-prof.jpg';
 import Botao from 'components/Btn';
@@ -19,6 +20,7 @@ export default function MyStacks() {
         { nome: "CSS", imagem: css },
         { nome: "JavaScript", imagem: js },
         { nome: "React", imagem: react },
+        { nome: "Next", imagem: next },
         { nome: "Sass", imagem: sass },
         { nome: "Git", imagem: git },
         { nome: "VS Code", imagem: vscode },

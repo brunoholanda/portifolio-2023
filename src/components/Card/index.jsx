@@ -18,13 +18,13 @@ export default function Card({ id, imagem, titulo, resumo, stacks, deploy, repos
                 </div>
             </div>
             <div className={styles.card__links}>
-                <a href={deploy} target="_blank">
+                <a href={deploy} target="_blank" rel="noopener noreferrer">
                     <div className={styles.link__icone}>
                         <img src={anexo} alt="icone pequeno de clipe de papel" />
                         <p>Ver Site</p>
                     </div>
                 </a>
-                <a href={repositorio} target="_blank">
+                <a href={repositorio} target="_blank" rel="noopener noreferrer">
                     <div className={styles.link__icone}>
                         <img src={github} alt="icone pequeno do github" ></img>
                         <p>Repositório</p>
