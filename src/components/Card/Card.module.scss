@@ -2,9 +2,10 @@
 
     width: 375px;
     height: 580px;
-    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin: 1em 0;
+    transition: 0.3s ease;
 
     &__imagem {
         display: flex;
@@ -77,7 +78,7 @@
 
 .card:hover {
     margin-top: -.5em;
-    transition: 0.3s ease;
+   
 }
 
 @media screen and (max-width: 768px) {
