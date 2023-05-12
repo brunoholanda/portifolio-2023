@@ -4,6 +4,7 @@ import adm from '../../public/assets/img/certifcados/superioradm.jpg';
 import ads from '../../public/assets/img/certifcados/ads.jpg';
 import divisor from '../../public/assets/img/divisor-2.png';
 import Botao from 'components/Btn';
+import styled from 'styled-components';
 
 export default function About() {
     const [showAds, setShowAds] = useState(false);
@@ -25,10 +26,19 @@ export default function About() {
         setShowAdm(false);
     }
 
+    const Titulo = styled.h2`
+         font-size: 2.62rem;
+        font-weight: 700;
+        color: var(--preto-texto);
+    `;
+
     return (
+       
         <div className={styles.sobre}>
             <div className={styles.sobre__descricao}>
+            <Titulo>
                 <h2>Sobre Mim</h2>
+                </Titulo>
                 <p>Desenvolvedor Front-End React codando páginas Mobile First com responsividade, aplicando SASS e JavaScript, foco em entrega rápida, qualidade e ótimas funcionalidades. </p>
                 <p>Já criei sites para restaurante, barbearia, lojas online, marketplace para vender artes. Atualmente estou desenvolvendo em React e possuo capacidade rápida de aprendizado.</p>
                 <p>Sempre gostei de criar coisas, aos 16 anos automatizei a casa dos meus pais usando Arduino, programando em C. Já desenvolvi alguns aplicativos para automação vendidos na internet, como um app para controlar o motor do portão pelo WIFI e Espelho inteligente em Python;</p>
