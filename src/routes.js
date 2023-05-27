@@ -1,4 +1,3 @@
-import ScrollToTop from "components/ScrollToTop";
 import Contact from "pages/Contact";
 import Hobbies from "pages/Hobbies";
 import Home from "pages/Home";
@@ -10,6 +9,18 @@ import MyStacks from "pages/MyStacks";
 import MyProjectsPage from "pages/MyProjectsPage";
 import About from "pages/About";
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+}
 function AppRoutes() {
     return (
         <HashRouter>
