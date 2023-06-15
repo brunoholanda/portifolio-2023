@@ -47,6 +47,12 @@ export default function About() {
             
             <div className={styles.sobre__experiencia}>
                 <h2>Experiência</h2>
+                
+                <h3>Desenvolvolvedor Fron-End na Elevaty</h3>
+                <h4>O que eu faço:</h4>
+                <p>Estou envolvido na criação e modificação de componentes React sob demanda. Participo das fases do ciclo de vida do desenvolvimento de software. Trabalho em estreita colaboração com equipes multifuncionais, empregando metodologias ágeis para garantir a entrega eficiente e de alta qualidade do nosso produto. Com um forte entendimento das melhores práticas de codificação e padrões, procuro sempre melhorar o desempenho e a usabilidade do nosso sistema. Adicionalmente, dedico-me a aprender novas tecnologias e técnicas para permanecer na vanguarda da inovação na indústria de desenvolvimento de software.</p>
+                <p>| Maio 2023 - presente</p>
+                <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
                 <h3>Desenvolvedor Front-End - Autônomo</h3>
                 <h4>O que eu faço:</h4>
                 <p>Desenvolvimento de websites Mobile First com responsividade, utilizando ReactJS, JavaScript, CSS, SASS e HTML aplicando conceitos de API`s. Foco em entrega rápida, qualidade e ótimas funcionalidades.</p>
