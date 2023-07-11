@@ -1,5 +1,7 @@
 import CardUpdate from 'components/CardUpdate';
+import ModalAdd from 'components/Modals/modalAdd';
 import React, { useState, useEffect } from 'react';
+import './Painel.css';
 
 const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdit }) => {
   const [title, setTitle] = useState('');
@@ -51,49 +53,45 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
   };
 
   return (
-    <div>
+    <div >
       <h2>Painel do Operador</h2>
-      <form onSubmit={handleSubmit}>
+      <form className='painel' onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="title">Título:</label>
-          <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} />
+          <input type="text" id="title" placeholder='Insira o Titulo do Projeto' value={title} onChange={(e) => setTitle(e.target.value)} />
         </div>
         <div>
-          <label htmlFor="image">Imagem do Projeto:</label>
-          <input type="text" id="image" value={image} onChange={(e) => setImage(e.target.value)} />
+          <input type="text" id="image" placeholder='Imagem do Projeto' value={image} onChange={(e) => setImage(e.target.value)} />
         </div>
         <div>
-          <label htmlFor="summary">Resumo:</label>
           <textarea
             id="summary"
+            placeholder='Resumo do projeto'
             value={summary}
             onChange={(e) => setSummary(e.target.value)}
           />
         </div>
         <div>
-          <label htmlFor="description">Descrição:</label>
           <textarea
             id="description"
+            placeholder='Descrição completa do projeto'
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
         </div>
         <div>
-          <label htmlFor="skills">Habilidades:</label>
-          <input type="text" id="skills" value={skills} onChange={(e) => setSkills(e.target.value)} />
+          <input type="text" id="skills" placeholder='Habilidades' value={skills} onChange={(e) => setSkills(e.target.value)} />
         </div>
         <div>
-          <label htmlFor="projectLink">Link do Projeto:</label>
           <input
             type="text"
             id="projectLink"
+            placeholder='Link do Projeto'
             value={projectLink}
             onChange={(e) => setProjectLink(e.target.value)}
           />
         </div>
         <div>
-          <label htmlFor="repoLink">Link do Repositório:</label>
-          <input type="text" id="repoLink" value={repoLink} onChange={(e) => setRepoLink(e.target.value)} />
+          <input type="text" id="repoLink" placeholder='Link do GitHub' value={repoLink} onChange={(e) => setRepoLink(e.target.value)} />
         </div>
         {editedPost ? (
           <>
@@ -204,17 +202,31 @@ const Posts = () => {
     fetchPosts();
   }, []);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+
   return (
     <div>
-      <h1>Meu Portfólio</h1>
-      <OperatorPanel
-        addPost={addPost}
-        editPost={editPost}
-        editedPost={editedPost}
-        setEditedPost={setEditedPost}
-        cancelEdit={cancelEdit}
-      />
-      <h2>Posts Recentes:</h2>
+      <h1>Painel do Operador</h1>
+      <button onClick={handleOpenModal}>Adicionar Post</button>
+      <ModalAdd isOpen={isModalOpen} close={handleCloseModal}>
+        <OperatorPanel
+          addPost={addPost}
+          editPost={editPost}
+          editedPost={editedPost}
+          setEditedPost={setEditedPost}
+          cancelEdit={cancelEdit}
+        />
+      </ModalAdd>
+      <p>Aqui é possivel adicionar, remover ou alterar projetos</p>
       {posts.map((post, index) => (
         <div key={index}>
           <h3>{post.title}</h3>
@@ -223,7 +235,8 @@ const Posts = () => {
           <p>Habilidades: {post.skills}</p>
           <a href={post.projectLink}>Link do Projeto</a>
           <a href={post.repoLink}>Link do Repositório</a>
-          <button onClick={() => setEditedPost(post)}>Editar</button>
+          <button onClick={() => { setEditedPost(post); handleOpenModal(); }}>Editar</button>
+
           <button onClick={() => deletePost(post.id)}>Excluir</button>
 
           <div>

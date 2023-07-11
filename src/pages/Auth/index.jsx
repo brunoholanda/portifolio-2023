@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import styles from './Auth.module.scss';
+import cadeado from '../../public/assets/img/cadeado.png';
 
 const Authentication = () => {
   const [username, setUsername] = useState('');
@@ -10,21 +12,7 @@ const Authentication = () => {
     e.preventDefault();
 
     try {
-      // Lógica de autenticação
-    } catch (error) {
-      alert(error.message);
-    }
-
-    // Limpar o formulário
-    setUsername('');
-    setPassword('');
-  };
-
-  const handleRegister = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch('http://localhost:8000/register', {
+      const response = await fetch('http://localhost:8000/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -37,43 +25,80 @@ const Authentication = () => {
         throw new Error(error.error);
       }
 
-      // Registro bem-sucedido, redirecionar para a rota de login
+      const { token } = await response.json();
+      localStorage.setItem('authToken', token);
+      navigate('/operador');
+    } catch (error) {
+      alert(error.message);
+    }
+
+    setUsername('');
+    setPassword('');
+  };
+
+  /*const handleRegister = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:8000/api/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error);
+      }
+
       navigate('/login');
     } catch (error) {
       alert(error.message);
     }
 
-    // Limpar o formulário
     setUsername('');
     setPassword('');
-  };
+  };*/
 
   return (
-    <div>
-      <h2>Login</h2>
+    <div className={styles.autenticar}>
+      <div className={styles.icone}>
+      <h1>Acesso ao Painel do Operador</h1>
+      <img src={cadeado} alt="imagem de cadeado" />
+      </div>
       <form onSubmit={handleLogin}>
         <div>
-          <label htmlFor="username">Usuário:</label>
+          <label htmlFor="username"></label>
           <input
             type="text"
             id="username"
+            placeholder='Usuário'
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
-        <div>   
-          <label htmlFor="password">Senha:</label>
+        <div>
+          <label htmlFor="password"></label>
           <input
             type="password"
             id="password"
+            placeholder='Senha'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <button type="submit">Entrar</button>
       </form>
+    </div>
+  );
+};
 
-      <h2>Registro</h2>
+export default Authentication;
+
+
+/*     <h2>Registro</h2>
       <form onSubmit={handleRegister}>
         <div>
           <label htmlFor="register-username">Usuário:</label>
@@ -94,9 +119,4 @@ const Authentication = () => {
           />
         </div>
         <button type="submit">Registrar</button>
-      </form>
-    </div>
-  );
-};
-
-export default Authentication;
+</form>*/

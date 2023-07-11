@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navigate, Route, Routes, HashRouter } from 'react-router-dom';
 
 import Contact from 'pages/Contact';
@@ -16,14 +16,10 @@ import Authentication from 'pages/Auth';
 function AppRoutes() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const handleLogin = (username, password) => {
-    // Verificar as credenciais do usuário
-    if (username === 'admin' && password === 'password') {
-      setIsAuthenticated(true);
-    } else {
-      alert('Credenciais inválidas');
-    }
-  };
+  useEffect(() => {
+    const token = localStorage.getItem('authToken');
+    setIsAuthenticated(!!token);
+  }, []);
 
   return (
     <HashRouter>
@@ -48,7 +44,7 @@ function AppRoutes() {
           />
           <Route
             path="/login"
-            element={<Authentication handleLogin={handleLogin} />}
+            element={<Authentication setIsAuthenticated={setIsAuthenticated} />}
           />
           <Route path="*" element={<NotFound />} />
         </Route>
