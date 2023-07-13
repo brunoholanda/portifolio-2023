@@ -2,6 +2,9 @@ import CardUpdate from 'components/CardUpdate';
 import ModalAdd from 'components/Modals/modalAdd';
 import React, { useState, useEffect } from 'react';
 import './Painel.css';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+
+const baseUrl = 'http://localhost:8000';
 
 const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdit }) => {
   const [title, setTitle] = useState('');
@@ -9,8 +12,8 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
   const [summary, setSummary] = useState('');
   const [description, setDescription] = useState('');
   const [skills, setSkills] = useState('');
-  const [projectLink, setProjectLink] = useState('');
-  const [repoLink, setRepoLink] = useState('');
+  const [project_link, setProject_link] = useState('');
+  const [repo_link, setRepo_link] = useState('');
 
   useEffect(() => {
     setTitle(editedPost?.title || '');
@@ -18,28 +21,31 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
     setSummary(editedPost?.summary || '');
     setDescription(editedPost?.description || '');
     setSkills(editedPost?.skills || '');
-    setProjectLink(editedPost?.projectLink || '');
-    setRepoLink(editedPost?.repoLink || '');
+    setProject_link(editedPost?.project_link || '');
+    setRepo_link(editedPost?.repo_link || '');
   }, [editedPost]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const post = {
-      title,
-      image,
-      summary,
-      description,
-      skills,
-      projectLink,
-      repoLink,
-    };
+  
+    const formData = new FormData();
+    formData.append('title', title);
+    formData.append('image', image);
+    formData.append('summary', summary);
+    formData.append('description', description);
+    formData.append('skills', skills);
+    formData.append('project_link', project_link);
+    formData.append('repo_link', repo_link);
+  
     if (editedPost) {
-      editPost(editedPost.id, post);
+      editPost(editedPost.id, formData);
     } else {
-      addPost(post);
+      addPost(formData);
     }
+  
     clearForm();
   };
+  
 
   const clearForm = () => {
     setTitle('');
@@ -47,20 +53,20 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
     setSummary('');
     setDescription('');
     setSkills('');
-    setProjectLink('');
-    setRepoLink('');
+    setProject_link('');
+    setRepo_link('');
     setEditedPost(null);
   };
 
   return (
-    <div >
-      <h2>Painel do Operador</h2>
+    <div className='formulario'>
+      <h2>Insira os dados do seu projeto !</h2>
       <form className='painel' onSubmit={handleSubmit}>
         <div>
           <input type="text" id="title" placeholder='Insira o Titulo do Projeto' value={title} onChange={(e) => setTitle(e.target.value)} />
         </div>
         <div>
-          <input type="text" id="image" placeholder='Imagem do Projeto' value={image} onChange={(e) => setImage(e.target.value)} />
+          <input type="file" id="image" onChange={(e) => setImage(e.target.files[0])} />
         </div>
         <div>
           <textarea
@@ -86,12 +92,12 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
             type="text"
             id="projectLink"
             placeholder='Link do Projeto'
-            value={projectLink}
-            onChange={(e) => setProjectLink(e.target.value)}
+            value={project_link}
+            onChange={(e) => setProject_link(e.target.value)}
           />
         </div>
         <div>
-          <input type="text" id="repoLink" placeholder='Link do GitHub' value={repoLink} onChange={(e) => setRepoLink(e.target.value)} />
+          <input type="text" id="repoLink" placeholder='Link do GitHub' value={repo_link} onChange={(e) => setRepo_link(e.target.value)} />
         </div>
         {editedPost ? (
           <>
@@ -110,41 +116,36 @@ const Posts = () => {
   const [posts, setPosts] = useState([]);
   const [editedPost, setEditedPost] = useState(null);
 
-  const addPost = async (post) => {
+  const addPost = async (formData) => {
     try {
-      const response = await fetch('http://localhost:8000/api/posts', {
+      const response = await fetch(`${baseUrl}/api/posts`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(post),
+        body: formData,
       });
-
+  
       if (!response.ok) {
         throw new Error('Erro ao adicionar o post');
       }
-
+  
       const newPost = await response.json();
       setPosts([...posts, newPost]);
     } catch (error) {
       console.error(error);
     }
   };
+  
 
-  const editPost = async (postId, post) => {
+  const editPost = async (postId, formData) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/posts/${postId}`, {
+      const response = await fetch(`${baseUrl}/api/posts/${postId}`, {
         method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(post),
+        body: formData,
       });
-
+  
       if (!response.ok) {
         throw new Error('Erro ao editar o post');
       }
-
+  
       const updatedPost = await response.json();
       setPosts(posts.map((p) => (p.id === updatedPost.id ? updatedPost : p)));
       setEditedPost(null);
@@ -152,10 +153,11 @@ const Posts = () => {
       console.error(error);
     }
   };
+  
 
   const deletePost = async (postId) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/posts/${postId}`, {
+      const response = await fetch(`${baseUrl}/api/posts/${postId}`, {
         method: 'DELETE',
       });
 
@@ -176,18 +178,18 @@ const Posts = () => {
   const [projetos, setProjetos] = useState([]);
 
   useEffect(() => {
-      fetch('http://localhost:8000/api/posts')
-          .then(resposta => resposta.json())
-          .then(dados => {
-              setProjetos(dados)
+    fetch(`${baseUrl}/api/posts`)
+      .then(resposta => resposta.json())
+      .then(dados => {
+        setProjetos(dados)
 
-          })
+      })
   }, [])
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-       
+
         const response = await fetch('http://localhost:8000/api/posts');
         if (!response.ok) {
           throw new Error('Erro ao obter os posts');
@@ -212,11 +214,13 @@ const Posts = () => {
     setIsModalOpen(false);
   };
 
-
   return (
     <div>
-      <h1>Painel do Operador</h1>
-      <button onClick={handleOpenModal}>Adicionar Post</button>
+      <div className='page'>
+        <h1>Painel do Operador</h1>
+        <p>Aqui é possivel adicionar, remover ou alterar projetos</p>
+        <button onClick={handleOpenModal}>Adicionar Post</button>
+      </div>
       <ModalAdd isOpen={isModalOpen} close={handleCloseModal}>
         <OperatorPanel
           addPost={addPost}
@@ -226,28 +230,22 @@ const Posts = () => {
           cancelEdit={cancelEdit}
         />
       </ModalAdd>
-      <p>Aqui é possivel adicionar, remover ou alterar projetos</p>
       {posts.map((post, index) => (
-        <div key={index}>
-          <h3>{post.title}</h3>
-          <img src={post.image} alt={post.title} />
-          <p>{post.description}</p>
-          <p>Habilidades: {post.skills}</p>
-          <a href={post.projectLink}>Link do Projeto</a>
-          <a href={post.repoLink}>Link do Repositório</a>
-          <button onClick={() => { setEditedPost(post); handleOpenModal(); }}>Editar</button>
-
-          <button onClick={() => deletePost(post.id)}>Excluir</button>
-
-          <div>
-                <h2>Projetos</h2>
-                <h3>Meus projetos mais recentes</h3>
-            </div>
-            <div>
-                {projetos.slice(0, 6).map((projeto) => {
-                    return <CardUpdate {...projeto} key={projeto.id} />
-                })}
-            </div>
+        <div key={index} className='postagem'>
+          <h2><strong>Titulo:</strong> {post.title}</h2>
+          <img src={`${baseUrl}/${post.image.replace(/\\/g, '/')}`} alt={post.title} />
+          <p><strong>Resumo:</strong> {post.summary}</p>
+          <strong>Postagem Completa</strong>
+          <ReactMarkdown>
+            {post.description.replace(/\\n/g, '\n')}
+          </ReactMarkdown>
+          <p><strong>Habilidades:</strong> {post.skills}</p>
+          <a href={post.project_link} target="_blank" rel="noreferrer noopener">Link do Projeto</a>
+          <a href={post.repo_link} target="_blank" rel="noreferrer noopener">Link do Repositório</a>
+          <div className='postagemBotoes'>
+            <button onClick={() => { setEditedPost(post); handleOpenModal(); }}>Editar</button>
+            <button onClick={() => deletePost(post.id)}>Excluir</button>
+          </div>
         </div>
       ))}
     </div>

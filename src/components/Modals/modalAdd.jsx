@@ -38,7 +38,7 @@ const ModalAdd = ({ isOpen, close, children }) => {
           padding: "1em",
           width: "100%",
           maxWidth: "1000px",
-          maxHeight: "500px",
+          maxHeight: "550px",
           height: "100%",
           opacity: modalOpacity,
           transition: 'opacity 0.5s ease-in-out',

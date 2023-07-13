@@ -3,7 +3,7 @@ import anexo from '../../public/assets/icons/anexo.png';
 import github from '../../public/assets/icons/mini-git-hub.png';
 import { Link } from 'react-router-dom';
 
-export default function CardUpdate({ id, image, title, sumamry, stacks, projectLink, repoLink }) {
+export default function CardUpdate({ id, image, title, summary, stacks, projectLink, repoLink }) {
 
     return (
         <div className={styles.card}>
@@ -13,7 +13,7 @@ export default function CardUpdate({ id, image, title, sumamry, stacks, projectL
                 </Link>
                 <div className={styles.card__texto}>
                     <h3>{title}</h3>
-                    <h4>{sumamry}</h4>
+                    <h4>{summary}</h4>
                     <p>Habilidades: {stacks}</p>
                 </div>
             </div>
