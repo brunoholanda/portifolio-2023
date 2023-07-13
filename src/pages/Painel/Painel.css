@@ -78,6 +78,11 @@
     border-radius: 8px;
 }
 
+.page button:hover {
+    background: orange;
+}
+
+
 .postagem h2, p {
     color: var(--preto-texto);
 }
