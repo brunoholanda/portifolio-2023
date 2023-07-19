@@ -7,7 +7,7 @@ export default function MyProjects() {
     const [projetos, setProjetos] = useState([]);
 
     useEffect(() => {
-        fetch('https://run.mocky.io/v3/ba501b7e-5428-4f5e-a7d3-e96d73fbd453')
+        fetch('http://localhost:8000/api/posts')
             .then(resposta => resposta.json())
             .then(dados => {
                 setProjetos(dados)

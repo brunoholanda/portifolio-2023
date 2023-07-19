@@ -5,12 +5,14 @@ import styles from './Post.module.scss';
 import Card from "components/Card";
 import carregando from '../../public/assets/img/carregando.gif';
 
-export default function Post() {
+const baseUrl = 'http://localhost:8000';
+
+export default function Post({ title }) {
     const [projetos, setProjetos] = useState([]);
     const { id } = useParams();
 
     useEffect(() => {
-        fetch('https://run.mocky.io/v3/ba501b7e-5428-4f5e-a7d3-e96d73fbd453')
+        fetch(`${baseUrl}/api/posts`)
             .then(resposta => resposta.json())
             .then(dados => {
                 setProjetos(dados)
@@ -23,12 +25,14 @@ export default function Post() {
         <article className={styles.post}>
             {projeto ? (
                 <div className={styles.post__artigo}>
-                    <img src={projeto.imagem} alt={projeto.titulo} />
+                    <img src={`${baseUrl}/${projeto.image.replace(/\\/g, '/')}`} alt={projeto.title} />
                     <h2>{projeto.titulo}</h2>
-                    <ReactMarkdown>{projeto.post}</ReactMarkdown>
+                    <ReactMarkdown>
+                        {projeto.description.replace(/\\n/g, '\n')}
+                    </ReactMarkdown>
                 </div>
             ) : (
-                <img src={carregando} alt="carregando projeto"/>
+                <img src={carregando} alt="carregando projeto" />
             )}
             <h2>Veja mais projetos:</h2>
             <div className={styles.post__cards}>

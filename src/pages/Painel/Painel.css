@@ -12,10 +12,19 @@
     margin-bottom: 2rem;
 }
 
+.error {
+    color: red;
+    margin: 0 0 1rem 2rem;
+  }
+  
+  .required-field {
+    border: 1px solid red;
+  }
+
 .painel input {
     margin-bottom: 1.5em;
     border-style: none;
-    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     width: 423px;
     height: 10px;
     font-size: 15px;
@@ -26,7 +35,7 @@
 .painel textarea {
     margin-bottom: 1.5em;
     border-style: none;
-    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     width: 423px;
     height: 150px;
     font-size: 18px;
@@ -49,7 +58,35 @@
 }
 
 .painel button:hover {
-  background: orange;
+    background: orange;
+}
+
+.imagem {
+    display: flex;
+}
+
+.imagemBotao {
+    width: 180px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    background: #42446E;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.4s all;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.imagemBotao:hover { 
+    background: orange;
+}
+
+.imagem p {
+    color: #ffffff;
+    margin-left: 1.3rem;
 }
 
 .page {
@@ -83,7 +120,8 @@
 }
 
 
-.postagem h2, p {
+.postagem h2,
+p {
     color: var(--preto-texto);
 }
 
@@ -114,17 +152,17 @@
 
 .postagem button:hover {
     background: orange;
-  }
+}
 
-  .postagem a {
+.postagem a {
     text-decoration: none;
-  }
-  .postagem a:hover {
+}
+
+.postagem a:hover {
     color: orange;
     font-weight: bold;
-  }
+}
 
 .postagemBotoes {
     margin: 2rem 0;
 }
-
