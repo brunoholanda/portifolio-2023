@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 import styles from './MyProjects.module.scss';
 import Card from '../Card';
+import { BASE_URL } from 'config';
+
 
 export default function MyProjects() {
 
     const [projetos, setProjetos] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/posts')
+        fetch(`${BASE_URL}/api/posts`)
             .then(resposta => resposta.json())
             .then(dados => {
                 setProjetos(dados)

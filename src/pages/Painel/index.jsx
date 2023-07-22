@@ -2,8 +2,9 @@ import ModalAdd from 'components/Modals/modalAdd';
 import React, { useState, useEffect } from 'react';
 import './Painel.css';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import { BASE_URL } from 'config';
 
-const baseUrl = 'http://localhost:8000';
+
 
 const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdit }) => {
   const [title, setTitle] = useState('');
@@ -149,7 +150,7 @@ const Posts = () => {
 
   const addPost = async (formData) => {
     try {
-      const response = await fetch(`${baseUrl}/api/posts`, {
+      const response = await fetch(`${BASE_URL}/api/posts`, {
         method: 'POST',
         body: formData,
       });
@@ -168,7 +169,7 @@ const Posts = () => {
 
   const editPost = async (postId, formData) => {
     try {
-      const response = await fetch(`${baseUrl}/api/posts/${postId}`, {
+      const response = await fetch(`${BASE_URL}/api/posts/${postId}`, {
         method: 'PUT',
         body: formData,
       });
@@ -188,7 +189,7 @@ const Posts = () => {
 
   const deletePost = async (postId) => {
     try {
-      const response = await fetch(`${baseUrl}/api/posts/${postId}`, {
+      const response = await fetch(`${BASE_URL}/api/posts/${postId}`, {
         method: 'DELETE',
       });
 
@@ -209,7 +210,7 @@ const Posts = () => {
   const [projetos, setProjetos] = useState([]);
 
   useEffect(() => {
-    fetch(`${baseUrl}/api/posts`)
+    fetch(`${BASE_URL}/api/posts`)
       .then(resposta => resposta.json())
       .then(dados => {
         setProjetos(dados)
@@ -221,7 +222,7 @@ const Posts = () => {
     const fetchPosts = async () => {
       try {
 
-        const response = await fetch('http://localhost:8000/api/posts');
+        const response = await fetch(`${BASE_URL}/api/posts`);
         if (!response.ok) {
           throw new Error('Erro ao obter os posts');
         }
@@ -264,7 +265,7 @@ const Posts = () => {
       {posts.map((post, index) => (
         <div key={index} className='postagem'>
           <h2><strong>Titulo:</strong> {post.title}</h2>
-          <img src={`${baseUrl}/${post.image.replace(/\\/g, '/')}`} alt={post.title} />
+          <img src={`${BASE_URL}/${post.image.replace(/\\/g, '/')}`} alt={post.title} />
           <p><strong>Resumo:</strong> {post.summary}</p>
           <strong>Postagem Completa</strong>
           <ReactMarkdown>
