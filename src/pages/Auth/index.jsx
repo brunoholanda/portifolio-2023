@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Auth.module.scss';
 import cadeado from '../../public/assets/img/cadeado.png';
+import { BASE_URL } from 'config';
 
 const Authentication = () => {
   const [username, setUsername] = useState('');
@@ -12,7 +13,7 @@ const Authentication = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8000/api/auth/login', {
+      const response = await fetch(`${BASE_URL}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

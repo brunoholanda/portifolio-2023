@@ -12,6 +12,26 @@
         },
         {
             "id": 2,
+            "imagem": "https://media.licdn.com/dms/image/D4D2DAQEnkRMpiv54WQ/profile-treasury-image-shrink_800_800/0/1692483803770?e=1710594000&v=beta&t=nngaAMFdkAzSMOk8j1IlYK_DhvbPwL6lcYfdfJ1tejE",
+            "titulo": "Site para dentista",
+            "resumo": "Website para dentista, o verdadeiro portifolio profissional...",
+            "post": "O site da clínica odontológica serve como um portfólio pessoal para a dentista, destacando sua expertise, serviços oferecidos, e facilita o contato direto entre pacientes e a profissional. Além de apresentar informações detalhadas sobre tratamentos dentários disponíveis, o site também inclui um calendário interativo onde os pacientes podem agendar suas consultas online, visualizar disponibilidades e receber lembretes automatizados sobre suas próximas visitas.\n\n ### O que aprendi? \n\n A importância de uma interface amigável e informativa para pacientes, práticas de SEO para melhorar a visibilidade online, integração com sistemas de agendamento e desenvolvimento de uma galeria de imagens dinâmica.\n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Basta acessar o site  \n\n Navegar pelas paginas  \n\n Conhecer o trabalho da profissional",
+            "stacks": "React, JavaScript, SASS, html, Linux, Hospedagem em nuvem",
+            "deploy": "https://waleskacaetano.com.br/",
+            "repositorio": "https://github.com/brunoholanda/dentista-waleska"
+        },
+        {
+            "id": 3,
+            "imagem": "https://media.licdn.com/dms/image/D4D2DAQHPm0NPcPqe8g/profile-treasury-image-shrink_800_800/0/1687215940873?e=1710594000&v=beta&t=kvyG-nGy9sBBtbLUQSa_4p_v8E510_ej-r5q8ghAa4M",
+            "titulo": "Amor e Vida",
+            "resumo": "Website para projeto social aumentar seu alcance...",
+            "post": "O site do nosso projeto social é projetado com o objetivo de aumentar a visibilidade das nossas ações, incentivar doações e expandir o alcance do nosso auxílio à comunidade. Ele serve como uma plataforma informativa e de engajamento, destacando as missões, os impactos positivos já alcançados e os depoimentos daqueles que foram ajudados pelo projeto. \n\n Através do site, os visitantes podem facilmente fazer doações online, seja como contribuições únicas ou recorrentes, utilizando um processo de pagamento seguro e simplificado. Além disso, há uma seção dedicada a voluntários, onde pessoas interessadas podem se inscrever para participar das atividades e eventos organizados pelo projeto. \n\n ### O que aprendi? \n\n A elaboração de campanhas de captação de recursos online, a importância de uma narrativa envolvente para conectar com o público, técnicas de otimização SEO para melhorar a visibilidade online e a implementação de sistemas de pagamento seguros para facilitar as doações.\n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • SASS • Git \n\n ### Como usar? \n\n Basta acessar e navegar pelo portal.",
+            "stacks": "React, JavaScript, SASS, html, Linux, Hospedagem em nuvem",
+            "deploy": "https://amorevida.org/",
+            "repositorio": "https://github.com/brunoholanda/AmorEVida-fork"
+        },
+        {
+            "id": 4,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/imobiliaria.png",
             "titulo": "Imobiliária",
             "resumo": "Website para imobiliária com funcionalidade experimental para que qualquer pessoa anuncie imóveis para alugar ou vender (Marketplace)",
@@ -21,7 +41,7 @@
             "repositorio": "https://github.com/brunoholanda/imobiliaria"
         },
         {
-            "id": 3,
+            "id": 5,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/restaurante.png",
             "titulo": "Restaurante",
             "resumo": "Website para restaurante com a utilização de API para coletar os dados do cardápio além de um estilo de dar água na boca, feito em react...",
@@ -31,7 +51,7 @@
             "repositorio": "https://github.com/brunoholanda/restaurante"
         },
         {
-            "id": 4,
+            "id": 6,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nivernay.png",
             "titulo": "Site Aniversário",
             "resumo": "Website da organização de uma festa de aniversário, nele os convidados podem presentear a aniversariante com valores que correspondem a...",
@@ -41,7 +61,7 @@
             "repositorio": "https://github.com/brunoholanda/imobiliaria"
         },
         {
-            "id": 5,
+            "id": 7,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/borali.png",
             "titulo": "BoraLi Viver",
             "resumo": "Site do tipo blog para fornecer dicas de roteiros e lugares para viagem, obtenção de ganhos por meio de fermentas afiliadas do Booking e Rent a Cars...",
@@ -51,7 +71,7 @@
             "repositorio": ""
         },
         {
-            "id": 6,
+            "id": 8,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nerdking.png",
             "titulo": "NerdKing Tecnologia",
             "resumo": "Site do tipo blog para propagar dicas e tutoriais para diversas tecnologias, obtenção de ganhos por meio de anúncios do Google. Feito em Wordpress...",
@@ -61,7 +81,7 @@
             "repositorio": ""
         },
         {
-            "id": 7,
+            "id": 9,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/alurageek.png",
             "titulo": "AluraGeek",
             "resumo": "Alura Geek é um marketplace fictício que reúne produtos Geek para compras, nesse projeto foi possível praticar UseStates do React...",
@@ -71,7 +91,7 @@
             "repositorio": "https://github.com/brunoholanda/AluraGeek-REACT"
         },
         {
-            "id": 8,
+            "id": 10,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/barbearia.png",
             "titulo": "Vieira Barbearia",
             "resumo": "Site para barbearia do bairro, a qual corto cabelo. O link do site fica nas redes sociais da empresa e tem a função de conectar clientes que...",
@@ -81,7 +101,7 @@
             "repositorio": "https://github.com/brunoholanda/VieiraBarbearia-JOB"
         },
         {
-            "id": 9,
+            "id": 11,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nkcine.png",
             "titulo": "NerdKing Tag",
             "resumo": "Website para adicionar aos favoritos os vídeos que o usuário mais gostar no youtube do NerdKing, feito para praticar useStates, e aprender a criar uma API fake",
@@ -91,7 +111,7 @@
             "repositorio": "https://github.com/brunoholanda/nktag-react"
         },
                 {
-            "id": 10,
+            "id": 12,
             "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nkcine.png",
             "titulo": "NerdKing Tag",
             "resumo": "Website para adicionar aos favoritos os vídeos que o usuário mais gostar no youtube do NerdKing, feito para praticar useStates, e aprender a criar uma API fake",

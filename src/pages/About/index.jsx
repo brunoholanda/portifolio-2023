@@ -39,7 +39,7 @@ export default function About() {
             <Titulo>
                 <h2>Sobre Mim</h2>
                 </Titulo>
-                <p>Desenvolvedor Front-End React codando páginas Mobile First com responsividade, aplicando SASS e JavaScript, foco em entrega rápida, qualidade e ótimas funcionalidades. </p>
+                <p>Desenvolvedor  Web FullStack codando páginas Mobile First com responsividade, aplicando SASS e JavaScript, foco em entrega rápida, qualidade e ótimas funcionalidades. </p>
                 <p>Já criei sites para restaurante, barbearia, lojas online, marketplace para vender artes. Atualmente estou desenvolvendo em React e possuo capacidade rápida de aprendizado.</p>
                 <p>Sempre gostei de criar coisas, aos 16 anos automatizei a casa dos meus pais usando Arduino, programando em C. Já desenvolvi alguns aplicativos para automação vendidos na internet, como um app para controlar o motor do portão pelo WIFI e Espelho inteligente em Python;</p>
                 <p>Estou inserido no mercado de trabalho como bancário desde 2010. Também atuo na área de desenvolvimento criando projetos pessoais como freelancer para clientes.</p>
@@ -47,20 +47,20 @@ export default function About() {
             
             <div className={styles.sobre__experiencia}>
                 <h2>Experiência</h2>
-                <h3>Desenvolvolvedor Fron-End na Elevaty</h3>
+                <h3>Desenvolvolvedor Web FullStack na Elevaty</h3>
                 <h4>O que eu faço:</h4>
                 <p>Estou envolvido na criação e modificação de componentes React sob demanda. Participo das fases do ciclo de vida do desenvolvimento de software. Trabalho em estreita colaboração com equipes multifuncionais, empregando metodologias ágeis para garantir a entrega eficiente e de alta qualidade do nosso produto. Com um forte entendimento das melhores práticas de codificação e padrões, procuro sempre melhorar o desempenho e a usabilidade do nosso sistema. Adicionalmente, dedico-me a aprender novas tecnologias e técnicas para permanecer na vanguarda da inovação na indústria de desenvolvimento de software.</p>
                 <p>| Maio 2023 - presente</p>
                 <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
-                <h3>Desenvolvedor Front-End - Autônomo</h3>
+                <h3>Desenvolvedor  Web FullStack - Autônomo</h3>
                 <h4>O que eu faço:</h4>
                 <p>Desenvolvimento de websites Mobile First com responsividade, utilizando ReactJS, JavaScript, CSS, SASS e HTML aplicando conceitos de API`s. Foco em entrega rápida, qualidade e ótimas funcionalidades.</p>
                 <p>| Janeiro 2022 - presente</p>
                 <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
                 <h3>Gerente Administrativo - Banco Bradesco</h3>
                 <h4>O que eu faço:</h4>
-                <p>Conduzo uma equipe com 32 funcionários, sendo o grande propagador do compliance da empresa lidando com pessoas e alta quantidade de informações. Sugeri alterações e melhorias sistêmicas com base nos meus conhecimentos em tecnologia com a finalidade de reduzir custos e riscos</p>
-                <p>| Março 2012 - presente</p>
+                <p>Conduzi uma equipe com 32 funcionários, sendo o grande propagador do compliance da empresa lidando com pessoas e alta quantidade de informações. Sugeri alterações e melhorias sistêmicas com base nos meus conhecimentos em tecnologia com a finalidade de reduzir custos e riscos</p>
+                <p>| Março 2012 - Janeiro 2024</p>
                 <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
             </div>
             <div className={styles.sobre__formacao}>

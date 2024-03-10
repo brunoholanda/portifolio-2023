@@ -2,16 +2,16 @@ import styles from './Card.module.scss';
 import anexo from '../../public/assets/icons/anexo.png';
 import github from '../../public/assets/icons/mini-git-hub.png';
 import { Link } from 'react-router-dom';
+import { BASE_URL } from 'config';
 
 export default function Card({ id, image, title, summary, skills, project_link, repo_link }) {
 
-    const baseUrl = 'http://localhost:8000';
 
     return (
         <div className={styles.card}>
             <div className={styles.card__imagem}>
                 <Link to={`/projetos/${id}`}>
-                    <img src={`${baseUrl}/${image.replace(/\\/g, '/')}`} alt={title} />
+                    <img src={image} alt={title} />
                 </Link>
                 <div className={styles.card__texto}>
                     <h3>{title}</h3>

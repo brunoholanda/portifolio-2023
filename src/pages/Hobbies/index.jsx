@@ -2,20 +2,14 @@ import { useEffect, useState } from 'react';
 import styles from './Hobbies.module.scss';
 import carregando from '../../public/assets/img/carregando.gif';
 import CardHobbie from './CardHobbie';
+import dadosLocais from '../../components/json/db.json'; 
 
 export default function Hobbies() {
-
     const [hobbies, setHobbies] = useState([]);
 
     useEffect(() => {
-        fetch('https://run.mocky.io/v3/c628efc1-ac35-4a71-a70e-92d4b2e57c43')
-            .then(resposta => resposta.json())
-            .then(dados => {
-                setHobbies(dados)
-
-            })
-    }, [])
-
+        setHobbies(dadosLocais.hobbies);
+    }, []);
 
     return (
         <div className={styles.hobbies}>
@@ -25,12 +19,12 @@ export default function Hobbies() {
             <p>Em 2013 subi meu primeiro vídeo no Youtube e nele eu mostrava uma fechadura eletrônica feita com sucata de um gravador de DVD.</p>
             <p>Desde então sempre que tenho um tempo livre posto novos vídeos ensinando as pessoas a fazerem algumas engenhocas interessantes, e a seguir você pode conferir algumas delas:</p>
             <div className={styles.hobbies__cards}>
-            {hobbies.length > 0 ? (
+                {hobbies.length > 0 ? (
                     hobbies.map((hobbie) => <CardHobbie {...hobbie} key={hobbie.id} />)
                 ) : (
-                    <img src={carregando} alt="carregando projeto"/>
+                    <img src={carregando} alt="Carregando..." />
                 )}
             </div>
         </div>
-    )
+    );
 }

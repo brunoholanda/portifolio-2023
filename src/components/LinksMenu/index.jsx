@@ -23,7 +23,7 @@ export default function MenuLinks() {
                 Hobbies
             </Link>
             <div className={styles.header__cv}>
-                <a href="https://drive.google.com/file/d/1bbHINj0agyZmsVAHPf_fd-G9-FNzqny6/view?usp=sharing" rel="noreferrer" target="_blank">Baixar CV</a>
+                <a href="https://drive.google.com/file/d/1Fx75PiP2j9KUdvhhEw_V4LPAKJecShzj/view?usp=sharing" rel="noreferrer" target="_blank">Baixar CV</a>
             </div>
         </section>
     )

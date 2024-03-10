@@ -8,6 +8,8 @@ import git from '../../public/assets/icons/git-icon.svg';
 import vscode from '../../public/assets/icons/vscode.svg';
 import github from '../../public/assets/icons/github-fill.svg';
 import wordpress from '../../public/assets/icons/wordpress.png';
+import node from '../../public/assets/icons/node.png';
+import pg from '../../public/assets/icons/pg.svg';
 
 export default function Skills() {
 
@@ -16,6 +18,8 @@ export default function Skills() {
         { imagem: css },
         { imagem: js },
         { imagem: react },
+        { imagem: node },
+        { imagem: pg },
         { imagem: sass },
         { imagem: git },
         { imagem: vscode },

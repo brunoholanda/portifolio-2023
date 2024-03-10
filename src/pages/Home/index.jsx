@@ -27,8 +27,8 @@ function Presentation() {
                     cor2="#3f51b5"
                 />
                 <TextoDuasCores
-                    texto="Desenvolvedor Front-End"
-                    palavra1="Front-End"
+                    texto="Desenvolvedor Web FullStack"
+                    palavra1="FullStack"
                     cor1="#3f51b5"
                 />
             </div>
