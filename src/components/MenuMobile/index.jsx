@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import HamburgerMenu from 'hamburger-react';
 import styles from './MenuMobile.module.scss';
 import { Link } from 'react-router-dom';
+import { GoDownload } from "react-icons/go";
+
 
 export default function MenuMobile() {
     const [isOpen, setOpen] = useState(false);
@@ -46,7 +48,11 @@ export default function MenuMobile() {
                         <li>Hobbies</li>
                     </Link>
                     <div className={styles.mobileMenu__cv}>
-                        <a href="https://drive.google.com/file/d/1Fx75PiP2j9KUdvhhEw_V4LPAKJecShzj/view?usp=sharing" rel="noreferrer" target="_blank">Baixar CV</a>
+                        <a href="https://drive.google.com/file/d/1Fx75PiP2j9KUdvhhEw_V4LPAKJecShzj/view?usp=sharing" rel="noreferrer" target="_blank"><GoDownload /> CV BR</a>
+
+                    </div>
+                    <div className={styles.mobileMenu__cv}>
+                        <a href="https://drive.google.com/file/d/1rOYKPQFoZ00veHIbaxrLT2v6fTVwNiin/view?usp=sharing" rel="noreferrer" target="_blank"><GoDownload /> CV EUA</a>
                     </div>
                 </ul>
             )}

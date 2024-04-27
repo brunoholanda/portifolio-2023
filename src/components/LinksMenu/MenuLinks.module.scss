@@ -17,6 +17,41 @@
     }
 }
 
+
+.arrow {
+    margin-left: 5px;
+}
+
+.subMenuContainer {
+    position: relative;
+}
+
+.subMenu {
+    position: absolute;
+    top: 100%; /* Isso coloca o submenu logo abaixo do link "Serviços" */
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Isso adiciona uma sombra ao submenu */
+    padding: 10px 20px; /* Isso adiciona um pouco de espaço ao redor dos itens do submenu */
+    z-index: 100; 
+    border-radius: 8px;
+   
+    a {
+        font-size: 18px;
+        white-space: nowrap;
+        margin: 0;
+        padding-top: .3rem;
+        cursor: pointer;
+    }
+
+    img {
+        width: 20px;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
     .menuLinks {
         a {
