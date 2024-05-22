@@ -1,3 +1,4 @@
+import ItensParaVenda from 'components/SellerItens';
 import styles from './Contact.module.scss';
 
 export default function Contact() {
@@ -16,6 +17,7 @@ export default function Contact() {
             <div className={styles.contato__redes}>
 
             </div>
+            <ItensParaVenda />
         </div>
     )
 }

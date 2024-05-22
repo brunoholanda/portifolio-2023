@@ -48,7 +48,7 @@ export default function MenuMobile() {
                         <li>Hobbies</li>
                     </Link>
                     <div className={styles.mobileMenu__cv}>
-                        <a href="https://drive.google.com/file/d/1Fx75PiP2j9KUdvhhEw_V4LPAKJecShzj/view?usp=sharing" rel="noreferrer" target="_blank"><GoDownload /> CV BR</a>
+                        <a href="https://drive.google.com/file/d/130cSVl3KHYloqGgorXTfSLShrmH6e3S6/view?usp=sharing" rel="noreferrer" target="_blank"><GoDownload /> CV BR</a>
 
                     </div>
                     <div className={styles.mobileMenu__cv}>

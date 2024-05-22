@@ -3,6 +3,7 @@ import Skills from "components/Skills";
 import MyProjects from "components/MyProjects";
 import TextoDuasCores from "components/TwoColorsText";
 import profile from '../../public/assets/img/profile-me.png';
+import ItensParaVenda from 'components/SellerItens';
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
             <Presentation />
             <Skills />
             <MyProjects />
+            <ItensParaVenda />
         </>
     )
 }
