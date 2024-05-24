@@ -40,7 +40,7 @@ export default function MenuLinks() {
                 </Link>
                 {showSubMenu && (
                     <div className={styles.subMenu}>
-                        <a href="https://drive.google.com/file/d/130cSVl3KHYloqGgorXTfSLShrmH6e3S6/view?usp=sharing" rel="noreferrer" target="_blank">Português <img src={brflag} alt="bandeira do brasil" /></a>
+                        <a href="https://drive.google.com/file/d/1n_LfAgGwAXUYOQV4Kr1pKdIe9E__ukBb/view?usp=sharing" rel="noreferrer" target="_blank">Português <img src={brflag} alt="bandeira do brasil" /></a>
                         <a href="https://drive.google.com/file/d/1rOYKPQFoZ00veHIbaxrLT2v6fTVwNiin/view?usp=sharing" rel="noreferrer" target="_blank">English <img src={euflag} alt="bandeira dos estados unidos da america" /></a>
                     </div>
                 )}

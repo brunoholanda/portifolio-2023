@@ -1,6 +1,7 @@
 import Loading from 'components/Loading';
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Navigate, Route, Routes, HashRouter, useLocation } from 'react-router-dom';
+import { hotjar } from 'react-hotjar';
 
 const Contact = lazy(() => import('pages/Contact'));
 const Hobbies = lazy(() => import('pages/Hobbies'));
@@ -16,11 +17,18 @@ const Authentication = lazy(() => import('pages/Auth'));
 
 
 function AppRoutes() {
+
+
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
     const token = localStorage.getItem('authToken');
     setIsAuthenticated(!!token);
+  }, []);
+
+  useEffect(() => {
+    hotjar.initialize(4997618, 6);
   }, []);
 
   function ScrollToTop() {
