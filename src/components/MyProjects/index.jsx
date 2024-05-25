@@ -1,42 +1,45 @@
 import { useEffect, useState } from 'react';
 import styles from './MyProjects.module.scss';
 import Card from '../Card';
-import { BASE_URL } from 'config';
-import dadosLocais from '../json/db.json'; // Ajuste o caminho de acordo com a estrutura do seu projeto
-
+import { useContent } from 'hook/useContent';
 
 export default function MyProjects() {
+    const content = useContent();
     const [projetos, setProjetos] = useState([]);
 
     useEffect(() => {
-        setTimeout(() => {
-            setProjetos(dadosLocais.projetos);
-            console.log('projetos', dadosLocais.projetos)
-        }, 0);
-    }, []);
+        if (content.projetos) {
+            setProjetos(content.projetos);
+        } else if (content.projects) {
+            setProjetos(content.projects);
+        } else {
+            setProjetos([]);
+        }
+        console.log('projetos', content.projetos || content.projects);
+    }, [content]);
 
     return (
         <section className={styles.projetos}>
             <div className={styles.projetos__descricao}>
-                <h2>Projetos</h2>
-                <h3>Meus projetos mais recentes</h3>
+                <h2>{content.language === 'pt-br' ? 'Projetos' : 'Projects'}</h2>
+                <h3>{content.language === 'pt-br' ? 'Meus projetos mais recentes' : 'My latest projects'}</h3>
             </div>
             <div className={styles.projetos__cards}>
                 {projetos.slice(0, 6).map((projeto) => {
-                    // Aqui, ajustamos as propriedades para corresponder ao esperado pelo componente Card
-                    return <Card 
-                        key={projeto.id}
-                        id={projeto.id}
-                        image={projeto.imagem}
-                        title={projeto.titulo}
-                        summary={projeto.resumo}
-                        skills={projeto.stacks} // Assumindo que 'skills' corresponda a 'stacks'
-                        project_link={projeto.deploy}
-                        repo_link={projeto.repositorio}
-                    />
+                    return (
+                        <Card 
+                            key={projeto.id}
+                            id={projeto.id}
+                            image={projeto.imagem || projeto.image}
+                            title={projeto.titulo || projeto.title}
+                            summary={projeto.resumo || projeto.summary}
+                            skills={projeto.stacks}
+                            project_link={projeto.deploy}
+                            repo_link={projeto.repositorio || projeto.repository}
+                        />
+                    );
                 })}
             </div>
-
         </section>
     );
 }

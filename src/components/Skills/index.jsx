@@ -10,8 +10,10 @@ import github from '../../public/assets/icons/github-fill.svg';
 import wordpress from '../../public/assets/icons/wordpress.png';
 import node from '../../public/assets/icons/node.png';
 import pg from '../../public/assets/icons/pg.svg';
+import { useLanguage } from 'Context/LanguageContext';
 
 export default function Skills() {
+    const { language } = useLanguage(); // Use o contexto de idioma
 
     const habilidades = [
         { imagem: html },
@@ -25,17 +27,17 @@ export default function Skills() {
         { imagem: vscode },
         { imagem: github },
         { imagem: wordpress },
-    ]
+    ];
 
     return (
         <div className={styles.habilidades}>
-            <h2>Minhas Habilidades Tech</h2>
-            <p>Tecnologias que eu venho trabalhando...</p>
+            <h2>{language === 'pt-br' ? 'Minhas Habilidades Tech' : 'My Tech Skills'}</h2>
+            <p>{language === 'pt-br' ? 'Tecnologias que eu venho trabalhando...' : 'Technologies I have been working with...'}</p>
             <div className={styles.habilidades__icones}>
                 {habilidades.map((habilidade, index) => (
                     <img key={index} src={habilidade.imagem} alt="habilidade" />
                 ))}
             </div>
         </div>
-    )
+    );
 }

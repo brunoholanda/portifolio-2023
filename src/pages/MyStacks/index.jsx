@@ -12,8 +12,9 @@ import next from '../../public/assets/icons/next-js.svg';
 import { useState } from 'react';
 import eftest from '../../public/assets/img/certifcados/english-prof.jpg';
 import Botao from 'components/Btn';
-
+import { useLanguage } from 'Context/LanguageContext';
 export default function MyStacks() {
+    const { language } = useLanguage(); // Use o contexto de idioma
 
     const habilidades = [
         { nome: "HTML", imagem: html },
@@ -39,10 +40,9 @@ export default function MyStacks() {
         setShowEftest(false);
     }
 
-
     return (
         <div className={styles.habilidades}>
-            <h2>Minhas Habilidades Tech</h2>
+            <h2>{language === 'pt-br' ? 'Minhas Habilidades Tech' : 'My Tech Skills'}</h2>
             <div className={styles.habilidades__icones}>
                 {habilidades.map((habilidade, index) => (
                     <div key={index}>
@@ -53,19 +53,17 @@ export default function MyStacks() {
             </div>
 
             <div className={styles.habilidades__idioma}>
-                <h2>Segundo Idioma</h2>
+                <h2>{language === 'pt-br' ? 'Segundo Idioma' : 'Second Language'}</h2>
                 <div className={styles.idioma}>
-                    <p>Inglês Avançado - Consigo me comunicar, ler e entender bem!</p>
-                    <Botao><a href="#" onClick={handleLinkClick}>Ver Teste</a></Botao>
+                    <p>{language === 'pt-br' ? 'Inglês Avançado - Consigo me comunicar, ler e entender bem!' : 'Advanced English - I can communicate, read, and understand well!'}</p>
+                    <Botao><a href="#" onClick={handleLinkClick}>{language === 'pt-br' ? 'Ver Teste' : 'View Test'}</a></Botao>
                 </div>
-
             </div>
             {showEftest && (
                 <div className={styles.imageContainer} onClick={handleCloseClick}>
-                    <img src={eftest} alt="Certificado de Administração" />
+                    <img src={eftest} alt={language === 'pt-br' ? 'Certificado de Administração' : 'English Proficiency Certificate'} />
                 </div>
             )}
-
         </div>
     );
 }
