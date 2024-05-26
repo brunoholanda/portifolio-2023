@@ -44,20 +44,20 @@ export default function About() {
                     <Titulo>
                         {language === 'pt-br' ? 'Sobre Mim' : 'About Me'}
                     </Titulo>
-                    <p>{language === 'pt-br' 
-                        ? 'Desenvolvedor Web FullStack codando páginas Mobile First com responsividade, aplicando SASS e JavaScript, foco em entrega rápida, qualidade e ótimas funcionalidades.' 
+                    <p>{language === 'pt-br'
+                        ? 'Desenvolvedor Web FullStack codando páginas Mobile First com responsividade, aplicando SASS e JavaScript, foco em entrega rápida, qualidade e ótimas funcionalidades.'
                         : 'FullStack Web Developer coding Mobile First pages with responsiveness, applying SASS and JavaScript, focusing on fast delivery, quality, and great features.'}
                     </p>
-                    <p>{language === 'pt-br' 
-                        ? 'Já criei sites para restaurante, barbearia, lojas online, marketplace para vender artes. Atualmente estou desenvolvendo em React e possuo capacidade rápida de aprendizado.' 
+                    <p>{language === 'pt-br'
+                        ? 'Já criei sites para restaurante, barbearia, lojas online, marketplace para vender artes. Atualmente estou desenvolvendo em React e possuo capacidade rápida de aprendizado.'
                         : 'I have created websites for restaurants, barbershops, online stores, and art selling marketplaces. Currently developing in React and having a quick learning capability.'}
                     </p>
-                    <p>{language === 'pt-br' 
-                        ? 'Sempre gostei de criar coisas, aos 16 anos automatizei a casa dos meus pais usando Arduino, programando em C. Já desenvolvi alguns aplicativos para automação vendidos na internet, como um app para controlar o motor do portão pelo WIFI e Espelho inteligente em Python;' 
+                    <p>{language === 'pt-br'
+                        ? 'Sempre gostei de criar coisas, aos 16 anos automatizei a casa dos meus pais usando Arduino, programando em C. Já desenvolvi alguns aplicativos para automação vendidos na internet, como um app para controlar o motor do portão pelo WIFI e Espelho inteligente em Python;'
                         : 'I have always liked creating things; at 16, I automated my parents\' house using Arduino, programming in C. I have developed some automation apps sold online, such as an app to control the gate motor via WIFI and a smart mirror in Python;'}
                     </p>
-                    <p>{language === 'pt-br' 
-                        ? 'Estou inserido no mercado de trabalho como bancário desde 2010. Também atuo na área de desenvolvimento criando projetos pessoais como freelancer para clientes.' 
+                    <p>{language === 'pt-br'
+                        ? 'Estou inserido no mercado de trabalho como bancário desde 2010. Também atuo na área de desenvolvimento criando projetos pessoais como freelancer para clientes.'
                         : 'I have been working in the banking sector since 2010. I also work in development, creating personal projects as a freelancer for clients.'}
                     </p>
                 </div>
@@ -66,16 +66,16 @@ export default function About() {
                     <h2>{language === 'pt-br' ? 'Experiência' : 'Experience'}</h2>
                     <h3>{language === 'pt-br' ? 'Desenvolvedor Web FullStack na Elevaty' : 'FullStack Web Developer at Elevaty'}</h3>
                     <h4>{language === 'pt-br' ? 'O que eu faço:' : 'What I do:'}</h4>
-                    <p>{language === 'pt-br' 
-                        ? 'Estou envolvido na criação e modificação de componentes React sob demanda. Participo das fases do ciclo de vida do desenvolvimento de software. Trabalho em estreita colaboração com equipes multifuncionais, empregando metodologias ágeis para garantir a entrega eficiente e de alta qualidade do nosso produto. Com um forte entendimento das melhores práticas de codificação e padrões, procuro sempre melhorar o desempenho e a usabilidade do nosso sistema. Adicionalmente, dedico-me a aprender novas tecnologias e técnicas para permanecer na vanguarda da inovação na indústria de desenvolvimento de software.' 
+                    <p>{language === 'pt-br'
+                        ? 'Estou envolvido na criação e modificação de componentes React sob demanda. Participo das fases do ciclo de vida do desenvolvimento de software. Trabalho em estreita colaboração com equipes multifuncionais, empregando metodologias ágeis para garantir a entrega eficiente e de alta qualidade do nosso produto. Com um forte entendimento das melhores práticas de codificação e padrões, procuro sempre melhorar o desempenho e a usabilidade do nosso sistema. Adicionalmente, dedico-me a aprender novas tecnologias e técnicas para permanecer na vanguarda da inovação na indústria de desenvolvimento de software.'
                         : 'I am involved in the creation and modification of React components on demand. I participate in the phases of the software development lifecycle. I work closely with cross-functional teams, employing agile methodologies to ensure efficient and high-quality delivery of our product. With a strong understanding of coding best practices and standards, I always strive to improve the performance and usability of our system. Additionally, I am dedicated to learning new technologies and techniques to stay at the forefront of innovation in the software development industry.'}
                     </p>
                     <p>| {language === 'pt-br' ? 'Maio 2023 - presente' : 'May 2023 - present'}</p>
                     <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
                     <h3>{language === 'pt-br' ? 'Desenvolvedor Web FullStack - Autônomo' : 'FullStack Web Developer - Freelancer'}</h3>
                     <h4>{language === 'pt-br' ? 'O que eu faço:' : 'What I do:'}</h4>
-                    <p>{language === 'pt-br' 
-                        ? 'Desenvolvimento de websites e <strong>Sistemas Web Fullstack </strong> Mobile First com responsividade, utilizando ReactJS, JavaScript, CSS, SASS e HTML aplicando conceitos de API`s. Foco em entrega rápida, qualidade e ótimas funcionalidades.' 
+                    <p>{language === 'pt-br'
+                        ? 'Desenvolvimento de websites e <strong>Sistemas Web Fullstack </strong> Mobile First com responsividade, utilizando ReactJS, JavaScript, CSS, SASS e HTML aplicando conceitos de API`s. Foco em entrega rápida, qualidade e ótimas funcionalidades.'
                         : 'Development of websites and <strong>Fullstack Web Systems</strong> Mobile First with responsiveness, using ReactJS, JavaScript, CSS, SASS, and HTML applying API concepts. Focus on fast delivery, quality, and great features.'}
                     </p>
                     <p><strong>{language === 'pt-br' ? 'Projetos mais relevantes:' : 'Most relevant projects:'}</strong></p>
@@ -104,8 +104,8 @@ export default function About() {
                     <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
                     <h3>{language === 'pt-br' ? 'Gerente Administrativo - Banco Bradesco' : 'Administrative Manager - Banco Bradesco'}</h3>
                     <h4>{language === 'pt-br' ? 'O que eu faço:' : 'What I do:'}</h4>
-                    <p>{language === 'pt-br' 
-                        ? 'Conduzi uma equipe com 32 funcionários, sendo o grande propagador do compliance da empresa lidando com pessoas e alta quantidade de informações. Sugeri alterações e melhorias sistêmicas com base nos meus conhecimentos em tecnologia com a finalidade de reduzir custos e riscos.' 
+                    <p>{language === 'pt-br'
+                        ? 'Conduzi uma equipe com 32 funcionários, sendo o grande propagador do compliance da empresa lidando com pessoas e alta quantidade de informações. Sugeri alterações e melhorias sistêmicas com base nos meus conhecimentos em tecnologia com a finalidade de reduzir custos e riscos.'
                         : 'Led a team of 32 employees, being the main propagator of the company\'s compliance, dealing with people and a high amount of information. Suggested systemic changes and improvements based on my technology knowledge to reduce costs and risks.'}
                     </p>
                     <p>| {language === 'pt-br' ? 'Março 2012 - Janeiro 2024' : 'March 2012 - January 2024'}</p>
@@ -133,6 +133,11 @@ export default function About() {
                         <img src={adm} alt={language === 'pt-br' ? 'Certificado de Administração' : 'Administration Certificate'} />
                     </div>
                 )}
+
+                <div className={styles.formacao}>
+                    <p>{language === 'pt-br' ? 'Formações Especificas - Tech' : 'Specific Training - Tech'}</p>
+                    <Botao><a href="https://drive.google.com/drive/folders/1f4zdAjwkLz2SMdjLoIk9YBc2rqtywP1s?usp=sharing" target='_blank'>{language === 'pt-br' ? 'Ver Ambiente' : 'View Certificate'}</a></Botao>
+                </div>
             </div>
             <ItensParaVenda />
         </>

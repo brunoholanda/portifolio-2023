@@ -47,13 +47,14 @@ export default function MenuLinks() {
                 onMouseLeave={() => setShowCvSubMenu(false)}
             >
                 <Link className={styles.menuLink} to="#">
-                   {language === 'pt-br' ? 'Baixar CV' : 'Download CV'}
+                   {language === 'pt-br' ? 'Baixar CV' : 'Resume'}
                     <FaChevronDown className={styles.arrow} />
                 </Link>
                 {showCvSubMenu && (
                     <div className={styles.subMenu}>
                         <a href="https://drive.google.com/file/d/1n_LfAgGwAXUYOQV4Kr1pKdIe9E__ukBb/view?usp=sharing" rel="noreferrer" target="_blank">Português <img src={brflag} alt="bandeira do brasil" /></a>
                         <a href="https://drive.google.com/file/d/1rOYKPQFoZ00veHIbaxrLT2v6fTVwNiin/view?usp=sharing" rel="noreferrer" target="_blank">English <img src={euflag} alt="bandeira dos estados unidos da america" /></a>
+                        <a href="https://drive.google.com/file/d/11Z29BuZJH1rJJNW0xZQ6vkdKhX6Assfy/view?usp=sharing" rel="noreferrer" target="_blank">Carta</a>
                     </div>
                 )}
             </div>
