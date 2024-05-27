@@ -19,7 +19,7 @@ export default function SocialLinks() {
                 <div className={styles.socialLinks__wp}></div>
             </a>
             <div className={styles.languageSwitcher}>
-                <button onClick={toggleLanguage} className={styles.languageButton}>
+                <button onClick={toggleLanguage} className={styles.languageButton} title={language === 'pt-br' ? 'Switch to English' : 'Mudar para Português'}>
                     <img src={language === 'pt-br' ? euflag : brflag} alt={language === 'pt-br' ? 'Switch to English' : 'Mudar para Português'} />
                 </button>
             </div>

@@ -15,7 +15,6 @@ export default function MyProjects() {
         } else {
             setProjetos([]);
         }
-        console.log('projetos', content.projetos || content.projects);
     }, [content]);
 
     return (

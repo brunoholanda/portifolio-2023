@@ -1,5 +1,4 @@
 .habilidades {
-
     text-align: center;
     margin: 4em 6em;
 
@@ -21,20 +20,21 @@
 
     &__icones {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+        margin: 0 15rem;
+        
 
         img {
-            width: 120px;
-            height: 120px;
+            width: 80px;
+            height: 80px;
         }
     }
 }
 
 @media screen and (max-width: 1024px) {
     .habilidades { 
-
         margin: 1em 2em;
         
         h2 {
@@ -47,10 +47,13 @@
         }
 
         &__icones {
+            gap: 1em;
+            margin: 0 8rem;
+
+
             img {
                 width: 80px;
                 height: 80px;
-                margin-bottom: 1em;
             }
         }
     }
@@ -58,7 +61,6 @@
 
 @media screen and (max-width: 768px) {
     .habilidades { 
-
         margin: 1em 2em;
         
         h2 {
@@ -70,10 +72,12 @@
         }
 
         &__icones {
+            gap: 1em;
+            margin: 0 2rem;
+
             img {
                 width: 80px;
                 height: 80px;
-                margin-bottom: 1em;
             }
         }
     }

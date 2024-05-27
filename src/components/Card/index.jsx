@@ -12,6 +12,9 @@ export default function Card({ id, image, title, summary, skills, project_link, 
             <div className={styles.card__imagem}>
                 <Link to={`/projetos/${id}`}>
                     <img src={image} alt={title} />
+                    <div className={styles.card__verMais}>
+                        {language === 'pt-br' ? 'Ver mais' : 'Read more'}
+                    </div>
                 </Link>
                 <div className={styles.card__texto}>
                     <h3>{title}</h3>

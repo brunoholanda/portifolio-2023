@@ -4,25 +4,29 @@ import ReactMarkdown from 'react-markdown';
 import styles from './Post.module.scss';
 import Card from "components/Card"; // Certifique-se de que o caminho está correto
 import carregando from '../../public/assets/img/carregando.gif';
-import dadosLocais from '../../components/json/db.json'; // Ajuste o caminho conforme necessário
+import { useContent } from "hook/useContent";
 
-export default function Post({ title }) {
+export default function Post() {
+    const content = useContent(); // Use o hook useContent
     const [projeto, setProjeto] = useState(null);
     const { id } = useParams();
 
     useEffect(() => {
-        // Encontra o projeto pelo ID
-        const projetoEncontrado = dadosLocais.projetos.find(projeto => projeto.id === parseInt(id));
-        setProjeto(projetoEncontrado);
-    }, [id]);
+        if (content.projetos || content.projects) {
+            const projetos = content.language === 'pt-br' ? content.projetos : content.projects;
+            const projetoEncontrado = projetos?.find(projeto => projeto.id === parseInt(id));
+            setProjeto(projetoEncontrado);
+        }
+    }, [id, content.language, content.projetos, content.projects]);
+
+    const projetosParaMostrar = content.language === 'pt-br' ? content.projetos : content.projects;
 
     return (
         <article className={styles.post}>
             {projeto ? (
                 <div className={styles.post__artigo}>
-                    {/* Assume que o campo 'imagem' contém a URL completa da imagem */}
-                    <img src={projeto.imagem} alt={projeto.titulo} />
-                    <h2>{projeto.titulo}</h2>
+                    <img src={projeto.imagem || projeto.image} alt={projeto.titulo || projeto.title} />
+                    <h2>{projeto.titulo || projeto.title}</h2>
                     <ReactMarkdown>
                         {projeto.post.replace(/\\n/g, '\n')}
                     </ReactMarkdown>
@@ -30,21 +34,27 @@ export default function Post({ title }) {
             ) : (
                 <img src={carregando} alt="Carregando..." />
             )}
-            <h2>Veja mais projetos:</h2>
+            <h2>{content.language === 'pt-br' ? 'Veja mais projetos:' : 'See more projects:'}</h2>
             <div className={styles.post__cards}>
-                {/* Embaralha e seleciona até 3 projetos para mostrar como recomendações */}
-                {dadosLocais.projetos.sort(() => Math.random() - 0.5).slice(0, 3).map(projeto => (
-                    <Card
-                        key={projeto.id}
-                        id={projeto.id}
-                        image={projeto.imagem}
-                        title={projeto.titulo}
-                        summary={projeto.resumo}
-                        skills={projeto.stacks} // Assumindo que 'skills' corresponde a 'stacks'
-                        project_link={projeto.deploy}
-                        repo_link={projeto.repositorio}
-                    />
-                ))}
+                {projetosParaMostrar && projetosParaMostrar.length > 0 ? (
+                    projetosParaMostrar
+                        .sort(() => Math.random() - 0.5)
+                        .slice(0, 3)
+                        .map(projeto => (
+                            <Card
+                                key={projeto.id}
+                                id={projeto.id}
+                                image={projeto.imagem || projeto.image}
+                                title={projeto.titulo || projeto.title}
+                                summary={projeto.resumo || projeto.summary}
+                                skills={projeto.stacks}
+                                project_link={projeto.deploy}
+                                repo_link={projeto.repositorio || projeto.repository}
+                            />
+                        ))
+                ) : (
+                    <img src={carregando} alt="Carregando..." />
+                )}
             </div>
         </article>
     );

@@ -9,7 +9,7 @@ import { useLanguage } from 'Context/LanguageContext';
 
 export default function MenuMobile() {
     const [isOpen, setOpen] = useState(false);
-    const { language, toggleLanguage } = useLanguage(); // Use o contexto de idioma
+    const { language } = useLanguage(); // Use o contexto de idioma
 
     const toggleMenu = () => {
         setOpen(!isOpen);
@@ -55,12 +55,7 @@ export default function MenuMobile() {
                     <div className={styles.mobileMenu__cv}>
                         <a href="https://drive.google.com/file/d/1rOYKPQFoZ00veHIbaxrLT2v6fTVwNiin/view?usp=sharing" rel="noreferrer" target="_blank"><GoDownload /> CV EUA</a>
                     </div>
-                    <div className={styles.languageSwitcher}>
-                        <button onClick={toggleLanguage} className={styles.languageButton}>
-                            <img src={language === 'pt-br' ? euflag : brflag} alt={language === 'pt-br' ? 'Switch to English' : 'Mudar para Português'} />
-                            {language === 'pt-br' ? 'Switch to English' : 'Mudar para Português'} 
-                        </button>
-                    </div>
+
                 </ul>
             )}
         </>

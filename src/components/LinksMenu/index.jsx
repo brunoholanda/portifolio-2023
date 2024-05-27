@@ -4,6 +4,7 @@ import styles from './MenuLinks.module.scss';
 import { FaChevronDown } from 'react-icons/fa';
 import brflag from '../../public/assets/icons/BR.webp';
 import euflag from '../../public/assets/icons/eua.webp';
+import carta from '../../public/assets/icons/carta.webp';
 import { useLanguage } from "Context/LanguageContext";
 
 export default function MenuLinks() {
@@ -54,19 +55,11 @@ export default function MenuLinks() {
                     <div className={styles.subMenu}>
                         <a href="https://drive.google.com/file/d/1n_LfAgGwAXUYOQV4Kr1pKdIe9E__ukBb/view?usp=sharing" rel="noreferrer" target="_blank">Português <img src={brflag} alt="bandeira do brasil" /></a>
                         <a href="https://drive.google.com/file/d/1rOYKPQFoZ00veHIbaxrLT2v6fTVwNiin/view?usp=sharing" rel="noreferrer" target="_blank">English <img src={euflag} alt="bandeira dos estados unidos da america" /></a>
-                        <a href="https://drive.google.com/file/d/11Z29BuZJH1rJJNW0xZQ6vkdKhX6Assfy/view?usp=sharing" rel="noreferrer" target="_blank">Carta</a>
+                        <a href="https://drive.google.com/file/d/11Z29BuZJH1rJJNW0xZQ6vkdKhX6Assfy/view?usp=sharing" rel="noreferrer" target="_blank">Carta<img src={carta} alt="icone de carta" /></a>
                     </div>
                 )}
             </div>
-            <div className={styles.languageSwitcher}>
-                <button onClick={toggleLanguage} className={styles.languageButton} title="Change Language">
-                    <img
-                        src={language === 'pt-br' ? euflag : brflag}
-                        alt={language === 'pt-br' ? 'bandeira dos estados unidos da america' : 'bandeira do brasil'}
-                        className={styles.flagIcon}
-                    />
-                </button>
-            </div>
+
         </section>
     )
 }
