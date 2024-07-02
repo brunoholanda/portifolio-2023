@@ -1,7 +1,8 @@
-import Loading from 'components/Loading';
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Navigate, Route, Routes, HashRouter, useLocation } from 'react-router-dom';
 import { hotjar } from 'react-hotjar';
+import Loading from 'components/Loading';
+import FloatingButton from 'components/FloatingButton';
 
 const Contact = lazy(() => import('pages/Contact'));
 const Hobbies = lazy(() => import('pages/Hobbies'));
@@ -15,11 +16,7 @@ const About = lazy(() => import('pages/About'));
 const Posts = lazy(() => import('pages/Painel'));
 const Authentication = lazy(() => import('pages/Auth'));
 
-
 function AppRoutes() {
-
-
-
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
@@ -46,11 +43,14 @@ function AppRoutes() {
     return null;
   }
 
+  const handleChatbotClick = () => {
+    alert('Chatbot iniciado!');
+  };
+
   return (
     <HashRouter>
       <ScrollToTop />
       <Suspense fallback={<Loading />}>
-
         <Routes>
           <Route path="/" element={<PageBody />}>
             <Route index element={<Home />} />
@@ -78,6 +78,7 @@ function AppRoutes() {
           </Route>
         </Routes>
       </Suspense>
+      <FloatingButton onClick={handleChatbotClick} />
     </HashRouter>
   );
 }
