@@ -17,6 +17,7 @@
     "@types/react-dom": "^18.0.11",
     "axios": "^1.7.2",
     "bootstrap": "^5.2.3",
+    "dotenv": "^16.4.5",
     "hamburger-react": "^2.5.0",
     "i18next": "^23.11.5",
     "i18next-browser-languagedetector": "^8.0.0",
@@ -34,8 +35,9 @@
     "react-slick": "^0.29.0",
     "rehype-raw": "^6.1.1",
     "rehype-sanitize": "^5.0.1",
+    "remark-gfm": "^4.0.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.10",
+    "styled-components": "^5.3.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
