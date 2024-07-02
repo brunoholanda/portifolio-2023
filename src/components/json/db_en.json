@@ -122,13 +122,13 @@
         },
         {
             "id": 13,
-            "image": "https://nerdking.net.br/wp-content/uploads/2023/04/nkcine.png",
-            "title": "NerdKing Tag",
-            "summary": "Website to add favorite videos from NerdKing's YouTube channel, created to practice UseStates and learn to create a fake API",
-            "post": "Developing a website to add favorite videos from NerdKing's YouTube channel is an excellent way to practice creating an application with UseStates in React and learn to create a fake API. This application can be very useful for users who want to save and organize their favorite videos from the channel. \n\n To make the platform more attractive and functional, React, a very popular JavaScript library for user interface development, was used. With React, it was possible to implement several interesting features on the site, such as using UseStates to favorite or unfavorite items on the page. \n\n UseStates are a React feature that allows the creation of state variables that can be modified over time. They are very useful for implementing dynamic functionalities on a website, such as updating information in real-time or changing colors and images when hovering over a product. \n\n ### What did I learn? \n\n My biggest learning in this project was the practice of JavaScript in React. Developing the feature to favorite and unfavorite for the first time was a big challenge. \n\n ### Technologies used: \n\n ReactJS • JavaScript • HTML • CSS • Git \n\n ### How to use? \n\n It is an intuitive landing page, and you can access its deployment [Clicking here](https://nktag-react-i64j.vercel.app/)",
-            "stacks": "JavaScript, CSS, html",
-            "deploy": "https://nktag-react-i64j.vercel.app/",
-            "repositorio": "https://github.com/brunoholanda/nktag-react"
+            "image": "https://nerdking.net.br/wp-content/uploads/2024/05/lojadrop.jpg",
+            "title": "E-Commerce",
+            "summary": "This project is a dropshipping e-commerce developed with Shopify and integrated with various applications to optimize product...",
+            "post": "Welcome to our brand new Dropshipping E-Commerce! 🌐🛍️\n\nWe have developed an intuitive and efficient platform for you to explore and purchase high-quality products with just a few clicks. Using the powerful Shopify platform, our site is packed with features that make online shopping simple and enjoyable.\n\n## What is Dropshipping?\n\nDropshipping is a business model where the store does not keep products in stock. Instead, when a customer places an order, the item is purchased from a third-party supplier and shipped directly to the customer. This allows offering a wide range of products without the need to manage inventory.\n\n## Why Choose Our E-Commerce?\n\n- **Ease of Use:** Navigate our site intuitively and easily find the products you want.\n- **Security:** Secure payment processes to protect your information.\n- **Variety:** A wide selection of high-quality products.\n- **Support:** Dedicated customer service to assist you at every step of your purchase.\n\n## Technologies Used\n\n- **Shopify:** Robust and reliable platform for creating online stores.\n- **Integrated Applications:** Tools to optimize product, order, and marketing management.\n- **Responsive Design:** Optimized browsing experience for all devices.\n\n## How It Works?\n\n1. **Browse the Site:** Explore our wide range of products.\n2. **Add to Cart:** Select the desired items and add them to your cart.\n3. **Checkout:** Complete your purchase quickly and securely.\n4. **Receive at Home:** Wait for your order to arrive comfortably at your home.\n\n👉 Visit our e-commerce now: [NerdKing Store](https://nerdkingloja.com.br)\n\nWant to know more about our platform and how we created this project? Check out our repository on Shopify: [Shopify](https://www.shopify.com/br)",
+            "stacks": "Shopify, Apps",
+            "deploy": "https://nerdkingloja.com.br",
+            "repositorio": "https://www.shopify.com/br"
         }
     ],
     "hobbies": [

@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import styles from './MyProjects.module.scss';
 import Card from '../Card';
 import { useContent } from 'hook/useContent';
+import Btn from 'components/Btn';
+import { Link } from 'react-router-dom';
 
 export default function MyProjects() {
     const content = useContent();
@@ -26,7 +28,7 @@ export default function MyProjects() {
             <div className={styles.projetos__cards}>
                 {projetos.slice(0, 6).map((projeto) => {
                     return (
-                        <Card 
+                        <Card
                             key={projeto.id}
                             id={projeto.id}
                             image={projeto.imagem || projeto.image}
@@ -38,6 +40,13 @@ export default function MyProjects() {
                         />
                     );
                 })}
+            </div>
+            <div className={styles.projetos__verMais}>
+                <Link to='./projetos'>
+                    <Btn >
+                    {content.language === 'pt-br' ? 'Ver mais...' : 'See more...'}
+                    </Btn>
+                </Link>
             </div>
         </section>
     );

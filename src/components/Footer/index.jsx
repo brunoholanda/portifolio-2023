@@ -16,9 +16,7 @@ export default function Footer() {
             </div>
             <Divisor />
             <div className={styles.rodape__links}>
-                <div className={styles.menuLinks}>
-                    <MenuLinks />
-                </div>
+      
                 <TextoDuasCores
                     texto={language === 'pt-br' ? 'Desenvolvido por Bruno Holanda' : 'Developed by Bruno Holanda'}
                     palavra1="Bruno"

@@ -10,7 +10,7 @@ import { useLanguage } from "Context/LanguageContext";
 export default function MenuLinks() {
     const [showCvSubMenu, setShowCvSubMenu] = useState(false);
     const [showProjectsSubMenu, setShowProjectsSubMenu] = useState(false);
-    const { language, toggleLanguage } = useLanguage();
+    const { language } = useLanguage();
 
     return (
         <section className={styles.menuLinks}>
@@ -53,8 +53,8 @@ export default function MenuLinks() {
                 </Link>
                 {showCvSubMenu && (
                     <div className={styles.subMenu}>
-                        <a href="https://drive.google.com/file/d/1n_LfAgGwAXUYOQV4Kr1pKdIe9E__ukBb/view?usp=sharing" rel="noreferrer" target="_blank">Português <img src={brflag} alt="bandeira do brasil" /></a>
-                        <a href="https://drive.google.com/file/d/1rOYKPQFoZ00veHIbaxrLT2v6fTVwNiin/view?usp=sharing" rel="noreferrer" target="_blank">English <img src={euflag} alt="bandeira dos estados unidos da america" /></a>
+                        <a href="https://drive.google.com/file/d/1Z-hbH7P_nEInGMWRML6JBaOtSDma5DVx/view?usp=sharing" rel="noreferrer" target="_blank">Português <img src={brflag} alt="bandeira do brasil" /></a>
+                        <a href="https://drive.google.com/file/d/1pjMWjYA1uJ4z_NdWRwxR1Jw0YnqnspHc/view?usp=sharing" rel="noreferrer" target="_blank">English <img src={euflag} alt="bandeira dos estados unidos da america" /></a>
                         <a href="https://drive.google.com/file/d/11Z29BuZJH1rJJNW0xZQ6vkdKhX6Assfy/view?usp=sharing" rel="noreferrer" target="_blank">Carta<img src={carta} alt="icone de carta" /></a>
                     </div>
                 )}

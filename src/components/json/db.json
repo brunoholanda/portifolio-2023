@@ -1,9 +1,8 @@
 {
     "projetos": [
-
         {
             "id": 1,
-            "imagem": "https://nerdking.net.br/wp-content/uploads/2024/05/1709763259416-1.jpeg", 
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2024/05/1709763259416-1.jpeg",
             "titulo": "SAAS Completo",
             "resumo": "Conheça o Marquei, um software completo para profissionais da saúde e gestão de clinicas, o marquei foi projetado para melhorar o dia a dia de profissionais que...",
             "post": "Conheça o Marquei, um software completo para profissionais da saúde e gestão de clinicas, o marquei foi projetado para melhorar o dia a dia de profissionais que precisam de um sistema rápido e fácil de usar e com suporte personalizado. \n\n O Sistema possui gestão automatica de agendamentos e pesquisa de satisfação, além de contar com modulos de contabilidade e estoque para clinicas e um cadastro de clients completo. \n\n ### O que aprendi? \n\n Com esse projeto me tornei fullstack, eu fui o responsavel por desenvolver todo o Sistema desde o banco de dados, backend, frontend e infra estrutura. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • Styled Components • Git \n\n ### Como usar? \n\n Acesse o marquee e conheça maisEntre com Email e senha cadastrados.",
@@ -121,16 +120,17 @@
             "deploy": "https://nktag-react-i64j.vercel.app/",
             "repositorio": "https://github.com/brunoholanda/nktag-react"
         },
-                {
+        {
             "id": 13,
-            "imagem": "https://nerdking.net.br/wp-content/uploads/2023/04/nkcine.png",
-            "titulo": "NerdKing Tag",
-            "resumo": "Website para adicionar aos favoritos os vídeos que o usuário mais gostar no youtube do NerdKing, feito para praticar useStates, e aprender a criar uma API fake",
-            "post": "O desenvolvimento de um website para adicionar aos favoritos os vídeos mais interessantes do canal NerdKing no YouTube é uma excelente maneira de praticar a criação de uma aplicação com UseStates no React, além de aprender a criar uma API fake. Essa aplicação pode ser muito útil para os usuários que desejam salvar e organizar seus vídeos favoritos do canal. \n\n Para tornar a plataforma mais atraente e funcional, foi utilizado o React, uma biblioteca JavaScript muito popular para o desenvolvimento de interfaces de usuário. Com o React, foi possível implementar diversas funcionalidades interessantes no site, como por exemplo, o uso de UseStates na funcionalidade de favoritar ou desfavoritar itens da página. \n\n Os UseStates são um recurso do React que permite a criação de variáveis de estado que podem ser modificadas ao longo do tempo. Eles são muito úteis para implementar funcionalidades dinâmicas em um site, como a atualização de informações em tempo real, ou a alteração de cores e imagens ao passar o mouse sobre um produto, por exemplo.  \n\n ### O que aprendi? \n\n Meu maior aprendizado neste projeto foi referente a pratica do Javascript no react, desenvolver a funcionalidade de favoritar e desafavoritar pela primeira vez foi um grande desafio. \n\n ### Tecnologias utilizadas: \n\n ReactJS • JavaScript • HTML • CSS • Git \n\n ### Como usar? \n\n Trata-se de uma landing Page intuitiva e você pode acessar seu Deploy  [Clicando aqui]( https://nktag-react-i64j.vercel.app/)",
-            "stacks": "JavaScript, CSS, html",
-            "deploy": "https://nktag-react-i64j.vercel.app/",
-            "repositorio": "https://github.com/brunoholanda/nktag-react"
+            "imagem": "https://nerdking.net.br/wp-content/uploads/2024/05/lojadrop.jpg",
+            "titulo": "E-Commerce",
+            "resumo": "Este projeto é um e-commerce de dropshipping desenvolvido com Shopify e integrado com diversas aplicações para otimizar a gestão de produtos, pedidos e marketing...",
+            "post": "Bem-vindo ao nosso mais novo E-Commerce de Dropshipping! 🌐🛍️\n\nDesenvolvi uma plataforma intuitiva e eficiente para você explorar e comprar produtos de alta qualidade com apenas alguns cliques. Utilizando a poderosa plataforma Shopify, nosso site está repleto de funcionalidades que tornam a experiência de compra online simples e agradável.\n\n## O que é Dropshipping?\n\nDropshipping é um modelo de negócios onde a loja não mantém os produtos em estoque. Em vez disso, quando um cliente faz um pedido, o item é comprado de um fornecedor terceirizado e enviado diretamente para o cliente. Isso permite oferecer uma vasta gama de produtos sem a necessidade de gerenciar inventário.\n\n## Por que Escolher Nosso E-Commerce?\n\n- **Facilidade de Uso:** Navegue por nosso site de forma intuitiva e encontre facilmente os produtos que deseja.\n- **Segurança:** Processos de pagamento seguros para proteger suas informações.\n- **Variedade:** Uma ampla seleção de produtos de alta qualidade.\n- **Suporte:** Atendimento ao cliente dedicado para ajudar em todas as etapas da sua compra.\n\n## Tecnologias Utilizadas\n\n- **Shopify:** Plataforma robusta e confiável para criação de lojas online.\n- **Aplicações Integradas:** Ferramentas para otimizar a gestão de produtos, pedidos e marketing.\n- **Design Responsivo:** Experiência de navegação otimizada para todos os dispositivos.\n\n## Como Funciona?\n\n1. **Navegue pelo Site:** Explore nossa vasta gama de produtos.\n2. **Adicione ao Carrinho:** Selecione os itens desejados e adicione-os ao carrinho.\n3. **Finalização da Compra:** Conclua sua compra de maneira rápida e segura.\n4. **Receba em Casa:** Aguarde seu pedido chegar confortavelmente em sua casa.\n\n👉 Visite nosso e-commerce agora: [NerdKing Loja](https://nerdkingloja.com.br)\n\nDeseja saber mais sobre nossa plataforma e como criamos este projeto? Confira nosso repositório na Shopify: [Shopify](https://www.shopify.com/br)",
+            "stacks": "Shopify, Apps",
+            "deploy": "https://nerdkingloja.com.br",
+            "repositorio": "https://www.shopify.com/br"
         }
+        
     ],
     "hobbies": [
         {

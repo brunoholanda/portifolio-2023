@@ -1,6 +1,7 @@
 import React from "react";
+import styles from './TwoColorsText.module.scss';
 
-const TextoDuasCores = ({ texto, palavra1, palavra2, cor1, cor2 }) => {
+const TextoDuasCores = ({ texto, palavra1, palavra2 }) => {
   const dividirTexto = texto.split(" ");
 
   return (
@@ -8,20 +9,16 @@ const TextoDuasCores = ({ texto, palavra1, palavra2, cor1, cor2 }) => {
       {dividirTexto.map((palavraAtual, index) => (
         <span
           key={index}
-          style={{
-            color:
-              palavraAtual === palavra1
-                ? cor1
-                : palavraAtual === palavra2
-                ? cor2
-                : "inherit",
-          }}
+          className={
+            palavraAtual === palavra1 || palavraAtual === palavra2
+              ? styles.gradiente
+              : ""
+          }
         >
           {palavraAtual}{" "}
         </span>
       ))}
     </h1>
-    
   );
 };
 
