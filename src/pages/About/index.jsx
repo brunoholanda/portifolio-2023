@@ -63,7 +63,10 @@ export default function About() {
                 </div>
 
                 <div className={styles.sobre__experiencia}>
-                    <h2>{language === 'pt-br' ? 'Experiência' : 'Experience'}</h2>
+                    <Titulo>
+                        {language === 'pt-br' ? 'Experiência de Trabalho' : 'Work Experience'}
+                    </Titulo>
+
                     <h3>{language === 'pt-br' ? 'Desenvolvedor Web FullStack na Elevaty' : 'FullStack Web Developer at Elevaty'}</h3>
                     <h4>{language === 'pt-br' ? 'O que eu faço:' : 'What I do:'}</h4>
                     <p>{language === 'pt-br'
@@ -112,7 +115,7 @@ export default function About() {
                     <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
                 </div>
                 <div className={styles.sobre__formacao}>
-                    <h2>{language === 'pt-br' ? 'Formação Acadêmica' : 'Academic Background'}</h2>
+                <Titulo>{language === 'pt-br' ? 'Formação Acadêmica' : 'Education'}</Titulo>
                     <div className={styles.formacao}>
                         <p>{language === 'pt-br' ? 'Análise e Desenvolvimento de Sistemas - Unopar' : 'System Analysis and Development - Unopar'}</p>
                         <Botao><a href="#" onClick={handleLinkClickAds}>{language === 'pt-br' ? 'Ver Certificado' : 'View Certificate'}</a></Botao>
@@ -133,10 +136,11 @@ export default function About() {
                         <img src={adm} alt={language === 'pt-br' ? 'Certificado de Administração' : 'Administration Certificate'} />
                     </div>
                 )}
+                <img className={styles.divisorImg} src={divisor} alt="divisor de experiencias" />
 
                 <div className={styles.formacao}>
                     <p>{language === 'pt-br' ? 'Formações Especificas - Tech' : 'Specific Training - Tech'}</p>
-                    <Botao><a href="https://drive.google.com/drive/folders/1f4zdAjwkLz2SMdjLoIk9YBc2rqtywP1s?usp=sharing" target='_blank'>{language === 'pt-br' ? 'Ver Ambiente' : 'View Certificate'}</a></Botao>
+                    <Botao><a href="https://drive.google.com/drive/folders/1f4zdAjwkLz2SMdjLoIk9YBc2rqtywP1s?usp=sharing" target='_blank'>{language === 'pt-br' ? 'Ver Ambiente' : 'See Repository'}</a></Botao>
                 </div>
             </div>
             <ItensParaVenda />

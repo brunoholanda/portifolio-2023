@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
 import styles from './Post.module.scss';
 import Card from "components/Card"; // Certifique-se de que o caminho está correto
 import carregando from '../../public/assets/img/carregando.gif';
 import { useContent } from "hook/useContent";
+import Btn from "components/Btn";
 
 export default function Post() {
     const content = useContent(); // Use o hook useContent
     const [projeto, setProjeto] = useState(null);
     const { id } = useParams();
+    const navegar = useNavigate ();
 
     useEffect(() => {
         if (content.projetos || content.projects) {
@@ -23,6 +25,9 @@ export default function Post() {
 
     return (
         <article className={styles.post}>
+            <div className={styles.post__botao} onClick={() => navegar(-1)}>
+                <Btn >{content.language === 'pt-br' ? 'Voltar' : 'Back'}</Btn>
+            </div>
             {projeto ? (
                 <div className={styles.post__artigo}>
                     <img src={projeto.imagem || projeto.image} alt={projeto.titulo || projeto.title} />

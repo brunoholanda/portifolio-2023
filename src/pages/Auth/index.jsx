@@ -2,80 +2,46 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Auth.module.scss';
 import cadeado from '../../public/assets/img/cadeado.png';
-import { BASE_URL } from 'config';
 
-const Authentication = () => {
+const Authentication = ({ setIsAuthenticated }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const response = await fetch(`${BASE_URL}/api/auth/login`, {
+      const response = await fetch('http://localhost:4000/auth/login', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
       });
-
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.error);
+      if (response.ok) {
+        const data = await response.json();
+        localStorage.setItem('authToken', data.access_token);
+        setIsAuthenticated(true);
+        navigate('/operador');
+      } else {
+        alert('Authentication failed');
       }
-
-      const { token } = await response.json();
-      localStorage.setItem('authToken', token);
-      navigate('/operador');
     } catch (error) {
-      alert(error.message);
+      console.error('Error:', error);
     }
-
-    setUsername('');
-    setPassword('');
   };
-
-  /*const handleRegister = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch('http://localhost:8000/api/auth/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-      });
-
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.error);
-      }
-
-      navigate('/login');
-    } catch (error) {
-      alert(error.message);
-    }
-
-    setUsername('');
-    setPassword('');
-  };*/
 
   return (
     <div className={styles.autenticar}>
       <div className={styles.icone}>
-      <h1>Acesso ao Painel do Operador</h1>
-      <img src={cadeado} alt="imagem de cadeado" />
+        <h1>Acesso ao Painel do Operador</h1>
+        <img src={cadeado} alt="imagem de cadeado" />
       </div>
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username"></label>
           <input
             type="text"
             id="username"
-            placeholder='Usuário'
+            placeholder="Usuário"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
@@ -85,7 +51,7 @@ const Authentication = () => {
           <input
             type="password"
             id="password"
-            placeholder='Senha'
+            placeholder="Senha"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -97,27 +63,3 @@ const Authentication = () => {
 };
 
 export default Authentication;
-
-
-/*     <h2>Registro</h2>
-      <form onSubmit={handleRegister}>
-        <div>
-          <label htmlFor="register-username">Usuário:</label>
-          <input
-            type="text"
-            id="register-username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </div>
-        <div>   
-          <label htmlFor="register-password">Senha:</label>
-          <input
-            type="password"
-            id="register-password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <button type="submit">Registrar</button>
-</form>*/

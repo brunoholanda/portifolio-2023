@@ -1,11 +1,8 @@
-import ModalAdd from 'components/Modals/modalAdd';
 import React, { useState, useEffect } from 'react';
 import './Painel.css';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { BASE_URL } from 'config';
-
-
-
+import ModalAdd from 'components/Modals/modalAdd';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdit }) => {
   const [title, setTitle] = useState('');
   const [image, setImage] = useState('');
@@ -17,43 +14,52 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
   const [isFormIncomplete, setIsFormIncomplete] = useState(false);
 
   useEffect(() => {
-    setTitle(editedPost?.title || '');
-    setImage(editedPost?.image || '');
-    setSummary(editedPost?.summary || '');
-    setDescription(editedPost?.description || '');
-    setSkills(editedPost?.skills || '');
-    setProject_link(editedPost?.project_link || '');
-    setRepo_link(editedPost?.repo_link || '');
+    if (editedPost) {
+      setTitle(editedPost.title);
+      setImage(editedPost.image);
+      setSummary(editedPost.summary);
+      setDescription(editedPost.description);
+      setSkills(editedPost.skills);
+      setProject_link(editedPost.project_link);
+      setRepo_link(editedPost.repo_link);
+    }
   }, [editedPost]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (title === '' || summary === '' || description === '' || skills === '' || project_link === '' || repo_link === '') {
+    if (!title || !summary || !description || !skills || !project_link || !repo_link) {
       setIsFormIncomplete(true);
-      setTimeout(() => {
-        setIsFormIncomplete(false);
-      }, 5000);
-
+      setTimeout(() => setIsFormIncomplete(false), 5000);
       return;
     }
 
-    const formData = new FormData();
-    formData.append('title', title);
-    formData.append('image', image);
-    formData.append('summary', summary);
-    formData.append('description', description);
-    formData.append('skills', skills);
-    formData.append('project_link', project_link);
-    formData.append('repo_link', repo_link);
+    const postData = {
+      title,
+      image,
+      summary,
+      description,
+      skills,
+      project_link,
+      repo_link,
+    };
 
-    if (editedPost) {
-      editPost(editedPost.id, formData);
-    } else {
-      addPost(formData);
+    try {
+      const token = localStorage.getItem('authToken');
+      const headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+      headers.append('Authorization', `Bearer ${token}`);
+
+      if (editedPost) {
+        await editPost(editedPost.id, postData, headers);
+      } else {
+        await addPost(postData, headers);
+      }
+      clearForm();
+    } catch (error) {
+      console.error('Erro ao enviar o post:', error);
+      alert('Erro ao enviar o post');
     }
-
-    clearForm();
   };
 
   const clearForm = () => {
@@ -67,35 +73,31 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
     setEditedPost(null);
   };
 
-  const [fileName, setFileName] = React.useState('');
-
-  const onChangeHandler = (e) => {
-    setImage(e.target.files[0]);
-    setFileName(e.target.files[0].name);
-  };
-
   return (
     <div className='formulario'>
       <h2>Insira os dados do seu projeto!</h2>
-      {isFormIncomplete && (
-        <p className="error">Por favor, preencha todos os campos !</p>
-      )}
+      {isFormIncomplete && <p className="error">Por favor, preencha todos os campos!</p>}
 
       <form className='painel' onSubmit={handleSubmit}>
         <div>
-          <input type="text" id="title" className={title === '' ? 'required-field' : ''} placeholder='Insira o Título do Projeto' value={title} onChange={(e) => setTitle(e.target.value)} />
-        </div>
-        <div className='imagem'>
           <input
-            type="file"
-            id="image"
-            style={{ display: 'none' }}
-            onChange={onChangeHandler}
+            type="text"
+            id="title"
+            className={title === '' ? 'required-field' : ''}
+            placeholder='Insira o Título do Projeto'
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
           />
-          <label htmlFor="image" className='imagemBotao'>
-            Escolha uma imagem
-          </label>
-          {fileName && <p><strong>Arquivo:</strong> "{fileName}"</p>}
+        </div>
+        <div>
+          <input
+            type="text"
+            id="image"
+            className={image === '' ? 'required-field' : ''}
+            placeholder='URL da Imagem'
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+          />
         </div>
         <div>
           <textarea
@@ -116,7 +118,14 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
           />
         </div>
         <div>
-          <input type="text" id="skills" className={skills === '' ? 'required-field' : ''} placeholder='Habilidades' value={skills} onChange={(e) => setSkills(e.target.value)} />
+          <input
+            type="text"
+            id="skills"
+            className={skills === '' ? 'required-field' : ''}
+            placeholder='Habilidades'
+            value={skills}
+            onChange={(e) => setSkills(e.target.value)}
+          />
         </div>
         <div>
           <input
@@ -129,12 +138,19 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
           />
         </div>
         <div>
-          <input type="text" id="repoLink" className={repo_link === '' ? 'required-field' : ''} placeholder='Link do GitHub' value={repo_link} onChange={(e) => setRepo_link(e.target.value)} />
+          <input
+            type="text"
+            id="repoLink"
+            className={repo_link === '' ? 'required-field' : ''}
+            placeholder='Link do GitHub'
+            value={repo_link}
+            onChange={(e) => setRepo_link(e.target.value)}
+          />
         </div>
         {editedPost ? (
           <>
             <button type="submit">Salvar</button>
-            <button onClick={cancelEdit}>Cancelar</button>
+            <button type="button" onClick={cancelEdit}>Cancelar</button>
           </>
         ) : (
           <button type="submit">Adicionar Post</button>
@@ -147,12 +163,14 @@ const OperatorPanel = ({ addPost, editPost, editedPost, setEditedPost, cancelEdi
 const Posts = () => {
   const [posts, setPosts] = useState([]);
   const [editedPost, setEditedPost] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const addPost = async (formData) => {
+  const addPost = async (postData, headers) => {
     try {
-      const response = await fetch(`${BASE_URL}/api/posts`, {
+      const response = await fetch(`${BASE_URL}/posts`, {
         method: 'POST',
-        body: formData,
+        headers,
+        body: JSON.stringify(postData),
       });
 
       if (!response.ok) {
@@ -162,16 +180,17 @@ const Posts = () => {
       const newPost = await response.json();
       setPosts([...posts, newPost]);
     } catch (error) {
-      console.error(error);
+      console.error('Erro ao adicionar o post:', error);
+      alert('Erro ao adicionar o post');
     }
   };
 
-
-  const editPost = async (postId, formData) => {
+  const editPost = async (postId, postData, headers) => {
     try {
-      const response = await fetch(`${BASE_URL}/api/posts/${postId}`, {
+      const response = await fetch(`${BASE_URL}/posts/${postId}`, {
         method: 'PUT',
-        body: formData,
+        headers,
+        body: JSON.stringify(postData),
       });
 
       if (!response.ok) {
@@ -182,15 +201,20 @@ const Posts = () => {
       setPosts(posts.map((p) => (p.id === updatedPost.id ? updatedPost : p)));
       setEditedPost(null);
     } catch (error) {
-      console.error(error);
+      console.error('Erro ao editar o post:', error);
+      alert('Erro ao editar o post');
     }
   };
 
-
   const deletePost = async (postId) => {
     try {
-      const response = await fetch(`${BASE_URL}/api/posts/${postId}`, {
+      const token = localStorage.getItem('authToken');
+      const headers = new Headers();
+      headers.append('Authorization', `Bearer ${token}`);
+
+      const response = await fetch(`${BASE_URL}/posts/${postId}`, {
         method: 'DELETE',
+        headers,
       });
 
       if (!response.ok) {
@@ -199,44 +223,27 @@ const Posts = () => {
 
       setPosts(posts.filter((post) => post.id !== postId));
     } catch (error) {
-      console.error(error);
+      console.error('Erro ao excluir o post:', error);
+      alert('Erro ao excluir o post');
     }
   };
-
-  const cancelEdit = () => {
-    setEditedPost(null);
-  };
-
-  const [projetos, setProjetos] = useState([]);
-
-  useEffect(() => {
-    fetch(`${BASE_URL}/api/posts`)
-      .then(resposta => resposta.json())
-      .then(dados => {
-        setProjetos(dados)
-
-      })
-  }, [])
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-
-        const response = await fetch(`${BASE_URL}/api/posts`);
+        const response = await fetch(`${BASE_URL}/posts`);
         if (!response.ok) {
           throw new Error('Erro ao obter os posts');
         }
         const data = await response.json();
         setPosts(data);
       } catch (error) {
-        console.error(error);
+        console.error('Erro ao obter os posts:', error);
       }
     };
 
     fetchPosts();
   }, []);
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -250,7 +257,7 @@ const Posts = () => {
     <div>
       <div className='page'>
         <h1>Painel do Operador</h1>
-        <p>Aqui é possivel adicionar, remover ou alterar projetos</p>
+        <p>Aqui é possível adicionar, remover ou alterar projetos</p>
         <button onClick={handleOpenModal}>Adicionar Post</button>
       </div>
       <ModalAdd isOpen={isModalOpen} close={handleCloseModal}>
@@ -259,18 +266,15 @@ const Posts = () => {
           editPost={editPost}
           editedPost={editedPost}
           setEditedPost={setEditedPost}
-          cancelEdit={cancelEdit}
         />
       </ModalAdd>
       {posts.map((post, index) => (
         <div key={index} className='postagem'>
-          <h2><strong>Titulo:</strong> {post.title}</h2>
-          <img src={`${BASE_URL}/${post.image.replace(/\\/g, '/')}`} alt={post.title} />
+          <h2><strong>Título:</strong> {post.title}</h2>
+          <img src={post.image} alt={post.title} />
           <p><strong>Resumo:</strong> {post.summary}</p>
           <strong>Postagem Completa</strong>
-          <ReactMarkdown>
-            {post.description.replace(/\\n/g, '\n')}
-          </ReactMarkdown>
+          <ReactMarkdown>{post.description}</ReactMarkdown>
           <p><strong>Habilidades:</strong> {post.skills}</p>
           <a href={post.project_link} target="_blank" rel="noreferrer noopener">Link do Projeto</a>
           <a href={post.repo_link} target="_blank" rel="noreferrer noopener">Link do Repositório</a>
@@ -283,7 +287,5 @@ const Posts = () => {
     </div>
   );
 };
-
-
 
 export default Posts;

@@ -2,6 +2,16 @@
 
     margin: 3em 8em;
     
+    &__botao {
+        margin-bottom: 1rem;
+        button {
+            border: none;
+            width: 100px;
+            height: 40px;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+    }
     &__artigo {
         
         img {
